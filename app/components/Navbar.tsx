@@ -10,6 +10,8 @@ import { Button } from "./ui/button";
 import { useMediaQuery } from "../hooks/use-media-query";
 import MobileNav from "./MobileNav";
 import { NAVLINKS } from "../constants";
+import {motion} from 'framer-motion'
+
 
 export function Navbar() {
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -40,7 +42,13 @@ function DesktopNavbar() {
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-black dark:bg-black shadow-sm">
-      <div className="container mx-auto flex items-center justify-between py-4 px-6">
+      <motion.div 
+       initial={{ x: -30, opacity: 0.2 }}
+       animate={{ x: 0, opacity: 1 }}
+       transition={{ ease: "easeInOut", duration: 1.5 }}
+       whileInView={{ opacity: 1 }}
+       viewport={{ once: false }}
+      className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Logo />
@@ -83,7 +91,7 @@ function DesktopNavbar() {
         <div className="flex-shrink-0">
           
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

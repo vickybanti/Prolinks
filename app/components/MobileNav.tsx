@@ -18,6 +18,8 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ColourfulText } from "./ui/colourful-text";
 import { NAVLINKS } from "../constants";
+import {motion} from 'framer-motion'
+
 
 const MobileNav = () => {
   const pathname = usePathname();
@@ -26,9 +28,17 @@ const MobileNav = () => {
     <div>
       {/* Header Section */}
       <header className="fixed top-0 left-0 w-full z-50 bg-black shadow-sm">
-        <div className="container mx-auto flex items-center justify-between py-4 px-6">
+         
+        <motion.div 
+         initial={{ x: -30, opacity: 0 }}
+         animate={{ x: 0, opacity: 1 }}
+         transition={{ ease: "easeInOut", duration: 1.5 }}
+         whileInView={{ opacity: 1 }}
+         viewport={{ once: false }}
+        className="container mx-auto flex items-center justify-between py-4 px-6">
           {/* Logo */}
           <Link href="/">
+
             <h2 className="font-extrabold text-xl text-white">Prolinks</h2>
           </Link>
 
@@ -123,7 +133,7 @@ const MobileNav = () => {
               </DropdownMenuContent>
             </DropdownMenu>
           </nav>
-        </div>
+        </motion.div>
       </header>
     </div>
   );
