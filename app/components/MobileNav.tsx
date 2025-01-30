@@ -74,7 +74,7 @@ const MobileNav = () => {
                     const isActive = link.route === pathname;
 
                     return (
-                      <div key={link.route}>
+                      <div key={link.id}>
                         {/* Parent Link */}
                         {!link.productItems && (
                           <DropdownMenuItem
@@ -102,7 +102,7 @@ const MobileNav = () => {
                               <DropdownMenuSubContent className="bg-black border-[#785F37] w-[600px] absolute top-10 mx-auto transform shadow-lg p-4">
                                 {link.productItems.map((product) => (
                                   <DropdownMenuItem
-                                    key={product.id}
+                                    key={product.title}
                                     className="hover:bg-[#785F37] text-[#785F37] hover:text-black transition-all duration-300"
                                   >
                                     <a

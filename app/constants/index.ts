@@ -3,33 +3,31 @@ import { HoveredLink, ProductItem } from "../components/ui/NavbarMenu";
 
 export const NAVLINKS = [
     {
+      id:1,
       label: "Homepage",
       route: "/",
       icon: "/assets/icons/home.svg",
     },
       
         {
-          id:1,
+          id:2,
           label: "Ongoing",
           route: "#",
           icon: "/assets/icons/image.svg",
           productItems: [
             {
-              id:1,
               title: "Algochurn",
               href: "#",
               src: "/assets/ongoing/PIC 3 Research centre Hallmark University Ijebu Itele.jpg",
               description: "Prespective view of ongoing project at Hallmark University",
             },
             {
-              id:2,
               title: "Orimolade project 1",
               href: "https://tailwindmasterkit.com",
               src: "/assets/ongoing/New Orimolade_Scene 1.jpg",
               description:"Prespective view of ongoing orimolade project",
             },
             {
-              id:3,
               title: "Ogba project",
               href: "https://gomoonbeam.com",
               src: "/assets/2 Colity Studio Kayode st Ogba.jpg",
@@ -37,7 +35,6 @@ export const NAVLINKS = [
             },
 
             {
-              id:4,
               title: "Ogba project 2",
               href: "https://gomoonbeam.com",
               src: "/assets/ongoing/trtr.jpg",
@@ -49,19 +46,18 @@ export const NAVLINKS = [
 
 
          {
+          id:3,
           label: "Completed",
           route: "#",
           icon: "/assets/icons/image.svg",
           productItems: [
             {
-              id:1,
               title: "Hallmark University project",
               href: "https://algochurn.com",
               src: "/assets/completed/Hallmark-1280x720.jpg",
               description: "Hallmark projects",
             },
             {
-              id:2,
               title: "Western gate",
               href: "https://tailwindmasterkit.com",
               src: "/assets/completed/Westgate Area capture.png",
@@ -69,14 +65,12 @@ export const NAVLINKS = [
                 "Western gate tower",
             },
             {
-              id:3,
               title: "Ikoyi project",
               href: "https://gomoonbeam.com",
               src: "/assets/completed/IMG-20190916-WA0022.jpg",
               description: "Ikoyi tower project.",
             },
             {
-              id:4,
               title: "Orimolade project",
               href: "https://userogue.com",
               src: "/assets/completed/New Orimolad.jpg",
@@ -90,7 +84,7 @@ export const NAVLINKS = [
       
     
     {
-      id:2,
+      id:4,
       label: "Properties",
       route: "/transformations/add/fill",
       icon: "/assets/icons/stars.svg",
@@ -99,7 +93,7 @@ export const NAVLINKS = [
     },
 
     {
-      id:3,
+      id:5,
       label: "Services",
       route: "/transformations/add/fill",
       icon: "/assets/icons/stars.svg",
@@ -107,7 +101,8 @@ export const NAVLINKS = [
       
     },
 
-    {id:4,
+    {
+      id:6,
       label: "About",
       route: "/transformations/add/fill",
       icon: "/assets/icons/stars.svg",
@@ -116,19 +111,7 @@ export const NAVLINKS = [
     
   ];
   
-  export const cards =[{
-    id: 1,
-    content: "This is the first card.",
-    thumbnail: "./assets/5.jpg",
-    className: "bg-white",
-  },
  
-  {
-    id: 3,
-    content: "A simple text card.",
-    thumbnail: "./assets/3.jpg",
-  },
-];
   
   export const transformationTypes = {
     restore: {
@@ -172,33 +155,74 @@ export const NAVLINKS = [
     },
   };
   
-  export const aspectRatioOptions = {
-    "1:1": {
-      aspectRatio: "1:1",
-      label: "Square (1:1)",
-      width: 1000,
-      height: 1000,
+  export const FOOTERLINKS=[
+    {
+      id:1,
+      "title":"Main menu",
+      "subTitle":[
+        {
+        id:1,
+        label:"About"
+      },
+
+      {
+        id:2,
+        label:"Properties"
+      },
+
+      {
+        id:3,
+        label:"Privacy policy"
+      },
+    ]
+
+     
     },
-    "3:4": {
-      aspectRatio: "3:4",
-      label: "Standard Portrait (3:4)",
-      width: 1000,
-      height: 1334,
+
+    {
+      id:2,
+      "title":"Featured",
+      "subTitle":[
+        {
+          id:1,
+          label:"Hallmark"
+        },
+        {
+          id:2,
+          label:"West gate"
+        },
+        {
+          id:3,
+          label:"Lekki"
+        },
+        {
+          id:4,
+          label:"Ikoyi"
+        },
+      ]
     },
-    "9:16": {
-      aspectRatio: "9:16",
-      label: "Phone Portrait (9:16)",
-      width: 1000,
-      height: 1778,
+    {
+      id:2,
+      "title":"Explore",
+      "subTitle":[
+        {
+          id:1,
+          label:"Search"
+        },
+        {
+          id:2,
+          label:"Ongoing"
+        },
+        {
+          id:3,
+          label:"Completed"
+        },
+       
+      ]
     },
-  };
-  
-  export const defaultValues = {
-    title: "",
-    aspectRatio: "",
-    color: "",
-    prompt: "",
-    publicId: "",
-  };
-  
-  export const creditFee = -1;
+
+
+   
+
+
+  ]

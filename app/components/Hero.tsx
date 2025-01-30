@@ -6,19 +6,20 @@ import { motion } from "framer-motion";
 export function Hero() {
     
   return (
+    <div className="bg-black">
     <motion.div
-    initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 50 }}
+    initial={{ opacity: 0.0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 1.5, // Animation duration
-          ease: "easeInOut", // Smooth transition effect
-          delay: 0.5, // Delay before animation starts
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
         }}
   
-        className="h-screen py-20 mb-20 w-full">
+        className="h-screen pt-20 pb-32 w-full">
       <LayoutGrid cards={cards} />
     </motion.div>
+    </div>
   );
 }
 

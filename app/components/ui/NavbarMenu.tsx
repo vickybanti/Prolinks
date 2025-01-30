@@ -3,6 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+
 
 const transition = {
   type: "spring",
@@ -26,6 +28,8 @@ export const MenuItem = ({
   children?: React.ReactNode;
 }) => {
   const hasChildren = React.Children.count(children) > 0;
+  const pathname = usePathname();
+
 
   return (
     <div
@@ -34,7 +38,7 @@ export const MenuItem = ({
     >
       <motion.p
         transition={{ duration: 0.7 }}
-        className="cursor-pointer text-[#A08C5B] font-semibold uppercase dark:text-white hover:text-white duration-700"
+        className={`${active &&'text-black bg-[#A08C5B] p-3 transition-all linear duration-300'} cursor-pointer text-[#A08C5B] font-semibold uppercase dark:text-white hover:text-white duration-700`}
       >
         {item}
       </motion.p>
@@ -71,7 +75,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-xs flex justify-center space-x-4 px-3 py-3 duration-700 ease-linear bg-none hover:bg-gradient-to-b hover:from-[#785F37] hover:to-transparent hover:bg-[length:100%_150%] hover:text-black"
+      className={`relative rounded-xs flex justify-center space-x-4 px-3 py-3 duration-700 ease-linear bg-none hover:bg-gradient-to-b hover:from-[#785F37] hover:to-transparent hover:bg-[length:100%_150%] hover:text-black`}
     >
       {children}
     </nav>

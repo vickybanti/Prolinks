@@ -1,12 +1,28 @@
 import Image from "next/image";
 import {Navbar} from "./components/Navbar";
 import {Hero} from "./components/Hero";
+import {Socials} from "./components/Socials"
+import {Location} from "./components/Location"
+import Work from "./components/Work"
+import Footer from "./components/Footer"
+import { calsans } from "@/fonts/calsans";
+import { twMerge } from "tailwind-merge";
+import { TracingBeam } from "./components/ui/tracing-beam";
+
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    
+            <main >
+
       <Navbar />
       <Hero />
-    </main>
+      <Socials />
+      <Location />
+      <Work />
+      <Footer />
+      </main>
+
+
   );
 }

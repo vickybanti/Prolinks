@@ -10,11 +10,24 @@ import { Button } from "./ui/button";
 import { useMediaQuery } from "../hooks/use-media-query";
 import MobileNav from "./MobileNav";
 import { NAVLINKS } from "../constants";
+import { usePathname } from "next/navigation";
 import {motion} from 'framer-motion'
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
+
 
 
 export function Navbar() {
   const isDesktop = useMediaQuery("(min-width: 768px)");
+
 
   return isDesktop ? (
     <div className="relative w-full">
@@ -37,6 +50,8 @@ function Logo() {
 
 function DesktopNavbar() {
   const [active, setActive] = useState<string | null>(null);
+  const pathname = usePathname();
+
 
   console.log(NAVLINKS); // Debugging log to verify NAVLINKS
 
@@ -55,36 +70,46 @@ function DesktopNavbar() {
         </div>
 
         {/* Navigation Links */}
-        <div className="flex items-center space-x-1">
-          {NAVLINKS.map((link) => (
-            
-            <Menu setActive={setActive} key={link.label}>
-              
-              <MenuItem setActive={setActive} active={active} item={link.label}>
-                
-              {link.productItems && link.productItems.length > 0 &&
-              <div
-              className={`${link.productItems.length > 0 ? 'text-sm grid grid-cols-2 gap-10 p-4':'bg-none border-none'}`}
-            >
-              
-                {link.productItems.map((prod) => (
-                  
+        <div className="flex items-center space-x-1 text-[#A08C5B]">
+        {NAVLINKS.map((link) => {
+                              const isActive = link.route === pathname;
+                              return (<NavigationMenu>
+    <NavigationMenuList className="relative z-10">
+    <NavigationMenuItem className={`relative px-3 py-3 overflow-hidden transition-all duration-700 ${isActive ? 'inset-0 bg-gradient-to-b from-[#A08C5B] to-black text-white' : 'bg-black text-[#A08C5B] group'}`}>
+  {/* Background Gradient Overlay */}
+  <span className="absolute inset-0 bg-gradient-to-b from-[#A08C5B] to-black scale-y-0 origin-top transition-transform duration-700 group-hover:scale-y-100"></span>
+  
+        {/* If there are product items, show dropdown, else just a link */}
+        {link.productItems && link.productItems.length > 0 ? (
+          <>
+            <NavigationMenuTrigger className={`relative z-10 hover:text-black hover:bg-transparent`}>{link.label}</NavigationMenuTrigger>
+            <NavigationMenuContent>
+            <div className="text-sm grid grid-cols-2 gap-10 p-[10px] w-auto min-w-[650px] max-w-fit bg-black border-none">
+            {link.productItems.map((prod) => (
+                  <NavigationMenuLink key={prod.title}>
                     <ProductItem
-                                  key={prod.title}
-
                       title={prod.title}
                       href={prod.href}
                       src={prod.src}
                       description={prod.description}
                     />
+                  </NavigationMenuLink>
                 ))}
-                </div>
-}
+              </div>
+            </NavigationMenuContent>
+          </>
+        ) : (
+          <NavigationMenuLink href={link.route} className="relative z-10">{link.label}</NavigationMenuLink>
+        )}
+      </NavigationMenuItem>
+    </NavigationMenuList>
+  </NavigationMenu>)
+                              
+})}
 
-           </MenuItem>
-         </Menu>
+          
 
-          ))}
+            
         </div>
 
         {/* Login Button */}
