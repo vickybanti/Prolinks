@@ -5,7 +5,7 @@ import { Meteors } from "./ui/meteors";
 const Footer = () => {
   return (
     <div
-      className="relative w-full bg-cover bg-center bg-fixed"
+      className="relative w-full bg-fixed bg-center bg-cover"
       style={{
         backgroundImage: `url(/assets/footerPics.jpg)`,
         backgroundRepeat: "no-repeat",
@@ -14,7 +14,7 @@ const Footer = () => {
 
       <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 w-full min-h-screen px-8 md:px-20 lg:px-32 pt-32">
         {/* Footer Content */}
-        <div className="mx-auto flex justify-between gap-10">
+        <div className="flex justify-between gap-10 mx-auto">
           {/* Branding */}
           <div className="w-full md:w-1/4">
             <h2 className="text-2xl font-bold">Prolinks</h2>
@@ -22,7 +22,7 @@ const Footer = () => {
 
           {/* Footer Links */}
           {FOOTERLINKS.map((footer) => (
-            <div className="w-full md:w-1/4 flex flex-col" key={footer.id}>
+            <div className="flex flex-col w-full md:w-1/4" key={footer.id}>
               <h2 className="text-xl font-semibold">{footer.title}</h2>
               {footer.subTitle.map((sub) => (
                 <p
@@ -36,11 +36,36 @@ const Footer = () => {
           ))}
 
           {/* Contact Us Section */}
-          <div className="w-full md:w-1/4 flex flex-col">
+          <div className="flex flex-col w-64">
             <h2 className="text-xl font-semibold">Contact Us</h2>
-            <p className="p-3 font-light cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black">
-              info@prolinks.com
+            <div className="flex items-center]">
+              
+           <img src=" https://img.icons8.com/?size=100&id=107436&format=png&color=000000" 
+           width="32px"
+           height="2px"
+           className="object-contain"/>
+           <p className="text-xs p-3 font-light cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black">
+           
+            13, Dayo Kuyeclose,New Oko-oba, Abulegba, Lagos
             </p>
+            </div>
+            <div className="flex items-center]">
+              
+              <img src="https://img.icons8.com/?size=100&id=12921&format=png&color=000000"
+              width="32px"
+              height="2px"
+              className="object-contain"/>
+            <p className="py-2 text-sm">0803-302-9830</p>
+            </div>
+
+            <div className="flex items-center]">
+              
+           <img src=" https://img.icons8.com/?size=100&id=OumT4lIcOllS&format=png&color=000000" 
+           width="32px"
+           height="2px"
+           className="object-contain"/>
+            <p className="py-2 text-sm">tundeadekola@yahoo.com</p>
+            </div>
           </div>
         </div>
 

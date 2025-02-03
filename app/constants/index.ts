@@ -1,6 +1,7 @@
 import { Content } from "next/dist/compiled/@next/font/dist/google";
 import { HoveredLink, ProductItem } from "../components/ui/NavbarMenu";
 
+
 export const NAVLINKS = [
     {
       id:1,
@@ -12,7 +13,7 @@ export const NAVLINKS = [
         {
           id:2,
           label: "Ongoing",
-          route: "#",
+          route: "/projects/ongoing",
           icon: "/assets/icons/image.svg",
           productItems: [
             {
@@ -53,27 +54,31 @@ export const NAVLINKS = [
           productItems: [
             {
               title: "Hallmark University project",
-              href: "https://algochurn.com",
+              href: "/property-type/admin",
               src: "/assets/completed/Hallmark-1280x720.jpg",
               description: "Hallmark projects",
+              route:"/property-type/admin"
             },
             {
               title: "Western gate",
-              href: "https://tailwindmasterkit.com",
+              href: "/property-type/residentials",
               src: "/assets/completed/Westgate Area capture.png",
               description:
                 "Western gate tower",
+              route:"/property-type/residentials"
             },
             {
               title: "Ikoyi project",
               href: "https://gomoonbeam.com",
               src: "/assets/completed/IMG-20190916-WA0022.jpg",
               description: "Ikoyi tower project.",
+              route:"/property-type/commercial"
             },
             {
               title: "Orimolade project",
-              href: "https://userogue.com",
+              href: "/property-type/commercial",
               src: "/assets/completed/New Orimolad.jpg",
+              route:"/property-type/shopping",
               description:
                 "Respond to government RFPs, RFIs and RFQs 10x faster using AI.",
             },
@@ -86,7 +91,7 @@ export const NAVLINKS = [
     {
       id:4,
       label: "Properties",
-      route: "/transformations/add/fill",
+      route: "/property-type/duplex",
       icon: "/assets/icons/stars.svg",
       
       
@@ -110,7 +115,274 @@ export const NAVLINKS = [
     },
     
   ];
+
+  export const residentials = [
+    {
+      id:1,
+      title: "Orimolade project",
+      route: "/property/orimolade",
+      icon: "/assets/completed/residentials/NewOrimolad.jpg",
+      description: "5 Bedroom semi detached duplex with a basementAnd roof-top garden.",
+      location:"Orimolade Estate, Adeniyi Jones Avenue, Ikeja, Lagos",      
+      images:[
+        {
+          src:"/assets/completed/residentials/NewOrimolad.jpg",
+          alt:"Orimolade project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        },
+        {
+          src:"/assets/completed/residentials/NewOrimoladee.jpg",
+          alt:"Orimolade project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        
+        }    
+
+    ]
+      
+    },
+
+    {
+      id:2,
+      title: "Ikorodu project",
+      route: "/property/Ikorodu",
+      icon: "/assets/completed/residentials/duplex1.jpg",
+      description: "5 Bedroom semi detached duplex with a basementAnd roof-top garden.",
+      location:"OrimoladeEstate, Adeniyi Jones Avenue, Ikeja, Lagos",      
+      images:[
+        {
+          src:"/assets/completed/residentials/duplex2.jpg",
+          alt:"Ikorodu project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        
+        },
+        {
+          src:"/assets/completed/residentials/duplex1.jpg",
+          alt:"Ikorodu project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        
+        }
+        
+      
+    ]
+      
+    },
+
+    {
+      id:2,
+      title: "Ipaja project",
+      route: "/property/ipaja",
+      icon: "/assets/completed/residentials/dertyuio.jpg",
+      description: "5 Bedroom duplex .",
+      location:" Command Ipaja, Lagos",      
+      images:[
+        {
+          src:"/assets/completed/residentials/dertyuio.jpg",
+          alt:"Ipaja project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        },
+        {
+          src:"/assets/completed/residentials/dghjh.jpg",
+          alt:"Ipaja project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        },
+        {
+          src:"/assets/completed/residentials/drtyujk.jpg",
+          alt:"Ipaja project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        }      
+
+    ]
+      
+    },
+  ]
   
+  export const commercial = [
+    {
+      id:1,
+      title: "Ogba project",
+      route: "/property/ogba",
+      icon: "/assets/completed/commercial/ogba.jpg",
+      description: "COLITYSTUDIOS, DM AUDIOVISUALS  MANUFACTURES .",
+      location:" OGBA, LAGOS STATE",      
+      images:[
+        {
+          src:"/assets/completed/commercial/ogba.jpg",
+          alt:"Ogba project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+
+        },
+
+        {
+          src:"/assets/completed/commercial/office.jpg",
+          alt:"Ogba project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+
+        },
+       
+    ]
+    },
+
+    {
+      id:2,
+      title: "Lascofedd project",
+      route: "/property/lascofedd",
+      icon: "/assets/completed/commercial/Lascofedd.jpg",
+      description: "LAGOS STATE CO-OPERATIVE FEDERATION (LASCOFED) MIXED-USE BUILDING .",
+      location:"  WEMPCOROAD, OGBA, LAGOSSTATE",      
+      images:[
+        {
+          src:"/assets/completed/commercial/Lascofedd.jpg",
+          alt:"Lascofedd project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        },
+        {
+          src:"/assets/completed/commercial/office1.jpg",
+          alt:"Lascofedd project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        },
+
+        {
+          src:"/assets/completed/commercial/office2.jpg",
+          alt:"Lascofedd project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        }       
+        
+        
+    ]
+    }
+  ]
+ 
+
+  export const educational = [
+    {
+      id:1,
+      title: "Library ",
+      route: "/property/library",
+      icon: "/assets/completed/admin/Library.jpg",
+      description: "COLITYSTUDIOS, DM AUDIOVISUALS  MANUFACTURES .",
+      location:" OGBA, LAGOS STATE",      
+      images:[
+        {
+          src:"/assets/completed/admin/Library.jpg",
+          alt:"Library project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        },
+
+        {
+          src:"/assets/completed/admin/Library.jpg",
+          alt:"Library project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        },
+
+        {
+          src:"/assets/completed/admin/Library.jpg",
+          alt:"Library project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        }
+        
+    ]
+    },
+
+    {
+      id:2,
+      title: "Osun project",
+      route: "/property/laboratory",
+      icon: "/assets/completed/admin/frontnear.jpg",
+      description: "Engineering Laboratory, Department of Civil Engineering .",
+      location:" Federal Polytechnic Ede, Ede, Osun State",      
+      images:[
+        {
+        src:"/assets/completed/admin/frontnear.jpg",
+        alt:"Osun project",
+        title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+      },  
+      {
+        src:"/assets/completed/admin/trtr.jpg",
+        alt:"Osun project",
+        title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+      },
+      {
+        src:"/assets/completed/admin/perspective.jpg",
+        alt:"Osun project",
+        title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+      }     
+      
+      
+    ]
+    }
+  ]
  
   
   export const transformationTypes = {

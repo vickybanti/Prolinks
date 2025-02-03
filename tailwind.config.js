@@ -2,6 +2,8 @@ const svgToDataUri = require("mini-svg-data-uri");
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
+const flowbite = require("flowbite-react/tailwind");
+
 
 
 /** @type {import('tailwindcss').Config} */
@@ -12,6 +14,8 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}", // For `src` directory structure
+    "./node_modules/flowbite/**/*.js"
+
   ],
   theme: {
     extend: {
@@ -116,6 +120,9 @@ module.exports = {
         { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
       );
     },
+
+    require('flowbite/plugin'),
+
   ],
 };
 

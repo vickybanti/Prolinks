@@ -5,7 +5,6 @@ import {Socials} from "./components/Socials"
 import {Location} from "./components/Location"
 import Work from "./components/Work"
 import Footer from "./components/Footer"
-import { calsans } from "@/fonts/calsans";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "./components/ui/tracing-beam";
 

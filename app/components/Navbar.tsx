@@ -56,14 +56,14 @@ function DesktopNavbar() {
   console.log(NAVLINKS); // Debugging log to verify NAVLINKS
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-black dark:bg-black shadow-sm">
+    <div className="fixed top-0 left-0 z-50 w-full bg-black shadow-sm dark:bg-black">
       <motion.div 
        initial={{ x: -30, opacity: 0.2 }}
        animate={{ x: 0, opacity: 1 }}
        transition={{ ease: "easeInOut", duration: 1.5 }}
        whileInView={{ opacity: 1 }}
        viewport={{ once: false }}
-      className="container mx-auto flex items-center justify-between py-4 px-6">
+      className="container flex items-center justify-between px-6 py-4 mx-auto">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Logo />
@@ -82,11 +82,12 @@ function DesktopNavbar() {
         {/* If there are product items, show dropdown, else just a link */}
         {link.productItems && link.productItems.length > 0 ? (
           <>
-            <NavigationMenuTrigger className={`relative z-10 hover:text-black hover:bg-transparent`}>{link.label}</NavigationMenuTrigger>
+            <NavigationMenuTrigger className={`relative z-10 hover:text-black hover:bg-transparent`}>
+{link.label}</NavigationMenuTrigger>
             <NavigationMenuContent>
             <div className="text-sm grid grid-cols-2 gap-10 p-[10px] w-auto min-w-[650px] max-w-fit bg-black border-none">
             {link.productItems.map((prod) => (
-                  <NavigationMenuLink key={prod.title}>
+                  <NavigationMenuLink key={prod.title} href={link.route}>
                     <ProductItem
                       title={prod.title}
                       href={prod.href}
