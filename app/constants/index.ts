@@ -49,14 +49,14 @@ export const NAVLINKS = [
          {
           id:3,
           label: "Completed",
-          route: "#",
+          route: "/property-type/admin",
           icon: "/assets/icons/image.svg",
           productItems: [
             {
               title: "Hallmark University project",
-              href: "/property-type/admin",
+              href: `/property/osun-project`,
               src: "/assets/completed/Hallmark-1280x720.jpg",
-              description: "Hallmark projects",
+              description: "Check out educational projects",
               route:"/property-type/admin"
             },
             {
@@ -64,14 +64,14 @@ export const NAVLINKS = [
               href: "/property-type/residentials",
               src: "/assets/completed/Westgate Area capture.png",
               description:
-                "Western gate tower",
+                "Check out shopping projects",
               route:"/property-type/residentials"
             },
             {
               title: "Ikoyi project",
               href: "https://gomoonbeam.com",
-              src: "/assets/completed/IMG-20190916-WA0022.jpg",
-              description: "Ikoyi tower project.",
+              src: "/assets/completed/commercial/Lascofedd.jpg",
+              description: "Check out commercial/office projects.",
               route:"/property-type/commercial"
             },
             {
@@ -80,7 +80,7 @@ export const NAVLINKS = [
               src: "/assets/completed/New Orimolad.jpg",
               route:"/property-type/shopping",
               description:
-                "Respond to government RFPs, RFIs and RFQs 10x faster using AI.",
+                "Check out residential projects",
             },
           ],
         },
@@ -185,7 +185,7 @@ export const NAVLINKS = [
 
     {
       id:2,
-      title: "Ipaja project",
+      title: "5 bedroom duplex",
       route: "/property/ipaja",
       icon: "/assets/completed/residentials/dertyuio.jpg",
       description: "5 Bedroom duplex .",
@@ -302,13 +302,54 @@ export const NAVLINKS = [
  
 
   export const educational = [
+
     {
       id:1,
+      title: "Hallmark university projects ",
+      route: "/property/Hallmark",
+      icon: "/assets/completed/admin/Hallmark.jpg",
+      description: "ADMINISTRATIVE BLOCK AND RESEARCH CENTER AT HALLMARK UNIVERSITY",
+      location:" JEBU ITELE, OGUN STATE",      
+      images:[
+        {
+          src:"/assets/completed/admin/Hallmark.jpg",
+          alt:"Hallmark project",
+          title: "Hallmark unoversity administrative building",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        },
+
+        {
+          src:"/assets/completed/admin/research.jpg",
+          alt:"Hallmark project",
+          title: "Hallmark university Research center",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        },
+
+        {
+          src:"/assets/completed/admin/Library.jpg",
+          alt:"Library project",
+          title: "Orimolade project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        }
+        
+    ]
+    },
+    {
+      id:2,
       title: "Library ",
       route: "/property/library",
-      icon: "/assets/completed/admin/Library.jpg",
-      description: "COLITYSTUDIOS, DM AUDIOVISUALS  MANUFACTURES .",
-      location:" OGBA, LAGOS STATE",      
+      icon: "/assets/completed/admin/89.jpg",
+      description: "Facaulty of law library at Ilorin",
+      location:" Ilorin, Kwara STATE",      
       images:[
         {
           src:"/assets/completed/admin/Library.jpg",
@@ -344,7 +385,7 @@ export const NAVLINKS = [
     },
 
     {
-      id:2,
+      id:3,
       title: "Osun project",
       route: "/property/laboratory",
       icon: "/assets/completed/admin/frontnear.jpg",

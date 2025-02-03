@@ -18,7 +18,7 @@ const PageCard = ({ title, description,icon, location, route,id,property }:{
 
         <div className="relative h-[300px] w-[100%] ">
 
-        <Image src={icon} alt={title} className="object-cover w-full h-full" fill/>
+        <Image src={icon} alt={title} className="object-cover" fill/>
 
 
         </div>
