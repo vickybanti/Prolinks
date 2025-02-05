@@ -1,5 +1,4 @@
-import Footer from '@/app/components/Footer';
-import { Navbar } from '@/app/components/Navbar';
+
 import Image from 'next/image';
 import React from 'react';
 import {
@@ -13,18 +12,18 @@ import {
 
 
 
-const PropertyCard = ({ label, description, images,src,alt}:{
+const PropertyCard = ({ label, description, images,src,alt,propertyType}:{
     label:string;
     description:string;
     images? :string[];
     src:any;
     alt?:string;
+    propertyType:string;
 
 
 }) => {
   return (
     <div className='mt-20 overflow-hidden'>
-      <Navbar />
     <div className='flex flex-col w-screen h-screen px-10 py-10'>
     <Breadcrumb>
   <BreadcrumbList>
@@ -33,11 +32,11 @@ const PropertyCard = ({ label, description, images,src,alt}:{
     </BreadcrumbItem>
     <BreadcrumbSeparator />
     <BreadcrumbItem>
-      <BreadcrumbLink href="/projects/completed">{label}</BreadcrumbLink>
+      <BreadcrumbLink href={`/property-type/${propertyType}`}>{propertyType}</BreadcrumbLink>
     </BreadcrumbItem>
     <BreadcrumbSeparator />
     <BreadcrumbItem>
-      <BreadcrumbPage>{label}</BreadcrumbPage>
+      <BreadcrumbPage className="text-white">{label}</BreadcrumbPage>
     </BreadcrumbItem>
   </BreadcrumbList>
 </Breadcrumb>
@@ -45,16 +44,16 @@ const PropertyCard = ({ label, description, images,src,alt}:{
 
       <h1 className='text-2xl text-[#A08C5B] py-3'>{label}</h1>
       <div className='flex items-center gap-3'>
-        <p className='p-2 text-sm font-semibold text-white bg-green-600'>
+        <p className='p-2 text-xs text-white bg-green-600'>
           Featured
         </p>
 
-        <p className='p-2 text-sm font-semibold text-white bg-orange-500'>
-          Featured
+        <p className='p-2 text-xs  text-white bg-orange-500'>
+          {propertyType}
         </p>
 
-        <p className='p-2 text-sm font-semibold text-white bg-green-600'>
-          Featured
+        <p className='p-2 text-xs text-white bg-green-600'>
+          Completed
         </p>
       </div>
       <div className='w-full h-full px-5'>
@@ -87,7 +86,6 @@ const PropertyCard = ({ label, description, images,src,alt}:{
   {description}
 </p>
 </div>
-    <Footer />
     </div>
   );
 };

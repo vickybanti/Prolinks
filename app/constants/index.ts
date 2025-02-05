@@ -1,6 +1,141 @@
 import { Content } from "next/dist/compiled/@next/font/dist/google";
 import { HoveredLink, ProductItem } from "../components/ui/NavbarMenu";
 
+export const COMPLETED = [
+  {
+    id:1,
+      propertyType:"residentials",
+      title: "Orimolade project",
+      route: "/property/orimolade",
+      icon: "/assets/completed/residentials/NewOrimolad.jpg",
+      description: "5 Bedroom semi detached duplex with a basementAnd roof-top garden.",
+      location:"Orimolade Estate, Adeniyi Jones Avenue, Ikeja, Lagos",      
+
+  },
+  {
+    id:2,
+      title: "Ikorodu project",
+      propertyType:"residentials",
+      route: "/property/Ikorodu",
+      icon: "/assets/completed/residentials/duplex1.jpg",
+      description: "5 Bedroom semi detached duplex with a basementAnd roof-top garden.",
+      location:"OrimoladeEstate, Adeniyi Jones Avenue, Ikeja, Lagos",      
+
+  },
+  {
+    id:3,
+    title: "5 bedroom duplex",
+    propertyType:"residentials",
+    route: "/property/ipaja",
+    icon: "/assets/completed/residentials/dertyuio.jpg",
+    description: "5 Bedroom duplex .",
+    location:" Command Ipaja, Lagos",  
+  },
+  {
+    id:4,
+      propertyType:"commercial",
+      title: "Ogba project",
+      route: "/property/ogba",
+      icon: "/assets/completed/commercial/ogba.jpg",
+      description: "COLITYSTUDIOS, DM AUDIOVISUALS  MANUFACTURES .",
+      location:" OGBA, LAGOS STATE",  
+  },
+  {
+    id:5,
+    title: "Lascofedd project",
+    propertyType:"commercial",
+    route: "/property/lascofedd",
+    icon: "/assets/completed/commercial/Lascofedd.jpg",
+    description: "LAGOS STATE CO-OPERATIVE FEDERATION (LASCOFED) MIXED-USE BUILDING .",
+    location:"  WEMPCOROAD, OGBA, LAGOSSTATE", 
+  },
+  {
+    id:6,
+    title: "Lascofedd project",
+    propertyType:"commercial",
+    route: "/property/lascofedd",
+    icon: "/assets/completed/commercial/Lascofedd.jpg",
+    description: "LAGOS STATE CO-OPERATIVE FEDERATION (LASCOFED) MIXED-USE BUILDING .",
+    location:"  WEMPCOROAD, OGBA, LAGOSSTATE", 
+  },
+
+  {
+    id:7,
+    propertyType:"educational",
+    title: "Hallmark university projects ",
+    route: "/property/Hallmark",
+    icon: "/assets/completed/admin/Hallmark.jpg",
+    description: "ADMINISTRATIVE BLOCK AND RESEARCH CENTER AT HALLMARK UNIVERSITY",
+    location:" JEBU ITELE, OGUN STATE",    
+  },
+  {
+    id:8,
+    title: "Library ",
+    propertyType:"educational",
+    route: "/property/library",
+    icon: "/assets/completed/admin/89.jpg",
+    description: "Facaulty of law library at Ilorin",
+    location:" Ilorin, Kwara STATE", 
+  },
+  {
+    id:9,
+    title: "Osun project",
+    propertyType:"educational",
+    route: "/property/laboratory",
+    icon: "/assets/completed/admin/frontnear.jpg",
+    description: "Engineering Laboratory, Department of Civil Engineering .",
+    location:" Federal Polytechnic Ede, Ede, Osun State",      
+  },
+  {
+    id:10,
+    propertyType:"Shopping",
+    title: "WESTGATE SUPERMARKET AND PHARMACY",
+    route: "/property/westgate",
+    icon: "/assets/completed/shopping/IMG-20190916-WA0022.jpg",
+    description: "WESTGATE SUPERMARKET AND PHARMACY",
+    location:"OLOWOORA, MAGODO, LAGOS.",      
+  },
+  {
+    id:11,
+    propertyType:"Shopping",
+    title: "CMART PHARMACY AND SUPERMARKET",
+    route: "/property/CMART",
+    icon: "/assets/completed/shopping/20210917_122818.jpg",
+    description: "CMART SUPERMARKET AND PHARMACY",
+    location:"ABOYADACOLE,  LEKKIPHASE 1, LAGOS", 
+  }
+]
+
+export const ONGOING = [
+  {
+    id:1,
+    title: "Algochurn",
+    route: "/property/A",
+    icon: "/assets/ongoing/1.jpg",
+    description: "Prespective view of ongoing project at Hallmark University",
+    location:" Federal Polytechnic Ede, Ede, Osun State",      
+
+  },
+  {
+    id:2,
+    title: "Orimolade project 1",
+    route: "https://tailwindmasterkit.com",
+    icon: "/assets/ongoing/New Orimolade_Scene 1.jpg",
+    location:" Federal Polytechnic Ede, Ede, Osun State",      
+    description:"Prespective view of ongoing orimolade project",
+  },
+  {
+    id:3,
+    title: "Ogba project",
+    route: "https://gomoonbeam.com",
+    icon: "/assets/2 Colity Studio Kayode st Ogba.jpg",
+    location:" Federal Polytechnic Ede, Ede, Osun State",      
+    description: "Perspective view of ongoing ogba project.",
+  },
+
+ 
+  
+]
 
 export const NAVLINKS = [
     {
@@ -10,62 +145,28 @@ export const NAVLINKS = [
       icon: "/assets/icons/home.svg",
     },
       
-        {
-          id:2,
-          label: "Ongoing",
-          route: "/projects/ongoing",
-          icon: "/assets/icons/image.svg",
-          productItems: [
-            {
-              title: "Algochurn",
-              href: "#",
-              src: "/assets/ongoing/PIC 3 Research centre Hallmark University Ijebu Itele.jpg",
-              description: "Prespective view of ongoing project at Hallmark University",
-            },
-            {
-              title: "Orimolade project 1",
-              href: "https://tailwindmasterkit.com",
-              src: "/assets/ongoing/New Orimolade_Scene 1.jpg",
-              description:"Prespective view of ongoing orimolade project",
-            },
-            {
-              title: "Ogba project",
-              href: "https://gomoonbeam.com",
-              src: "/assets/2 Colity Studio Kayode st Ogba.jpg",
-              description: "Perspective view of ongoing ogba project.",
-            },
-
-            {
-              title: "Ogba project 2",
-              href: "https://gomoonbeam.com",
-              src: "/assets/ongoing/trtr.jpg",
-              description: "Perspective view of department of civil engineering admin building at Hallmark University.",
-            },
-            
-          ],
-        },
-
+       
 
          {
-          id:3,
+          id:2,
           label: "Completed",
-          route: "/property-type/admin",
+          route: "/status/completed",
           icon: "/assets/icons/image.svg",
           productItems: [
             {
-              title: "Hallmark University project",
+              title: "Engineering Laboratory University project",
               href: `/property/osun-project`,
-              src: "/assets/completed/Hallmark-1280x720.jpg",
+              src: "/assets/completed/89.jpg",
               description: "Check out educational projects",
-              route:"/property-type/admin"
+              route:"/property-type/educational"
             },
             {
               title: "Western gate",
-              href: "/property-type/residentials",
+              href: "/property/shopping",
               src: "/assets/completed/Westgate Area capture.png",
               description:
                 "Check out shopping projects",
-              route:"/property-type/residentials"
+              route:"/property-type/shopping"
             },
             {
               title: "Ikoyi project",
@@ -88,28 +189,21 @@ export const NAVLINKS = [
       
       
     
-    {
-      id:4,
-      label: "Properties",
-      route: "/property-type/duplex",
-      icon: "/assets/icons/stars.svg",
-      
-      
-    },
+   
 
     {
-      id:5,
+      id:3,
       label: "Services",
-      route: "/transformations/add/fill",
+      route: "/services",
       icon: "/assets/icons/stars.svg",
      
       
     },
 
     {
-      id:6,
-      label: "About",
-      route: "/transformations/add/fill",
+      id:4,
+      label: "Contact",
+      route: "/contact",
       icon: "/assets/icons/stars.svg",
       
     },
@@ -119,6 +213,7 @@ export const NAVLINKS = [
   export const residentials = [
     {
       id:1,
+      propertyType:"residentials",
       title: "Orimolade project",
       route: "/property/orimolade",
       icon: "/assets/completed/residentials/NewOrimolad.jpg",
@@ -152,6 +247,7 @@ export const NAVLINKS = [
     {
       id:2,
       title: "Ikorodu project",
+      propertyType:"residentials",
       route: "/property/Ikorodu",
       icon: "/assets/completed/residentials/duplex1.jpg",
       description: "5 Bedroom semi detached duplex with a basementAnd roof-top garden.",
@@ -184,8 +280,9 @@ export const NAVLINKS = [
     },
 
     {
-      id:2,
+      id:3,
       title: "5 bedroom duplex",
+      propertyType:"residentials",
       route: "/property/ipaja",
       icon: "/assets/completed/residentials/dertyuio.jpg",
       description: "5 Bedroom duplex .",
@@ -227,6 +324,7 @@ export const NAVLINKS = [
   export const commercial = [
     {
       id:1,
+      propertyType:"commercial",
       title: "Ogba project",
       route: "/property/ogba",
       icon: "/assets/completed/commercial/ogba.jpg",
@@ -261,6 +359,7 @@ export const NAVLINKS = [
     {
       id:2,
       title: "Lascofedd project",
+      propertyType:"commercial",
       route: "/property/lascofedd",
       icon: "/assets/completed/commercial/Lascofedd.jpg",
       description: "LAGOS STATE CO-OPERATIVE FEDERATION (LASCOFED) MIXED-USE BUILDING .",
@@ -305,12 +404,23 @@ export const NAVLINKS = [
 
     {
       id:1,
+      propertyType:"educational",
       title: "Hallmark university projects ",
       route: "/property/Hallmark",
       icon: "/assets/completed/admin/Hallmark.jpg",
       description: "ADMINISTRATIVE BLOCK AND RESEARCH CENTER AT HALLMARK UNIVERSITY",
       location:" JEBU ITELE, OGUN STATE",      
       images:[
+       
+        {
+          src:"/assets/completed/admin/research.jpg",
+          alt:"Hallmark project",
+          title: "Hallmark university Research center",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        },
         {
           src:"/assets/completed/admin/Hallmark.jpg",
           alt:"Hallmark project",
@@ -321,15 +431,6 @@ export const NAVLINKS = [
           secondColour: "blue",
         },
 
-        {
-          src:"/assets/completed/admin/research.jpg",
-          alt:"Hallmark project",
-          title: "Hallmark university Research center",
-          firstButton:"View",
-          secondButton:"View",
-          firstColour: "blue",
-          secondColour: "blue",
-        },
 
         {
           src:"/assets/completed/admin/Library.jpg",
@@ -346,6 +447,7 @@ export const NAVLINKS = [
     {
       id:2,
       title: "Library ",
+      propertyType:"educational",
       route: "/property/library",
       icon: "/assets/completed/admin/89.jpg",
       description: "Facaulty of law library at Ilorin",
@@ -387,6 +489,7 @@ export const NAVLINKS = [
     {
       id:3,
       title: "Osun project",
+      propertyType:"educational",
       route: "/property/laboratory",
       icon: "/assets/completed/admin/frontnear.jpg",
       description: "Engineering Laboratory, Department of Civil Engineering .",
@@ -425,48 +528,70 @@ export const NAVLINKS = [
     }
   ]
  
+  export const shopping = [
+    {
+      id:1,
+      propertyType:"Shopping",
+      title: "West gate supermarket and pharmacy",
+      route: "/property/westgate",
+      icon: "/assets/completed/shopping/IMG-20190916-WA0022.jpg",
+      description: "WESTGATE SUPERMARKET AND PHARMACY",
+      location:"OLOWOORA, MAGODO, LAGOS.",      
+      images:[
+        {
+          src:"/assets/completed/shopping/IMG-20190916-WA0022.jpg",
+          alt:"West gate project",
+          title: "West gate shopping and pharmacy project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        },
+        {
+          src:"/assets/completed/shopping/Westgate.jpg",
+          alt:"West gate project",
+          title: "West gate shopping and pharmacy project",
+          firstButton:"View",
+          secondButton:"View",
+          firstColour: "blue",
+          secondColour: "blue",
+        
+        }    
+
+    ]
+  },
+  {
+    id:2,
+    propertyType:"Shopping",
+    title: "cmart supermarket and pharmacy",
+    route: "/property/CMART",
+    icon: "/assets/completed/shopping/20210917_122818.jpg",
+    description: "CMART SUPERMARKET AND PHARMACY",
+    location:"ABOYADACOLE,  LEKKIPHASE 1, LAGOS",      
+    images:[
+      {
+        src:"/assets/completed/shopping/20210917_122818.jpg",
+        alt:"cmart project",
+        title: "Cmart shopping and pharmacy project",
+        firstButton:"View",
+        secondButton:"View",
+        firstColour: "blue",
+        secondColour: "blue",
+      },
+      {
+        src:"/assets/completed/shopping/20210917_122818.jpg",
+        alt:"Cmart project",
+        title: "Cmart shopping and pharmacy project",
+        firstButton:"View",
+        secondButton:"View",
+        firstColour: "blue",
+        secondColour: "blue",
+      
+      }    
+    ]
+  }
+]
   
-  export const transformationTypes = {
-    restore: {
-      type: "restore",
-      title: "Restore Image",
-      subTitle: "Refine images by removing noise and imperfections",
-      config: { restore: true },
-      icon: "image.svg",
-    },
-    removeBackground: {
-      type: "removeBackground",
-      title: "Background Remove",
-      subTitle: "Removes the background of the image using AI",
-      config: { removeBackground: true },
-      icon: "camera.svg",
-    },
-    fill: {
-      type: "fill",
-      title: "Generative Fill",
-      subTitle: "Enhance an image's dimensions using AI outpainting",
-      config: { fillBackground: true },
-      icon: "stars.svg",
-    },
-    remove: {
-      type: "remove",
-      title: "Object Remove",
-      subTitle: "Identify and eliminate objects from images",
-      config: {
-        remove: { prompt: "", removeShadow: true, multiple: true },
-      },
-      icon: "scan.svg",
-    },
-    recolor: {
-      type: "recolor",
-      title: "Object Recolor",
-      subTitle: "Identify and recolor objects from the image",
-      config: {
-        recolor: { prompt: "", to: "", multiple: true },
-      },
-      icon: "filter.svg",
-    },
-  };
   
   export const FOOTERLINKS=[
     {
@@ -474,7 +599,7 @@ export const NAVLINKS = [
       "title":"Main menu",
       "subTitle":[
         {
-        id:1,
+        id:5,
         label:"About"
       },
 
@@ -515,7 +640,7 @@ export const NAVLINKS = [
       ]
     },
     {
-      id:2,
+      id:3,
       "title":"Explore",
       "subTitle":[
         {
