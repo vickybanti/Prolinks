@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import { LayoutGrid } from "./ui/layout-grid";
 import { motion } from "framer-motion";
 
@@ -16,7 +16,7 @@ export function Hero() {
           ease: "easeInOut",
         }}
   
-        className="h-screen pt-20 pb-32 w-full">
+        className="w-full h-screen pt-20 pb-32">
       <LayoutGrid cards={cards} />
     </motion.div>
     </div>
@@ -26,13 +26,13 @@ export function Hero() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
+      <p className="text-xl font-bold text-white md:text-4xl">
       Hallmark University Administrative building, Ijebu, Ogun State. 
       
 
       </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+      <p className="text-base font-normal text-white"></p>
+      <p className="max-w-lg my-4 text-base font-normal text-neutral-200">
       "Inspiring innovation and learning at Hallmark University, Ijebu-Itele, Ogun State."
 
 
@@ -44,11 +44,11 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
+      <p className="text-xl font-bold text-white md:text-4xl">
       Westgate mall, Magodo
       </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+      <p className="text-base font-normal text-white"></p>
+      <p className="max-w-lg my-4 text-base font-normal text-neutral-200">
       Redefining retail experiences at Westgate Mall, Magodo Lagos premier shopping destination
       </p>
     </div>
@@ -57,11 +57,11 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
+      <p className="text-xl font-bold text-white md:text-4xl">
         Office buildings
       </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+      <p className="text-base font-normal text-white"></p>
+      <p className="max-w-lg my-4 text-base font-normal text-neutral-200">
       "Modern workspace reimagined – where productivity meets innovative design."
 
 
@@ -73,11 +73,11 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
+      <p className="text-xl font-bold text-white md:text-4xl">
         Serene Residentials
       </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+      <p className="text-base font-normal text-white"></p>
+      <p className="max-w-lg my-4 text-base font-normal text-neutral-200">
       A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
       perfect place to relax, unwind, and enjoy life.
       </p>

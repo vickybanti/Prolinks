@@ -31,6 +31,7 @@ const formSchema = z.object({
 const page = () => {
      const ref = useRef<HTMLFormElement>(null);
     const [success, setSuccess] = useState("");
+    const [loading, setLoading] = useState(false)
       
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -40,26 +41,46 @@ const page = () => {
         },
       })
     function onSubmit(values: z.infer<typeof formSchema>) {
-       
-       
-      
-          if (ref.current) {
-            emailjs
-              .sendForm(
-                "service_bqlyqeq",
-                "template_5yyxifj",
-                ref.current,
-                "U2D7hh_TfmUqWH5qi"
-              )
-              .then(
-                (result) => {
-                  setSuccess("Message sent successfully");
-                },
-                (error) => {
-                  setSuccess(error.text);
-                }
-              );
-          }
+      setLoading(true)
+
+      emailjs.init({
+        publicKey: 'U2D7hh_TfmUqWH5qi',
+        // Do not allow headless browsers
+        blockHeadless: true,
+        blockList: {
+          // Block the suspended emails
+          list: ['foo@emailjs.com', 'bar@emailjs.com'],
+          // The variable contains the email address
+          watchVariable: 'userEmail',
+        },
+        limitRate: {
+          // Set the limit rate for the application
+          id: 'app',
+          // Allow 1 request per 10s
+          throttle: 10000,
+        },
+      });
+
+              if (ref.current) {
+                emailjs.sendForm(
+                  "service_y8uzxz9",
+                  "template_5yyxifj",
+                  ref.current,
+                  "U2D7hh_TfmUqWH5qi"
+                ).then(
+                  (response) => {
+                    setSuccess("Message sent successfully");
+                  },
+                  (error) => {
+                    setSuccess(error.text);
+                  }
+                );
+              }
+              setLoading(false)
+            
+                
+             
+          
     console.log(values)
   }
 
@@ -79,8 +100,8 @@ const page = () => {
                          animate={{ y: 0, opacity: 1 }}
                          transition={{ ease: "easeInOut", duration: 1.5 }}
                          whileInView={{ opacity: 1 }}
-                         viewport={{ once: false }} className="bg-black flex justify-between items-center gap-4">
-                    <div className="w-1/2 h-full p-32 items-center ">
+                         viewport={{ once: false }} className="flex items-center justify-between gap-4 bg-black">
+                    <div className="items-center w-1/2 h-full p-32 ">
         <h1 className="text-[#A08C5B] text-5xl py-3">Contact us</h1>
         <div className="flex items-center]">
               
@@ -113,8 +134,10 @@ const page = () => {
           </div>
         <div className="justify-end w-1/2 overflow-hidden h-full  px-32 py-40 bg-[#A08C5B] mr-10">
 
+        <h2 className='py-3 text-lg font-semibold text-white'>Send us a message and we'll get in touch</h2>
+
         <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form ref={ref} onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         <FormField
           control={form.control}
           name="email"
@@ -146,8 +169,8 @@ const page = () => {
         />
 
 
-        <Button type="submit">Submit</Button>
-        {success && <p className='text-white'>Message successfully sent</p>}
+        <Button type="submit" disabled={loading}>{loading? "submitting":"Submit"}</Button>
+        <p className='text-white duration-100 ease-in-out'>{success}</p>
       </form>
     </Form>
         

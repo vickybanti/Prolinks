@@ -1,12 +1,11 @@
 import React from 'react';
 import { Highlight } from "./ui/hero-highlight";
-import { motion } from "framer-motion";
 
 
 const Work = () => {
   return (
     <div
-      className="w-full relative min-h-screen"
+      className="relative w-full min-h-screen"
       style={{
         backgroundImage: `url(/assets/2.jpg)`,
         backgroundSize: 'cover',
@@ -15,10 +14,10 @@ const Work = () => {
       }}
       
     >
-      <div className="bg-black/80 px-32 min-h-screen flex flex-col py-20">
-      <div className="flex flex-col gap-4 text-center md:text-left uppercase w-1/2 leading-10">
-        <h2 className="text-md font-semibold text-white">What we do</h2>
-        <h1 className="text-3xl md:text-4xl font-bold text-white/30 leading-relax">
+      <div className="flex flex-col min-h-screen px-32 py-20 bg-black/80">
+      <div className="flex flex-col w-1/2 gap-4 leading-10 text-center uppercase md:text-left">
+        <h2 className="font-semibold text-white text-md">What we do</h2>
+        <h1 className="text-3xl font-bold md:text-4xl text-white/30 leading-relax">
           We know the <Highlight className="text-black dark:text-white">  ins and outs </Highlight> of luxurious buildings
         </h1>
         <p className="text-[#A08C5B]"> And it shows in our magnificent edifices ALL over the big city of Lagos 
@@ -33,14 +32,14 @@ const Work = () => {
   <div className="flex items-center space-x-4 h-[100px]">
     <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
       <img
-        className="w-full h-full object-contain"
+        className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=7687&format=png&color=000000"
         alt="trophy-emoji"
       />
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-2xl font-semibold">Design</h3>
-      <span className="text-white/50 text-sm">Architectural designs</span>
+      <span className="text-sm text-white/50">Architectural designs</span>
     </div>
   </div>
 
@@ -48,14 +47,14 @@ const Work = () => {
   <div className="flex items-center space-x-4 h-[100px]">
     <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
       <img
-        className="w-full h-full object-contain"
+        className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=9342&format=png&color=000000"
         alt="trophy-emoji"
       />
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-2xl font-semibold">Construction</h3>
-      <span className="text-white/50 text-sm">Capable construction engineers</span>
+      <span className="text-sm text-white/50">Capable construction engineers</span>
     </div>
   </div>
 
@@ -65,14 +64,14 @@ const Work = () => {
   <div className="flex items-center space-x-4 h-[100px]">
     <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
       <img
-        className="w-full h-full object-contain"
+        className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=cQUE9D1CWfuG&format=png&color=000000"
         alt="trophy-emoji"
       />
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-2xl font-semibold">Interior decoration</h3>
-      <span className="text-white/50 text-sm">Stylish and luxurious interiors to suite your rich taste</span>
+      <span className="text-sm text-white/50">Stylish and luxurious interiors to suite your rich taste</span>
     </div>
   </div>
 
@@ -82,14 +81,14 @@ const Work = () => {
   <div className="flex items-center space-x-4 h-[100px]">
     <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
       <img
-        className="w-full h-full object-contain"
+        className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=102879&format=png&color=000000"
         alt="trophy-emoji"
       />
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-2xl font-semibold">Project Management</h3>
-      <span className="text-white/50 text-sm">Sleep, rest assured your project is in safe hands</span>
+      <span className="text-sm text-white/50">Sleep, rest assured your project is in safe hands</span>
     </div>
   </div>
 
@@ -98,14 +97,14 @@ const Work = () => {
   <div className="flex items-center space-x-4 h-[100px]">
     <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
       <img
-        className="w-full h-full object-contain"
+        className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=DRqAsQCxcDuW&format=png&color=000000"
         alt="trophy-emoji"
       />
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-2xl font-semibold">Property Valuation</h3>
-      <span className="text-white/50 text-sm">Know the ccurrent worth of your properties</span>
+      <span className="text-sm text-white/50">Know the ccurrent worth of your properties</span>
     </div>
   </div>
 
@@ -114,14 +113,14 @@ const Work = () => {
   <div className="flex items-center space-x-4 h-[100px]">
     <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
       <img
-        className="w-full h-full object-contain"
+        className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=47076&format=png&color=000000"
         alt="trophy-emoji"
       />
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-2xl font-semibold">Property Marketing</h3>
-      <span className="text-white/50 text-sm">Sell your properties quicker</span>
+      <span className="text-sm text-white/50">Sell your properties quicker</span>
     </div>
   </div>
 

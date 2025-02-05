@@ -1,12 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/NavbarMenu";
-import { cn } from "@/lib/utils";
+import { ProductItem } from "./ui/NavbarMenu";
 import Link from "next/link";
-import { ColourfulText } from "./ui/colourful-text";
 import { BackgroundGradient } from "./ui/background-gradient";
 import Image from "next/image";
-import { Button } from "./ui/button";
 import { useMediaQuery } from "../hooks/use-media-query";
 import MobileNav from "./MobileNav";
 import { NAVLINKS } from "../constants";
@@ -15,13 +12,11 @@ import {motion} from 'framer-motion'
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
+} from "./ui/navigation-menu"
 
 
 
@@ -49,7 +44,6 @@ function Logo() {
 }
 
 function DesktopNavbar() {
-  const [active, setActive] = useState<string | null>(null);
   const pathname = usePathname();
 
 
@@ -74,7 +68,7 @@ function DesktopNavbar() {
         {NAVLINKS.map((link) => {
                               const isActive = link.route === pathname;
                               return (<NavigationMenu>
-    <NavigationMenuList className="relative z-10">
+    <NavigationMenuList className="relative z-10" key={link.id}>
     <NavigationMenuItem className={`relative px-3 py-3 overflow-hidden transition-all duration-700 ${isActive ? 'inset-0 bg-gradient-to-b from-[#A08C5B] to-black text-white' : 'bg-black text-[#A08C5B] group'}`}>
   {/* Background Gradient Overlay */}
   <span className="absolute inset-0 bg-gradient-to-b from-[#A08C5B] to-black scale-y-0 origin-top transition-transform duration-700 group-hover:scale-y-100"></span>
@@ -82,7 +76,8 @@ function DesktopNavbar() {
         {/* If there are product items, show dropdown, else just a link */}
         {link.productItems && link.productItems.length > 0 ? (
           <>
-            <NavigationMenuTrigger className={`relative z-10 hover:text-black hover:bg-transparent`}>
+            <NavigationMenuTrigger className={`relative z-10 hover:text-black hover:bg-transparent flex`}>
+<Image src={link.icon} alt="icon" width={32} height={32} className="text-white"/>
 {link.label}</NavigationMenuTrigger>
             <NavigationMenuContent>
             <div className="text-sm grid grid-cols-2 gap-10 p-[10px] w-auto min-w-[650px] max-w-fit bg-black border-none">

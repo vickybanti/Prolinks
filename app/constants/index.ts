@@ -142,7 +142,7 @@ export const NAVLINKS = [
       id:1,
       label: "Homepage",
       route: "/",
-      icon: "/assets/icons/home.svg",
+      icon: "https://img.icons8.com/?size=100&id=jPDM9Pv61iP5&format=png&color=000000",
     },
       
        
@@ -151,12 +151,12 @@ export const NAVLINKS = [
           id:2,
           label: "Completed",
           route: "/status/completed",
-          icon: "/assets/icons/image.svg",
+          icon: "https://img.icons8.com/?size=100&id=60641&format=png&color=000000",
           productItems: [
             {
               title: "Engineering Laboratory University project",
               href: `/property/osun-project`,
-              src: "/assets/completed/89.jpg",
+              src: "/assets/completed/admin/89.jpg",
               description: "Check out educational projects",
               route:"/property-type/educational"
             },
@@ -195,16 +195,24 @@ export const NAVLINKS = [
       id:3,
       label: "Services",
       route: "/services",
-      icon: "/assets/icons/stars.svg",
+      icon: "https://img.icons8.com/?size=100&id=59992&format=png&color=000000",
      
       
     },
+    {
+      id:4,
+      label: "Properties",
+      route: "/status/completed",
+      icon: "https://img.icons8.com/?size=100&id=61091&format=png&color=000000",
+      
+    },
+    
 
     {
       id:4,
       label: "Contact",
       route: "/contact",
-      icon: "/assets/icons/stars.svg",
+      icon: "https://img.icons8.com/?size=100&id=61091&format=png&color=000000",
       
     },
     

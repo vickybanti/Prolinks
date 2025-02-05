@@ -1,4 +1,4 @@
-
+"use client"
 import Image from 'next/image';
 import React from 'react';
 import {
@@ -8,7 +8,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
+} from "@/app/components/ui/breadcrumb"
 
 
 
@@ -48,7 +48,7 @@ const PropertyCard = ({ label, description, images,src,alt,propertyType}:{
           Featured
         </p>
 
-        <p className='p-2 text-xs  text-white bg-orange-500'>
+        <p className='p-2 text-xs text-white bg-orange-500'>
           {propertyType}
         </p>
 

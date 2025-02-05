@@ -4,9 +4,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { AuroraBackground } from "./ui/aurora-background";
 import { Highlight } from "./ui/hero-highlight";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Image from "next/image";
 
  
 export function Socials() {
@@ -20,13 +18,13 @@ export function Socials() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-6 mt-10"
+        className="relative flex flex-col items-center justify-center gap-4 px-6 mt-10"
       >
-        <div className="lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-24 mt-20">
+        <div className="mt-20 lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-24">
         <div className="flex flex-col items-center justify-center">
-        <div className="text-3xl uppercase font-bold dark:text-black-400 text-white/50 text-center">
+        <div className="text-3xl font-bold text-center uppercase dark:text-black-400 text-white/50">
         
-        <div className="px-4 md:text-4xl lg:text-4xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto lg:w-full md:w-1/2">
+        <div className="max-w-4xl px-4 mx-auto font-bold leading-relaxed text-center md:text-4xl lg:text-4xl text-neutral-700 dark:text-white lg:leading-snug lg:w-full md:w-1/2">
         Top notch <Highlight className="text-black dark:text-white"> projects </Highlight>  with a perfect mix of....
            </div>
         
@@ -55,14 +53,14 @@ export function Socials() {
   <div className="flex items-center space-x-4 h-[100px]">
     <div className="w-[80px] h-[80px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
       <img
-        className="w-full h-full object-contain"
+        className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=60012&format=png&color=000000"
         alt="trophy-emoji"
       />
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-xl font-semibold">25+</h3>
-      <span className="text-white/50 text-sm">Achievements</span>
+      <span className="text-sm text-white/50">Achievements</span>
     </div>
   </div>
 
@@ -70,14 +68,14 @@ export function Socials() {
   <div className="flex items-center space-x-4 h-[100px]">
     <div className="w-[80px] h-[80px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
       <img
-        className="w-full h-full object-contain"
+        className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=37862&format=png&color=000000"
         alt="trophy-emoji"
       />
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-xl font-semibold">15+</h3>
-      <span className="text-white/50 text-sm">years of experience</span>
+      <span className="text-sm text-white/50">years of experience</span>
     </div>
   </div>
 
@@ -85,14 +83,14 @@ export function Socials() {
    <div className="flex items-center space-x-4 h-[100px]">
   <div className="w-[80px] h-[80px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
   <img
-        className="w-full h-full object-contain"
+        className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=34520&format=png&color=000000"
         alt="trophy-emoji"
       />
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-xl font-semibold">300+</h3>
-      <span className="text-white/50 text-sm">Building projects</span>
+      <span className="text-sm text-white/50">Building projects</span>
     </div>
   </div>
 
@@ -100,14 +98,14 @@ export function Socials() {
   <div className="flex items-center space-x-4 h-[100px]">
   <div className="w-[80px] h-[80px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
   <img
-        className="w-full h-full object-contain animate-pulse"
+        className="object-contain w-full h-full animate-pulse"
         src="https://img.icons8.com/?size=100&id=uLaytFdQhTaZ&format=png&color=000000"
         alt="trophy-emoji"
       />
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-xl font-semibold">700+</h3>
-      <span className="text-white/50 text-sm">Happy Homeowners and tenants</span>
+      <span className="text-sm text-white/50">Happy Homeowners and tenants</span>
     </div>
   </div>
 

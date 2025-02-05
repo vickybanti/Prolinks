@@ -16,7 +16,6 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ColourfulText } from "./ui/colourful-text";
 import { NAVLINKS } from "../constants";
 import {motion} from 'framer-motion'
 
@@ -27,7 +26,7 @@ const MobileNav = () => {
   return (
     <div>
       {/* Header Section */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-black shadow-sm">
+      <header className="fixed top-0 left-0 z-50 w-full bg-black shadow-sm">
          
         <motion.div 
          initial={{ x: -30, opacity: 0 }}
@@ -35,11 +34,11 @@ const MobileNav = () => {
          transition={{ ease: "easeInOut", duration: 1.5 }}
          whileInView={{ opacity: 1 }}
          viewport={{ once: false }}
-        className="container mx-auto flex items-center justify-between py-4 px-6">
+        className="container flex items-center justify-between px-6 py-4 mx-auto">
           {/* Logo */}
           <Link href="/">
 
-            <h2 className="font-extrabold text-xl text-white">Prolinks</h2>
+            <h2 className="text-xl font-extrabold text-white">Prolinks</h2>
           </Link>
 
           {/* Mobile Navigation Dropdown */}
@@ -61,7 +60,7 @@ const MobileNav = () => {
                 {/* Logo Inside Dropdown */}
                 <DropdownMenuLabel>
                   {/* <Link href="/">
-                    <h2 className="font-extrabold text-xl mb-2 text-white">
+                    <h2 className="mb-2 text-xl font-extrabold text-white">
                       Prolinks
                     </h2>
                   </Link> */}
@@ -98,7 +97,7 @@ const MobileNav = () => {
                             }`}>
                               {link.label}
                             </DropdownMenuSubTrigger>
-                            <DropdownMenuPortal className="relative">
+                            <DropdownMenuPortal>
                               <DropdownMenuSubContent className="bg-black border-[#785F37] w-[600px] absolute top-10 mx-auto transform shadow-lg p-4">
                                 {link.productItems.map((product) => (
                                   <DropdownMenuItem

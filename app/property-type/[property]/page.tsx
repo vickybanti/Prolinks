@@ -6,7 +6,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
+} from "@/app/components/ui/breadcrumb"
 
 
 
@@ -15,7 +15,7 @@ import {motion} from "framer-motion"
 import React from 'react';
 import { commercial, residentials, educational,shopping } from '@/app/constants';
 
-const Page = async({ params }: { params: { property: string } }) => {
+const page = async({ params }: { params: { property: string } }) => {
   const { property } = await params;
 
   // Determine the correct dataset based on property type
@@ -55,7 +55,7 @@ const Page = async({ params }: { params: { property: string } }) => {
        transition={{ ease: "easeInOut", duration: 1.5 }}
        whileInView={{ opacity: 1 }}
        viewport={{ once: false }}
-           className='grid w-full h-full grid-cols-3 gap-3 items-center justify-center'>
+           className='grid items-center justify-center w-full h-full grid-cols-3 gap-3'>
           {propertyData.map((item) => (
             <PageCard
               id={item.id}
@@ -76,4 +76,4 @@ const Page = async({ params }: { params: { property: string } }) => {
   );
 };
 
-export default Page;
+export default page;

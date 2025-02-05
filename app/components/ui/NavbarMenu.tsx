@@ -3,17 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 
 
-const transition = {
-  type: "spring",
-  mass: 0.5,
-  damping: 11.5,
-  stiffness: 100,
-  restDelta: 0.001,
-  restSpeed: 0.001,
-};
 
 
 export const MenuItem = ({
@@ -28,7 +19,6 @@ export const MenuItem = ({
   children?: React.ReactNode;
 }) => {
   const hasChildren = React.Children.count(children) > 0;
-  const pathname = usePathname();
 
 
   return (
@@ -54,7 +44,7 @@ export const MenuItem = ({
               layoutId="active"
               className="bg-black dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
             >
-              <motion.div layout className="w-max h-full p-4">
+              <motion.div layout className="h-full p-4 w-max">
                 {children}
               </motion.div>
             </motion.div>
