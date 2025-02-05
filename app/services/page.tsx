@@ -102,7 +102,7 @@ const Page = () => {
                       </div>
                       <div className="flex flex-col">
                           <h3 className="text-[#A08C5B] text-2xl font-semibold">Interior decoration</h3>
-                          <span className="text-sm text-white/50">We understand that well-designed interiors have the power to enhance the overall value and appeal of a property. That is why we offer comprehensive interior design services that are tailored to our clients'
+                          <span className="text-sm text-white/50">We understand that well-designed interiors have the power to enhance the overall value and appeal of a property. That is why we offer comprehensive interior design services that are tailored to our clients
                               unique preferences, needs, and objectives.
                           </span>
                       </div>

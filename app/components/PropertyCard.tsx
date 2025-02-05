@@ -12,11 +12,11 @@ import {
 
 
 
-const PropertyCard = ({ label, description, images,src,alt,propertyType}:{
+const PropertyCard = ({ label, description,src,propertyType}:{
     label:string;
     description:string;
     images? :string[];
-    src:any;
+    src: string[];
     alt?:string;
     propertyType:string;
 

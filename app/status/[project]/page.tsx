@@ -46,10 +46,11 @@ const Page = async({ params }: { params: { project: string } }) => {
         <p className="text-gray-400 py-7">{project.length} properties</p>
 
         {/* Grid container for property cards */}
-        <div className='grid w-full h-full grid-cols-3 gap-3 items-center justify-center'>
+        <div className='grid items-center justify-center w-full h-full grid-cols-3 gap-3'>
           {propertyData.map((item) => (
             <PageCard
               id={item.id}
+              key={item.id}
               icon={item.icon} // Ensure the correct prop type
               location={item.location}
               route={`/property/${item.title.toLowerCase().replace(/ /g, '-')}`}

@@ -58,6 +58,7 @@ const page = async({ params }: { params: { property: string } }) => {
            className='grid items-center justify-center w-full h-full grid-cols-3 gap-3'>
           {propertyData.map((item) => (
             <PageCard
+              key={item.id}
               id={item.id}
               icon={item.icon} // Ensure the correct prop type
               location={item.location}

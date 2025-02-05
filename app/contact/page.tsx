@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -28,7 +27,7 @@ const formSchema = z.object({
 
   })
    
-const page = () => {
+const Page = () => {
      const ref = useRef<HTMLFormElement>(null);
     const [success, setSuccess] = useState("");
     const [loading, setLoading] = useState(false)
@@ -68,7 +67,7 @@ const page = () => {
                   ref.current,
                   "U2D7hh_TfmUqWH5qi"
                 ).then(
-                  (response) => {
+                  () => {
                     setSuccess("Message sent successfully");
                   },
                   (error) => {
@@ -182,4 +181,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -33,7 +33,8 @@ const SkeletonOne = () => {
       </p>
       <p className="text-base font-normal text-white"></p>
       <p className="max-w-lg my-4 text-base font-normal text-neutral-200">
-      "Inspiring innovation and learning at Hallmark University, Ijebu-Itele, Ogun State."
+      Inspiring innovation and learning at Hallmark 
+      University, Ijebu-Itele, Ogun State.
 
 
       </p>
@@ -62,7 +63,7 @@ const SkeletonThree = () => {
       </p>
       <p className="text-base font-normal text-white"></p>
       <p className="max-w-lg my-4 text-base font-normal text-neutral-200">
-      "Modern workspace reimagined – where productivity meets innovative design."
+      Modern workspace reimagined – where productivity meets innovative design.
 
 
         

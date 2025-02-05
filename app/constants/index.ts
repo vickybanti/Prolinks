@@ -1,6 +1,3 @@
-import { Content } from "next/dist/compiled/@next/font/dist/google";
-import { HoveredLink, ProductItem } from "../components/ui/NavbarMenu";
-
 export const COMPLETED = [
   {
     id:1,

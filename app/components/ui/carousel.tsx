@@ -8,7 +8,6 @@ interface SlideData {
   secondButton?:string;
   src: string;
   firstColour?: string;
-  secondColour?:string;
 }
 
 interface SlideProps {
@@ -65,7 +64,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     event.currentTarget.style.opacity = "1";
   };
 
-  const { src, firstButton,secondButton,firstColour,secondColour, title } = slide;
+  const { src, firstButton,secondButton,firstColour, title } = slide;
 
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d]">

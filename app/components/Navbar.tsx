@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { ProductItem } from "./ui/NavbarMenu";
 import Link from "next/link";
 import { BackgroundGradient } from "./ui/background-gradient";
