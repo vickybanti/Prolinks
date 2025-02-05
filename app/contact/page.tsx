@@ -133,7 +133,7 @@ const Page = () => {
           </div>
         <div className="justify-end w-1/2 overflow-hidden h-full  px-32 py-40 bg-[#A08C5B] mr-10">
 
-        <h2 className='py-3 text-lg font-semibold text-white'>Send us a message and we'll get in touch</h2>
+        <h2 className='py-3 text-lg font-semibold text-white'>Send us a message and we will get in touch</h2>
 
         <Form {...form}>
       <form ref={ref} onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
