@@ -67,9 +67,9 @@ function DesktopNavbar() {
         <div className="flex items-center space-x-1 text-[#A08C5B]">
         {NAVLINKS.map((link) => {
                               const isActive = link.route === pathname;
-                              return (<NavigationMenu>
-    <NavigationMenuList className="relative z-10" key={link.id}>
-    <NavigationMenuItem className={`relative px-3 py-3 overflow-hidden transition-all duration-700 ${isActive ? 'inset-0 bg-gradient-to-b from-[#A08C5B] to-black text-white' : 'bg-black text-[#A08C5B] group'}`} key={link.id}>
+                              return (<NavigationMenu key={link.id}>
+    <NavigationMenuList className="relative z-10" >
+    <NavigationMenuItem className={`relative px-3 py-3 overflow-hidden transition-all duration-700 ${isActive ? 'inset-0 bg-gradient-to-b from-[#A08C5B] to-black text-white' : 'bg-black text-[#A08C5B] group'}`} >
   {/* Background Gradient Overlay */}
   <span className="absolute inset-0 bg-gradient-to-b from-[#A08C5B] to-black scale-y-0 origin-top transition-transform duration-700 group-hover:scale-y-100"></span>
   
