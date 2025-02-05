@@ -116,3 +116,5 @@ function DesktopNavbar() {
     </div>
   );
 }
+
+export default Navbar;
