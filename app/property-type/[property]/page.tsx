@@ -1,66 +1,63 @@
+"use client";
+import { useEffect, useState } from 'react';
+import { useParams } from 'next/navigation';
+import { commercial, residentials, educational } from '@/app/constants';
 import PageCard from '@/app/components/PageCard';
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/app/components/ui/breadcrumb"
+import { motion } from 'framer-motion';
 
+const PropertyPage = () => {
+  const params = useParams();
+  const property = Array.isArray(params.property) ? params.property[0] : params.property || '';
+  const allProperties = [
+    ...commercial.map((item) => ({ ...item, propertyType: item.propertyType || 'commercial' })),
+    ...residentials.map((item) => ({ ...item, propertyType: item.propertyType || 'residential' })),
+    ...educational.map((item) => ({ ...item, propertyType: item.propertyType || 'educational' })),
+  ];
 
+  interface PropertyData {
+    id: number;
+    title: string;
+    description: string;
+    icon: string;
+    location: string;
+    route: string;
+    propertyType: string;
+    images: { src: string; alt: string; title: string; firstButton: string; secondButton: string; firstColour: string; secondColour: string; }[];
+  }
 
-import {motion} from "framer-motion"
+  const [propertyData, setPropertyData] = useState<PropertyData[]>([]);
 
-import React from 'react';
-import { commercial, residentials, educational,shopping } from '@/app/constants';
+  useEffect(() => {
+    const filteredProperties = allProperties.filter(
+      (item) => item.propertyType.toLowerCase() === property.toLowerCase()
+    );
+    setPropertyData(filteredProperties);
+  }, [property]);
 
-const page = async({ params }: { params: { property: string } }) => {
-  const { property } = await params;
-
-  // Determine the correct dataset based on property type
-  const propertyData =
-    property === "commercial" ? commercial :
-    property === "residentials" ? residentials :
-    property === "educational" ? educational :
-    property === "shopping" ? shopping:
-    [];
+  if (!propertyData.length) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className='px-20 mt-20 overflow-hidden text-white'>
       <div className='px-10 py-10'>
-
-            <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/">Home</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-           
-            <BreadcrumbItem>
-              <BreadcrumbPage className="text-white">{property}</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-
-
-        <h1 className='text-2xl text-[#A08C5B] capitalize py-7'>{property} Projects</h1>
+        <h1 className='text-2xl text-[#A08C5B] capitalize py-7'>{property}</h1>
         <p className="text-gray-400">Explore {property} buildings</p>
-        <p className="text-gray-400 py-7">{propertyData.length} properties</p>
+        <p className="text-white py-7">{propertyData.length} properties</p>
 
-        {/* Grid container for property cards */}
-        <motion.div 
-       initial={{ x: -30, opacity: 0.2 }}
-       animate={{ x: 0, opacity: 1 }}
-       transition={{ ease: "easeInOut", duration: 1.5 }}
-       whileInView={{ opacity: 1 }}
-       viewport={{ once: false }}
-           className='grid items-center justify-center w-full h-full grid-cols-3 gap-3'>
+        <motion.div
+          initial={{ x: -30, opacity: 0.2 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: 1.5 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false }}
+          className='grid w-full h-full grid-cols-3 gap-8 mx-auto my-4'
+        >
           {propertyData.map((item) => (
             <PageCard
               key={item.id}
               id={item.id}
-              icon={item.icon} // Ensure the correct prop type
+              icon={item.icon}
               location={item.location}
               route={`/property/${item.title.toLowerCase().replace(/ /g, '-')}`}
               description={item.description}
@@ -68,7 +65,6 @@ const page = async({ params }: { params: { property: string } }) => {
               property={property}
               propertyLabel={property}
               status='Completed'
-
             />
           ))}
         </motion.div>
@@ -77,4 +73,4 @@ const page = async({ params }: { params: { property: string } }) => {
   );
 };
 
-export default page;
+export default PropertyPage;
