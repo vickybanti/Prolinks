@@ -147,7 +147,7 @@ export const NAVLINKS = [
          {
           id:2,
           label: "Completed",
-          route: "/status/completed",
+          route: "#",
           icon: "https://img.icons8.com/?size=100&id=60641&format=png&color=000000",
           productItems: [
             {
@@ -199,7 +199,7 @@ export const NAVLINKS = [
     {
       id:4,
       label: "Properties",
-      route: "/status/completed",
+      route: "/projects",
       icon: "https://img.icons8.com/?size=100&id=61091&format=png&color=000000",
       
     },

@@ -18,19 +18,19 @@ export function Socials() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col items-center justify-center gap-4 px-6 mt-10"
+        className="relative flex flex-col items-center justify-center gap-4 px-6 mt-10 overflow-hidden"
       >
         <div className="mt-20 lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-24">
         <div className="flex flex-col items-center justify-center">
         <div className="text-3xl font-bold text-center uppercase dark:text-black-400 text-white/50">
         
-        <div className="max-w-4xl px-4 mx-auto font-bold leading-relaxed text-center md:text-4xl lg:text-4xl text-neutral-700 dark:text-white lg:leading-snug lg:w-full md:w-1/2">
+        <div className="max-w-4xl px-4 mx-auto font-bold leading-relaxed text-center md:text-2xl lg:text-4xl text-neutral-700 dark:text-white lg:leading-snug lg:w-full md:w-1/2">
         Top notch <Highlight className="text-black dark:text-white"> projects </Highlight>  with a perfect mix of....
            </div>
         
 
         </div>
-        <div className="flex font-extralight md:text-md text-[#A08C5b] py-10 px-20 text-lg">
+        <div className="flex font-extralight md:text-sm text-[#A08C5b] py-10 px-20 text-lg">
         
         <p className="px-4">ARCHITECTURE</p>
              <p className="px-4">
@@ -48,10 +48,10 @@ export function Socials() {
           
         </div>
 
-        <div className="grid grid-cols-2 gap-12 px-10">
+        <div className="grid grid-cols-2 gap-12 px-10 socialsGrid">
   {/* First Item */}
   <div className="flex items-center space-x-4 h-[100px]">
-    <div className="w-[80px] h-[80px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
+    <div className="w-[80px] h-[80px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B] socialsImg">
       <img
         className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=60012&format=png&color=000000"

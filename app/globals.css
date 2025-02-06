@@ -60,6 +60,25 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
+  @media only screen and (max-width: 767px) {
+    .mobile{
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+    }
+    .socialsGrid{
+      gap:18px;
+    }
+    .socialsFont{
+      font-size:20px;
+    }
+    
+    .socialsImg{
+      width:40px;
+      height:40px;
+    }
+  }
 }
 
 @layer base {
@@ -70,3 +89,5 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
