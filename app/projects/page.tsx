@@ -1,7 +1,4 @@
 "use client";
-import { useEffect, useState } from 'react';
-import { useParams } from 'next/navigation';
-import { commercial, residentials, educational, COMPLETED } from '@/app/constants';
 import PageCard from '@/app/components/PageCard';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/app/components/ui/breadcrumb";
 
