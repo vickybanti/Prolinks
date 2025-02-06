@@ -160,14 +160,14 @@ export const NAVLINKS = [
             {
               title: "Western gate",
               href: "/property/shopping",
-              src: "/assets/completed/Westgate Area capture.png",
+              src: "/assets/completed/Westgate.png",
               description:
                 "Check out shopping projects",
               route:"/property-type/shopping"
             },
             {
               title: "Ikoyi project",
-              href: "https://gomoonbeam.com",
+              href: "/property/lascofedd-project",
               src: "/assets/completed/commercial/Lascofedd.jpg",
               description: "Check out commercial/office projects.",
               route:"/property-type/commercial"
