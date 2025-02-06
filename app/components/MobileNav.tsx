@@ -12,7 +12,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenuLabel,
   DropdownMenuGroup,
-} from "@/components/ui/dropdown-menu";
+} from "./ui/dropdown-menu";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";

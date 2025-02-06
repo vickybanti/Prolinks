@@ -19,9 +19,9 @@ export function Card({
   className?: string;
   title:string;
   subtitle:string;
-  contentTitle:string;
-  ContentSubtitle:string;
-  img:string;
+  contentTitle?:string;
+  ContentSubtitle?:string;
+  img?: React.ReactNode;
   colour?:string;
 
  
