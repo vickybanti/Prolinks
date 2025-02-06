@@ -16,7 +16,7 @@ export function Hero() {
           ease: "easeInOut",
         }}
   
-        className="w-full h-screen pt-20 pb-32">
+        className="max-w-full container">
       <LayoutGrid cards={cards} />
     </motion.div>
     </div>
@@ -63,7 +63,8 @@ const SkeletonThree = () => {
       </p>
       <p className="text-base font-normal text-white"></p>
       <p className="max-w-lg my-4 text-base font-normal text-neutral-200">
-      Modern workspace reimagined – where productivity meets innovative design.
+      Modern workspace reimagined
+       – where productivity meets innovative design.
 
 
         

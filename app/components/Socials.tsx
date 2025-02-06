@@ -9,7 +9,6 @@ import { Highlight } from "./ui/hero-highlight";
  
 export function Socials() {
   return (
-    <AuroraBackground>
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -18,9 +17,9 @@ export function Socials() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col items-center justify-center gap-4 px-6 mt-10 overflow-hidden"
+        className="relative flex flex-col items-center justify-center container max-w-full py-20"
       >
-        <div className="mt-20 lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-24">
+        <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-36 container">
         <div className="flex flex-col items-center justify-center">
         <div className="text-3xl font-bold text-center uppercase dark:text-black-400 text-white/50">
         
@@ -48,7 +47,7 @@ export function Socials() {
           
         </div>
 
-        <div className="grid grid-cols-2 gap-12 px-10 socialsGrid">
+        <div className="grid grid-cols-2 gap-12">
   {/* First Item */}
   <div className="flex items-center space-x-4 h-[100px]">
     <div className="w-[80px] h-[80px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B] socialsImg">
@@ -117,6 +116,5 @@ export function Socials() {
         
         </div>
       </motion.div>
-    </AuroraBackground>
   );
 }

@@ -5,14 +5,14 @@ import { Meteors } from "./ui/meteors";
 const Footer = () => {
   return (
     <div
-      className="relative w-full bg-fixed bg-center bg-cover"
+      className="relative w-full overflow-hidden bg-fixed bg-center bg-cover container h-full bg-black"
       style={{
         backgroundImage: `url(/assets/footerPics.jpg)`,
         backgroundRepeat: "no-repeat",
       }}
     >
 
-      <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 w-full min-h-screen px-8 md:px-20 lg:px-32 pt-32">
+      <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 w-full px-8 md:px-20 lg:px-32 py-20 md:py-32">
         {/* Footer Content */}
         <div className="flex justify-between gap-10 mx-auto">
           {/* Branding */}
