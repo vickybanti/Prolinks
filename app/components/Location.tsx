@@ -7,7 +7,7 @@ export const Location = () => {
     const words = `We beautify everywhere we go`
   return (
     <div className="bg-black">
-    <div className="min-h-screen container mx-auto">
+    <div className="min-h-screen container mx-auto py-28 px-8">
       {/* Section Header */}
 
       
@@ -31,7 +31,7 @@ export const Location = () => {
 
         <Card image="/assets/dertyuio.jpg" 
         title="Ipaja"
-        className="w-[420px] h-64"
+        className="w-[400px] h-64"
         subtitle="5-BEDROOM DUPLEX"
         contentTitle="Safe and serene environment"
         ContentSubtitle="Residentials"
@@ -41,7 +41,7 @@ export const Location = () => {
        
         <Card image={"/assets/completed/Library.jpg"} 
         title="Hallmark"
-        className="w-[420px] h-64"
+        className="w-[400px] h-64"
         subtitle="Library"
         ContentSubtitle="School library"
         colour="none" 
@@ -50,7 +50,7 @@ export const Location = () => {
         
         <Card image={"/assets/completed/20210917_122818.jpg"} 
         title="Lekki"
-        className="w-[420px] h-64"
+        className="w-[400px] h-64"
         subtitle="city mall"
         colour="black"
         ContentSubtitle="Shopping"
@@ -59,10 +59,10 @@ export const Location = () => {
         
         </div>
         {/* Last row with equal-width cards */}
-        <div className="grid grid-cols-2 gap-1 mt-5">
+        <div className="grid grid-cols-2 gap-1 mt-4">
           <Card image="/assets/office.jpg"  
           title="WEMPCOROAD"
-          className="w-[630px] h-64"
+          className="w-[600px] h-64"
           subtitle="MIXED-USE BUILDINGS"
           ContentSubtitle="Commercial/Office building"
           colour="none"
@@ -70,7 +70,7 @@ export const Location = () => {
 
 <Card image={"/assets/completed/Westgate.png"} 
         title="Magodo"
-        className="w-[630px] h-64"
+        className="w-[600px] h-64"
         subtitle="Shopping"
         colour="black"
         img=<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M112 0C85.5 0 64 21.5 64 48l0 48L16 96c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 208 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 160l-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l16 0 176 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 224l-48 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 144 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 288l0 128c0 53 43 96 96 96s96-43 96-96l128 0c0 53 43 96 96 96s96-43 96-96l32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64 0-32 0-18.7c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7L416 96l0-48c0-26.5-21.5-48-48-48L112 0zM544 237.3l0 18.7-128 0 0-96 50.7 0L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg> />

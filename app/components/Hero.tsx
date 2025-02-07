@@ -16,7 +16,7 @@ export function Hero() {
           ease: "easeInOut",
         }}
   
-        className="max-w-full container min-h-screen">
+        className="max-w-full container min-h-screen py-28 px-8">
       <LayoutGrid cards={cards} />
     </motion.div>
     </div>

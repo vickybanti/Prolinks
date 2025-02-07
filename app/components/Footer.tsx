@@ -12,7 +12,7 @@ const Footer = () => {
       }}
     >
 
-      <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 w-full px-8 md:px-20 lg:px-32 py-20 md:py-32">
+      <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 w-full xl:px-8 md:px-20 lg:px-32 xl:py-20 md:py-32">
         {/* Footer Content */}
         <div className="flex justify-between gap-10 mx-auto">
           {/* Branding */}
@@ -22,7 +22,7 @@ const Footer = () => {
 
           {/* Footer Links */}
           {FOOTERLINKS.map((footer) => (
-            <div className="flex flex-col w-full md:w-1/4" key={footer.id}>
+            <div className="flex flex-col w-full" key={footer.id}>
               <h2 className="text-xl font-semibold">{footer.title}</h2>
               {footer.subTitle.map((sub) => (
                 <p
