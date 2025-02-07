@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export function Hero() {
     
   return (
-    <div className="bg-black">
+    <div className="bg-black min-h-screen">
     <motion.div
     initial={{ opacity: 0.0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ export function Hero() {
           ease: "easeInOut",
         }}
   
-        className="max-w-full container">
+        className="max-w-full container min-h-screen">
       <LayoutGrid cards={cards} />
     </motion.div>
     </div>
