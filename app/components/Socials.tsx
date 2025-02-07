@@ -17,7 +17,7 @@ export function Socials() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col items-center justify-center container max-w-full py-20"
+        className="relative flex flex-col items-center justify-center container max-w-full mt-20"
       >
         <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-36 container">
         <div className="flex flex-col items-center justify-center">
