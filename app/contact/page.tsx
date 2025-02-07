@@ -119,7 +119,7 @@ const Page = () => {
               width="32px"
               height="2px"
               className="object-contain"/>
-            <p className="py-2 text-sm text-white">0803-302-9830</p>
+            <p className="p-3 text-sm text-white">0803-302-9830</p>
             </div>
 
             <div className="flex items-center]">
@@ -128,7 +128,7 @@ const Page = () => {
            width="32px"
            height="2px"
            className="object-contain"/>
-            <p className="py-2 text-sm text-white">tundeadekola@yahoo.com</p>
+            <p className="p-3 text-sm text-white">tundeadekola@yahoo.com</p>
             </div>
           </div>
         <div className="justify-end w-1/2 overflow-hidden h-full  px-32 py-40 bg-[#A08C5B] mr-10">

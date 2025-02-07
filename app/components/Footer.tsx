@@ -5,18 +5,18 @@ import { Meteors } from "./ui/meteors";
 const Footer = () => {
   return (
     <div
-      className="relative w-full overflow-hidden bg-fixed bg-center bg-cover container h-full bg-black"
+      className="relative max-w-full overflow-hidden bg-fixed bg-center bg-cover container h-full bg-black"
       style={{
         backgroundImage: `url(/assets/footerPics.jpg)`,
         backgroundRepeat: "no-repeat",
       }}
     >
 
-      <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 w-full xl:px-8 md:px-20 lg:px-32 xl:py-20 md:py-32">
+      <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 xl:px-20 md:px-20 lg:px-32 xl:py-20 md:py-32 max-w-full">
         {/* Footer Content */}
         <div className="flex justify-between gap-10 mx-auto">
           {/* Branding */}
-          <div className="w-full md:w-1/4">
+          <div className="w-full">
             <h2 className="text-2xl font-bold">Prolinks</h2>
           </div>
 
@@ -55,7 +55,7 @@ const Footer = () => {
               width="32px"
               height="2px"
               className="object-contain"/>
-            <p className="py-2 text-sm">0803-302-9830</p>
+            <p className="p-3 text-sm">0803-302-9830</p>
             </div>
 
             <div className="flex items-center]">
@@ -64,7 +64,7 @@ const Footer = () => {
            width="32px"
            height="2px"
            className="object-contain"/>
-            <p className="py-2 text-sm">tundeadekola@yahoo.com</p>
+            <p className="p-3 text-sm">tundeadekola@yahoo.com</p>
             </div>
           </div>
         </div>
