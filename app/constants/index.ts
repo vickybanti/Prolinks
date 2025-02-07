@@ -159,7 +159,7 @@ export const NAVLINKS = [
             },
             {
               title: "Western gate",
-              href: "/property/shopping",
+              href: "property/westgate-supermarket-and-pharmacy",
               src: "/assets/completed/Westgate.png",
               description:
                 "Check out shopping projects",
@@ -331,7 +331,7 @@ export const NAVLINKS = [
       id:1,
       propertyType:"commercial",
       title: "Ogba project",
-      route: "/property/ogba",
+      route: "/property/ogba-project",
       icon: "/assets/completed/commercial/ogba.jpg",
       description: "COLITYSTUDIOS, DM AUDIOVISUALS  MANUFACTURES .",
       location:" OGBA, LAGOS STATE",      
@@ -348,7 +348,7 @@ export const NAVLINKS = [
         },
 
         {
-          src:"/assets/completed/commercial/office.jpg",
+          src:"/assets/completed/commercial/ogba.jpg",
           alt:"Ogba project",
           title: "Orimolade project",
           firstButton:"View",
@@ -380,7 +380,7 @@ export const NAVLINKS = [
           secondColour: "blue",
         },
         {
-          src:"/assets/completed/commercial/office1.jpg",
+          src:"/assets/completed/commercial/office.jpg",
           alt:"Lascofedd project",
           title: "Orimolade project",
           firstButton:"View",
@@ -538,7 +538,7 @@ export const NAVLINKS = [
       id:1,
       propertyType:"Shopping",
       title: "West gate supermarket and pharmacy",
-      route: "/property/westgate",
+      route: "property/westgate-supermarket-and-pharmacy",
       icon: "/assets/completed/shopping/IMG-20190916-WA0022.jpg",
       description: "WESTGATE SUPERMARKET AND PHARMACY",
       location:"OLOWOORA, MAGODO, LAGOS.",      

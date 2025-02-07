@@ -44,9 +44,7 @@ const PropertyCard = ({ label, description,src,propertyType}:{
 
       <h1 className='text-2xl text-[#A08C5B] py-3'>{label}</h1>
       <div className='flex items-center gap-3'>
-        <p className='p-2 text-xs text-white bg-green-600'>
-          Featured
-        </p>
+
 
         <p className='p-2 text-xs text-white bg-orange-500'>
           {propertyType}

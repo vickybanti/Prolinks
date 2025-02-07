@@ -61,8 +61,8 @@ const Page = () => {
 
               <div className="grid grid-cols-2 gap-12 px-10 py-10">
                   {/* First Item */}
-                  <div className="flex items-center space-x-4 h-[100px]">
-                      <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
+                  <div className="flex items-center space-x-4 h-[100px] py-20">
+                      <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full px-3 bg-[#A08C5B]">
                           <img
                               className="object-contain w-full h-full"
                               src="https://img.icons8.com/?size=100&id=7687&format=png&color=000000"
@@ -76,7 +76,7 @@ const Page = () => {
                   </div>
 
                   {/* First Item */}
-                  <div className="flex items-center space-x-4 h-[100px]">
+                  <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
                           <img
                               className="object-contain w-full h-full"
@@ -92,8 +92,8 @@ const Page = () => {
 
 
 
-                  {/* First Item */}
-                  <div className="flex items-center space-x-4 h-[100px]">
+                  {/* third Item */}
+                  <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
                           <img
                               className="object-contain w-full h-full"
@@ -110,8 +110,8 @@ const Page = () => {
 
 
 
-                  {/* First Item */}
-                  <div className="flex items-center space-x-4 h-[100px]">
+                  {/* Fourth Item */}
+                  <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
                           <img
                               className="object-contain w-full h-full"
@@ -126,8 +126,8 @@ const Page = () => {
                   </div>
 
 
-                  {/* First Item */}
-                  <div className="flex items-center space-x-4 h-[100px]">
+                  {/* Fifth Item */}
+                  <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
                           <img
                               className="object-contain w-full h-full"
@@ -142,8 +142,8 @@ const Page = () => {
                   </div>
 
 
-                  {/* First Item */}
-                  <div className="flex items-center space-x-4 h-[100px]">
+                  {/* sixth Item */}
+                  <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
                           <img
                               className="object-contain w-full h-full"

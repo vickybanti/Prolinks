@@ -68,7 +68,7 @@ const ProjectPage = () => {
               description={item.description}
               title={item.title}
               property={item.propertyType}
-              status="completed"
+              status={item.propertyType}
             />
           ))}
         </div>
