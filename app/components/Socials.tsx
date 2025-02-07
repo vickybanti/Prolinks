@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-import { AuroraBackground } from "./ui/aurora-background";
 import { Highlight } from "./ui/hero-highlight";
 
 
