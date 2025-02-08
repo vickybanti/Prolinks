@@ -16,7 +16,7 @@ export function Socials() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="2xl:pt-28 lg:pt-52 md:pt-52 flex flex -col items-center h-full justify-center container max-w-full "
+        className="2xl:pt-28 lg:pt-56 md:pt-56 flex flex -col items-center h-full justify-center container max-w-full "
       >
         <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-36  px-40
         ">
