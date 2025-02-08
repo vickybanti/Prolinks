@@ -202,7 +202,7 @@ export function Carousel({ slides }: CarouselProps) {
         ))}
       </ul>
 
-      <div className="absolute flex justify-between w-full mx-auto top-60">
+      <div className="absolute flex justify-between w-full mx-auto lg:top-48 md:top-48 2xl:top-80">
         <CarouselControl
           type="previous"
           title="Go to previous slide"

@@ -35,9 +35,10 @@ const Page = () => {
        animate={{ x: 0, opacity: 1 }}
        transition={{ ease: "easeInOut", duration: 1.5 }}
        whileInView={{ opacity: 1 }}
-       viewport={{ once: false }} className="h-full">
+       viewport={{ once: false }} className="pb-24">
       <div
-          className="relative w-full min-h-screen mt-10"
+            className="w-full h-full"
+
           style={{
               backgroundImage: `url(/assets/2.jpg)`,
               backgroundSize: 'cover',
@@ -46,10 +47,10 @@ const Page = () => {
           }}
 
       >
-          <div className="flex flex-col min-h-screen px-32 py-20 bg-black/80">
-              <div className="flex flex-col w-full gap-4 leading-10 text-center uppercase md:text-left">
-                  <h2 className="flex items-center justify-center font-semibold text-white text-md">What we do</h2>
-                  <h1 className="text-3xl font-bold md:text-4xl text-white/30 leading-relax">
+          <div className="flex flex-col py-44 px-32 bg-black/80">
+              <div className="flex items-center justify-center py-2 flex-col w-full gap-4 leading-10 text-center uppercase md:text-left">
+                  <h2 className=" font-semibold text-white text-md">What we do</h2>
+                  <h1 className="text-3xl font-bold md:text-4xl text-white/30 leading-relax py-3">
                       We deliver <Highlight className="text-black dark:text-white">  EXCELLENCE </Highlight> in all our services
                   </h1>
                   <p className="text-[#A08C5B]"> And it shows in our magnificent edifices ALL over the big city of Lagos
@@ -59,7 +60,7 @@ const Page = () => {
 
 
 
-              <div className="grid grid-cols-2 gap-12 px-10 py-10">
+              <div className="grid grid-cols-2 gap-12">
                   {/* First Item */}
                   <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full px-3 bg-[#A08C5B]">
@@ -169,16 +170,18 @@ const Page = () => {
                  animate={{ y: 0, opacity: 1 }}
                  transition={{ ease: "easeInOut", duration: 1.5 }}
                  whileInView={{ opacity: 1 }}
-                 viewport={{ once: false }} className="flex items-center justify-between gap-4 bg-black">
+                 viewport={{ once: false }} 
+                 className="flex items-center justify-between gap-4 bg-black">
+            
             <div className="items-center w-1/2 h-full p-32 ">
            <p className="font-semibold text-white"> From</p>
 <h1 className="text-[#A08C5B] text-7xl py-3">Exquisuite Architecture</h1>
-<p className="py-2 text-white text-md">
+<p className="py-2 text-white text-md items-center justify-center">
 we celebrate the exquisite beauty and elegance of majestic architecture. We specialize in representing and showcasing properties that embody timeless design, 
 meticulous craftsmanship, 
 and awe-inspiring architectural feats. </p>
 </div>
-<div className="justify-end w-1/2 h-full pt-5 overflow-hidden">
+<div className="justify-end w-1/2 h-full pb-20 pt-44 overflow-hidden">
 
            <Carousel slides={slides1} />
           </div>
@@ -191,7 +194,7 @@ and awe-inspiring architectural feats. </p>
                  whileInView={{ opacity: 1 }}
                  viewport={{ once: false }} className="flex items-center justify-between gap-4 bg-black">
 
-          <div className="justify-start w-1/2 h-full pt-5 overflow-hidden">
+          <div className="justify-start w-1/2 h-full py-20 overflow-hidden">
 
 <Carousel slides={slides2} />
 </div>
@@ -221,7 +224,7 @@ and awe-inspiring architectural feats. </p>
 
 <Button onClick={()=>router.push("/completed")}>See More...</Button>
 </div>
-<div className="justify-end w-1/2 h-full pt-5 overflow-hidden">
+<div className="justify-end w-1/2 h-full py-20 overflow-hidden">
 
            <Carousel slides={slides3} />
           </div>

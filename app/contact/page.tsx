@@ -144,7 +144,7 @@ const Page = () => {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input placeholder="Email address" {...field} />
+                <Input placeholder="Email address" {...field} className="text-white"/>
               </FormControl>
              
               <FormMessage />
@@ -159,7 +159,7 @@ const Page = () => {
             <FormItem>
               <FormLabel>message</FormLabel>
               <FormControl>
-                <Textarea placeholder="Enter your message" {...field} />
+                <Textarea placeholder="Enter your message" {...field} className="text-white"/>
               </FormControl>
              
               <FormMessage />
