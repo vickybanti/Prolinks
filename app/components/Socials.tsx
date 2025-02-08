@@ -16,19 +16,20 @@ export function Socials() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col items-center justify-center container max-w-full px-8"
+        className="relative flex flex-col items-center h-full justify-center container max-w-full "
       >
-        <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-36 container">
+        <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-36 py-10 px-40
+        ">
         <div className="flex flex-col items-center justify-center">
         <div className="text-3xl font-bold text-center uppercase dark:text-black-400 text-white/50">
         
-        <div className="max-w-4xl px-4 mx-auto font-bold leading-relaxed text-center md:text-2xl lg:text-4xl text-neutral-700 dark:text-white lg:leading-snug lg:w-full md:w-1/2">
+        <div className="max-w-4xl font-bold leading-relaxed text-center md:text-2xl lg:text-4xl text-neutral-700 dark:text-white lg:leading-snug lg:w-full md:w-1/2">
         Top notch <Highlight className="text-black dark:text-white"> projects </Highlight>  with a perfect mix of....
            </div>
         
 
         </div>
-        <div className="flex font-extralight md:text-sm text-[#A08C5b] py-10 px-20 text-lg">
+        <div className="flex font-extralight md:text-sm text-[#A08C5b] py-10 text-lg">
         
         <p className="px-4">ARCHITECTURE</p>
              <p className="px-4">

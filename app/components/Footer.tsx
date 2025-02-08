@@ -27,7 +27,7 @@ const Footer = () => {
               {footer.subTitle.map((sub) => (
                 <p
                   key={sub.id}
-                  className="text-sm w-full px-2 py-1 cursor-pointer font-light transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black"
+                  className="text-sm w-1/4 py-1 cursor-pointer font-light transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black"
                 >
                   {sub.label}
                 </p>
@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright Section */}
-        <div className="text-center border-t border-[#A08C5B] pt-4 mt-56">
+        <div className="text-center border-t border-[#A08C5B] mt-6 pt-3">
           <p className="text-[#A08C5B]">
             &copy; 2025 Project Prolinks. All Rights Reserved.
           </p>

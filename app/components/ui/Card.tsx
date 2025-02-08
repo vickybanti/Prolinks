@@ -30,7 +30,7 @@ export function Card({
     <div className="w-full max-w-xs group/card">
       <div
         className={cn(
-          "cursor-pointer overflow-hidden relative card rounded-sm shadow-xl flex flex-col justify-between p-4",
+          "cursor-pointer w-full relative rounded-sm shadow-xl flex flex-col justify-between p-4",
           className
         )}
         
@@ -42,10 +42,7 @@ export function Card({
         }}
       >
         {/* Overlay */}
-        <div className="absolute top-0 left-0 w-full h-full transition duration-300 bg-black/50 group-hover/card:bg-black opacity-60">
-        
-        </div>
-
+       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
         {/* Author Info */}
         <div className="z-10 flex flex-row items-center space-x-4">
           

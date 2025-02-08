@@ -5,7 +5,7 @@ import { Highlight } from "./ui/hero-highlight";
 const Work = () => {
   return (
     <div
-      className="relative w-full min-h-screen"
+      className="w-full h-full"
       style={{
         backgroundImage: `url(/assets/2.jpg)`,
         backgroundSize: 'cover',
@@ -14,7 +14,7 @@ const Work = () => {
       }}
       
     >
-      <div className="flex flex-col min-h-screen px-32 py-20 bg-black/80">
+      <div className="flex flex-col py-44 px-44 bg-black/80">
       <div className="flex flex-col w-1/2 gap-4 leading-10 text-center uppercase md:text-left">
         <h2 className="font-semibold text-white text-md">What we do</h2>
         <h1 className="text-3xl font-bold md:text-4xl text-white/30 leading-relax">
