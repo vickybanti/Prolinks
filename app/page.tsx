@@ -6,7 +6,7 @@ import Work from "./components/Work"
 export default function Home() {
   return (
     
-            <main className="mobile">
+            <main>
 
       <Hero />
       <Socials />

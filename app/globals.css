@@ -63,24 +63,51 @@ body {
 }
 @layer utilities {
   @media only screen and (max-width: 767px) {
-    .mobile{
-      overflow: hidden;
-      padding: 0;
-      position: relative;
+    .location{
+      padding:100px 20px;
     }
-    .socialsGrid{
+    .loc-grid{
+      margin-top:10px;
+    }
+    .location-grid{
+      gap:10px;
+    }
 
-      
-      gap:18px;
+    .socials{
+      padding:0 50px;
     }
     .socialsFont{
-      font-size:20px;
+      font-size:12px;
     }
-    
-    .socialsImg{
-      width:40px;
-      height:40px;
+    .socialsGrid{
+      padding:0 5px;
+      margin-top:45px;
+
     }
+    .socialsImage{
+      width:70%;
+      height:70%;
+    }
+  }
+  .work{
+    padding-left:10px;
+    padding-right:10px;
+  }
+  .workHeading{
+    font-size:20px;
+  }
+
+  .workGrid{
+    padding-left:1px;
+    padding-right:80px;
+  }
+  
+  
+  .workIconFont{
+    font-size:18px
+  }
+  .workFontP{
+    font-size:12px;
   }
 }
 

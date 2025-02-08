@@ -16,25 +16,24 @@ export function Socials() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="2xl:pt-28 lg:pt-56 md:pt-56 flex flex -col items-center h-full justify-center container max-w-full "
+        className="2xl:py-44 lg:py-44 md:py-44 flex flex -col items-center h-full justify-center max-w-full "
       >
-        <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-36  px-40
-        ">
+        <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-36  px-40 work">
         <div className="flex flex-col items-center justify-center">
         <div className="text-3xl font-bold text-center uppercase dark:text-black-400 text-white/50">
         
-        <div className="max-w-4xl font-bold leading-relaxed text-center md:text-2xl lg:text-4xl text-neutral-700 dark:text-white lg:leading-snug lg:w-full md:w-1/2">
-        Top notch <Highlight className="text-black dark:text-white"> projects </Highlight>  with a perfect mix of....
+        <div className="max-w-4xl font-bold text-center md:text-2xl lg:text-4xl text-neutral-700 dark:text-white  lg:w-full md:w-1/2 socials">
+        <h1>Top notch <Highlight className="text-black dark:text-white"> projects </Highlight>  with a perfect mix of....</h1>
            </div>
         
 
         </div>
         <div className="flex font-extralight md:text-sm text-[#A08C5b] py-10 text-lg">
         
-        <p className="px-4">ARCHITECTURE</p>
-             <p className="px-4">
+        <p className="px-4 socialsFont">ARCHITECTURE</p>
+             <p className="px-4 socialsFont">
                 ENGINEERING </p>
-             <p className="px-4"> CONSTRUCTION</p>
+             <p className="px-4 socialsFont"> CONSTRUCTION</p>
 
         </div>
         
@@ -47,7 +46,7 @@ export function Socials() {
           
         </div>
 
-        <div className="grid grid-cols-2 gap-12">
+        <div className="grid grid-cols-2 gap-12 socialsGrid">
   {/* First Item */}
   <div className="flex items-center space-x-4 h-[100px]">
     <div className="w-[80px] h-[80px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B] socialsImg">
@@ -59,7 +58,7 @@ export function Socials() {
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-xl font-semibold">25+</h3>
-      <span className="text-sm text-white/50">Achievements</span>
+      <span className="text-sm text-white/50 socialsFont">Achievements</span>
     </div>
   </div>
 
@@ -74,7 +73,7 @@ export function Socials() {
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-xl font-semibold">15+</h3>
-      <span className="text-sm text-white/50">years of experience</span>
+      <span className="text-sm text-white/50 socialsFont">years of experience</span>
     </div>
   </div>
 
@@ -89,7 +88,7 @@ export function Socials() {
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-xl font-semibold">300+</h3>
-      <span className="text-sm text-white/50">Building projects</span>
+      <span className="text-sm text-white/50 socialsFont">Building projects</span>
     </div>
   </div>
 
@@ -104,7 +103,7 @@ export function Socials() {
     </div>
     <div className="flex flex-col">
       <h3 className="text-[#A08C5B] text-xl font-semibold">700+</h3>
-      <span className="text-sm text-white/50">Happy Homeowners and tenants</span>
+      <span className="text-sm text-white/50 socialsFont">Happy Homeowners and tenants</span>
     </div>
   </div>
 
