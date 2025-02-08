@@ -16,9 +16,9 @@ export function Socials() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col items-center h-full justify-center container max-w-full "
+        className="2xl:pt-28 flex flex-col items-center h-full justify-center container max-w-full "
       >
-        <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-36 py-10 px-40
+        <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-36  px-40
         ">
         <div className="flex flex-col items-center justify-center">
         <div className="text-3xl font-bold text-center uppercase dark:text-black-400 text-white/50">

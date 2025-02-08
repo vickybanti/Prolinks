@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export function Hero() {
     
   return (
-    <div className="bg-black h-full">
+    <div className="bg-black h-screen">
     <motion.div
     initial={{ opacity: 0.0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ export function Hero() {
           ease: "easeInOut",
         }}
   
-        className="max-w-full container 2xl:py-44 lg:py-20 md:py-20 sm:py-20 px-8">
+        className="max-w-full 2xl:py-24 lg:py-20 md:py-20 sm:py-20 px-8 min-h-screen">
       <LayoutGrid cards={cards} />
     </motion.div>
     </div>
@@ -91,7 +91,7 @@ const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
-    className: "md:col-span-2 lg:h-[300px]",
+    className: "md:col-span-2 lg:h-[300px] 2xl:h-[450px]",
     thumbnail:
       "/assets/completed/Hallmark-1280x720.jpg",
     title:"Administrative buildings"
@@ -108,7 +108,7 @@ const cards = [
   {
     id: 3,
     content: <SkeletonThree />,
-    className: "col-span-1 lg:h-[300px]",
+    className: "col-span-1 lg:h-[300px] 2xl:h-[450px]",
     title:"Office building",
     thumbnail:
      "/assets/Lascofedd.jpg" 
