@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import { commercial, residentials, educational } from '@/app/constants';
+import { commercial, residentials, educational, shopping } from '@/app/constants';
 import PageCard from '@/app/components/PageCard';
 import { motion } from 'framer-motion';
 
@@ -12,6 +12,8 @@ const PropertyPage = () => {
     ...commercial.map((item) => ({ ...item, propertyType: item.propertyType || 'commercial' })),
     ...residentials.map((item) => ({ ...item, propertyType: item.propertyType || 'residential' })),
     ...educational.map((item) => ({ ...item, propertyType: item.propertyType || 'educational' })),
+    ...shopping.map((item) => ({ ...item, propertyType: item.propertyType || 'shopping' })),
+
   ];
 
   interface PropertyData {

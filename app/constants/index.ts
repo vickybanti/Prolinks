@@ -159,7 +159,7 @@ export const NAVLINKS = [
             },
             {
               title: "Western gate",
-              href: "property/westgate-supermarket-and-pharmacy",
+              href: "property/west-gate-supermarket-and-pharmacy",
               src: "/assets/completed/Westgate.png",
               description:
                 "Check out shopping projects",
@@ -174,7 +174,7 @@ export const NAVLINKS = [
             },
             {
               title: "Orimolade project",
-              href: "/property-type/commercial",
+              href: "/property/orimolade-project",
               src: "/assets/completed/New Orimolad.jpg",
               route:"/property-type/shopping",
               description:
@@ -220,7 +220,7 @@ export const NAVLINKS = [
       id:1,
       propertyType:"residentials",
       title: "Orimolade project",
-      route: "/property/orimolade",
+      route: "/property/orimolade-project",
       icon: "/assets/completed/residentials/NewOrimolad.jpg",
       description: "5 Bedroom semi detached duplex with a basementAnd roof-top garden.",
       location:"Orimolade Estate, Adeniyi Jones Avenue, Ikeja, Lagos",      
@@ -538,7 +538,7 @@ export const NAVLINKS = [
       id:1,
       propertyType:"Shopping",
       title: "West gate supermarket and pharmacy",
-      route: "property/westgate-supermarket-and-pharmacy",
+      route: "property/west-gate-supermarket-and-pharmacy",
       icon: "/assets/completed/shopping/IMG-20190916-WA0022.jpg",
       description: "WESTGATE SUPERMARKET AND PHARMACY",
       location:"OLOWOORA, MAGODO, LAGOS.",      
@@ -569,7 +569,7 @@ export const NAVLINKS = [
     id:2,
     propertyType:"Shopping",
     title: "cmart supermarket and pharmacy",
-    route: "/property/CMART",
+    route: "/property/cmart-supermarket-and-pharmacy",
     icon: "/assets/completed/shopping/20210917_122818.jpg",
     description: "CMART SUPERMARKET AND PHARMACY",
     location:"ABOYADACOLE,  LEKKIPHASE 1, LAGOS",      
