@@ -27,7 +27,7 @@ const Footer = () => {
               {footer.subTitle.map((sub) => (
                 <p
                   key={sub.id}
-                  className="text-sm w-1/4 py-1 cursor-pointer font-light transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black"
+                  className="text-sm w-1/2 py-1 cursor-pointer font-light transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black"
                 >
                   {sub.label}
                 </p>
@@ -38,7 +38,7 @@ const Footer = () => {
           {/* Contact Us Section */}
           <div className="flex flex-col w-64">
             <h2 className="text-xl font-semibold">Contact Us</h2>
-            <div className="flex items-center]">
+            <div className="flex items-center">
               
            <img src=" https://img.icons8.com/?size=100&id=107436&format=png&color=000000" 
            width="32px"
@@ -49,7 +49,7 @@ const Footer = () => {
             13, Dayo Kuyeclose,New Oko-oba, Abulegba, Lagos
             </p>
             </div>
-            <div className="flex items-center]">
+            <div className="flex items-center">
               
               <img src="https://img.icons8.com/?size=100&id=12921&format=png&color=000000"
               width="32px"
@@ -58,7 +58,7 @@ const Footer = () => {
             <p className="p-3 text-sm">0803-302-9830</p>
             </div>
 
-            <div className="flex items-center]">
+            <div className="flex items-center">
               
            <img src=" https://img.icons8.com/?size=100&id=OumT4lIcOllS&format=png&color=000000" 
            width="32px"
