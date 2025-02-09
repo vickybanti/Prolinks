@@ -2,11 +2,9 @@
 import React from "react";
 import { LayoutGrid } from "./ui/layout-grid";
 import { motion } from "framer-motion";
-import { useMediaQuery } from "../hooks/use-media-query";
 
 
 export function Hero() {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
 
     
   return (
