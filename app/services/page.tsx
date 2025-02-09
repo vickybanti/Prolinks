@@ -66,7 +66,7 @@ const Page = () => {
 
 
 
-              <div className="grid grid-cols-2 gap-12 pt-10 workGrid">
+              <div className="grid grid-cols-2 gap-12 pt-10 servicesGrid">
                   {/* First Item */}
                   <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full px-3 bg-[#A08C5B]">

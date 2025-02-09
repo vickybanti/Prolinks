@@ -104,6 +104,14 @@ body {
    display:flex;
    flex-direction:column;
   }
+
+  
+
+  .projectGrid{
+    display:flex;
+   flex-direction:column;
+   gap:60px;
+  }
   
   
   .workIconFont{
@@ -128,32 +136,45 @@ body {
     
   }
   .hero{
-    width:130%;
+    max-width:110%;
     height:100%;
-    margin-left:-60px;
     margin-top:100px;
-    padding-left:1px;
-    padding-right:7px;
     padding-bottom:40px;
+    padding-left:1px;
+    padding-right:1px;
+    
+    overflow:hidden;
+  }
+  .heroImage{
+    width:120%;
+    padding:0 1px;
   }
   .layoutCard{
+    padding:1px;
     height:1200px;
   }
   .services{
     width:100%;
-    padding:100px 15px;
+    padding:100px 30px;
 
   }
   .servicesHeading{
     font-size:22px;
+  }
+  .servicesGrid{
+    display:flex;
+   flex-direction:column;
+   gap:80px;
+   padding:10px;
   }
   .servicesCarousel{
     width:100%;
     padding:15px;
   }
 
+
   .carouselArrow{
-    top:140px;
+    top:120px;
   }
   
 }

@@ -2,6 +2,7 @@
 import { COMPLETED } from '@/app/constants';
 import PageCard from '@/app/components/PageCard';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/app/components/ui/breadcrumb";
+import { useMediaQuery } from "../hooks/use-media-query";
 
 const ProjectPage = () => {
 //   const params = useParams();
@@ -36,8 +37,11 @@ const ProjectPage = () => {
 //     return <div>Loading...</div>;
 //   }
 
+const isDesktop = useMediaQuery("(min-width: 768px)");
+
+
   return (
-    <div className='px-32 py-44 overflow-hidden text-white work'>
+    <div className={`px-32 py-44 overflow-hidden text-white ${!isDesktopo && 'work'}`}>
       <div className='px-10'>
         <Breadcrumb>
           <BreadcrumbList>
@@ -57,7 +61,7 @@ const ProjectPage = () => {
         <p className="text-gray-400 py-7">{COMPLETED.length} properties</p>
 
         {/* Grid container for property cards */}
-        <div className='grid items-center justify-center w-full h-full grid-cols-3 gap-3'>
+        <div className={`grid items-center justify-center w-full h-full grid-cols-3 gap-3  ${!isDesktopo && 'projectGrid'}`}>
           {COMPLETED.map((item) => (
             <PageCard
               id={item.id}

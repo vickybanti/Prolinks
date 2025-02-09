@@ -4,6 +4,8 @@ import {motion} from "framer-motion"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
+import { useMediaQuery } from "../hooks/use-media-query";
+
  
 import { Button } from "@/components/ui/button"
 import {
@@ -28,6 +30,8 @@ const formSchema = z.object({
   })
    
 const Page = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
      const ref = useRef<HTMLFormElement>(null);
     const [success, setSuccess] = useState("");
     const [loading, setLoading] = useState(false)
@@ -99,8 +103,8 @@ const Page = () => {
                          animate={{ y: 0, opacity: 1 }}
                          transition={{ ease: "easeInOut", duration: 1.5 }}
                          whileInView={{ opacity: 1 }}
-                         viewport={{ once: false }} className="flex items-center justify-between gap-4 bg-black">
-                    <div className="items-center w-1/2 h-full p-32 ">
+                         viewport={{ once: false }} className={`${!isDesktop && 'workGrid'} flex items-center justify-between gap-4 bg-black`}>
+                    <div className={`items-center w-1/2 h-full p-32 ${!isDesktop && 'work'}`}>
         <h1 className="text-[#A08C5B] text-5xl py-3">Contact us</h1>
         <div className="flex items-center]">
               
@@ -131,7 +135,7 @@ const Page = () => {
             <p className="p-3 text-sm text-white">tundeadekola@yahoo.com</p>
             </div>
           </div>
-        <div className="justify-end w-1/2 overflow-hidden h-full  px-32 py-40 bg-[#A08C5B] mr-10">
+        <div className={`justify-end w-1/2 overflow-hidden h-full  px-32 py-40 bg-[#A08C5B] mr-10 ${!isDesktop && 'w-full px-2 justify-stretch'}`}>
 
         <h2 className='py-3 text-lg font-semibold text-white'>Send us a message and we will get in touch</h2>
 
