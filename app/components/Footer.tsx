@@ -1,8 +1,12 @@
+"use client"
 import React from "react";
 import { FOOTERLINKS } from "../constants";
 import { Meteors } from "./ui/meteors";
+import { useMediaQuery } from "../hooks/use-media-query";
 
 const Footer = () => {
+  
+  const isDesktop = useMediaQuery("(min-width: 768px)");
   return (
     <div
       className="relative max-w-full overflow-hidden bg-fixed bg-center bg-cover container h-full bg-black"
@@ -14,9 +18,9 @@ const Footer = () => {
 
       <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 px-40 py-10 max-w-full footPad">
         {/* Footer Content */}
-        <div className="flex justify-between gap-10 mx-auto footer">
+        <div className={`flex justify-between gap-10 mx-auto ${!isDesktop && 'footer'}`}>
           {/* Branding */}
-          <div className="w-full footerContent">
+          <div className={`w-full ${!isDesktop && 'footerContent'}`}>
             <h2 className="text-2xl font-bold">Prolinks</h2>
           </div>
 

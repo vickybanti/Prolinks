@@ -2,13 +2,15 @@
 import React from "react";
 import { LayoutGrid } from "./ui/layout-grid";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "../hooks/use-media-query";
 
 
 export function Hero() {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
     
   return (
-    <div className={'bg-black h-screen hero'}>
+    <div className={`bg-black h-screen ${!isDesktop && 'hero'}`}>
     <motion.div
     initial={{ opacity: 0.0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}

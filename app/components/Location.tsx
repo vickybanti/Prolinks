@@ -1,12 +1,15 @@
+"use client"
 import { Card } from "./ui/Card";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-
+import { useMediaQuery } from "../hooks/use-media-query";
 
 export const Location = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
   const words = `We beautify everywhere we go`;
 
   return (
-      <div className="2xl:px-40 lg:px-40 pb-44 bg-black h-full location">
+      <div className={`2xl:px-40 lg:px-40 pb-44 bg-black h-full ${!isDesktop && 'location'}`}>
         {/* Section Header */}
         <div className="flex flex-col gap-4 text-center uppercase md:text-left">
           <h2 className="text-xl font-semibold text-gray-700">Explore by Location</h2>
@@ -48,7 +51,7 @@ export const Location = () => {
           </div>
 
           {/* Second Row (2 Cards) */}
-          <div className="loc-grid location-grid flex flex-wrap w-full 2xl:gap-[27rem] lg:gap-44 md:gap-44">
+          <div className={`${!isDesktop && 'loc-grid location-grid'} flex flex-wrap w-full 2xl:gap-[27rem] lg:gap-44 md:gap-44`}>
             <Card
               image="/assets/office.jpg"
               className="2xl:basis-[49%] 2xl:w-[226.2%] lg:w-[153%] h-72 md:[153%] xl:h-72"
