@@ -16,9 +16,9 @@ const Footer = () => {
       }}
     >
 
-      <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 px-40 py-10 max-w-full footPad">
+      <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 max-w-full footPad">
         {/* Footer Content */}
-        <div className={`flex justify-between gap-10 mx-auto ${!isDesktop && 'footer'}`}>
+        <div className={`flex justify-between gap-10 mx-auto px-40 py-20 ${!isDesktop && 'footer'}`}>
           {/* Branding */}
           <div className={`w-full ${!isDesktop && 'footerContent'}`}>
             <h2 className="text-2xl font-bold">Prolinks</h2>
@@ -27,7 +27,7 @@ const Footer = () => {
           {/* Footer Links */}
           {FOOTERLINKS.map((footer) => (
             <div className="flex flex-col w-full" key={footer.id}>
-              <h2 className="text-xl font-semibold">{footer.title}</h2>
+              <h2 className="text-lg font-semibold">{footer.title}</h2>
               {footer.subTitle.map((sub) => (
                 <p
                   key={sub.id}
@@ -74,8 +74,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright Section */}
-        <div className="text-center border-t-[2px] border-[#A08C5B] mt-3 pt-3">
-          <p className="text-[#A08C5B] text-sm">
+        <div className="text-center mt-3 pt-3">
+          <p className="text-[#A08C5B] text-xs">
             &copy; 2025 Project Prolinks. All Rights Reserved.
           </p>
         </div>

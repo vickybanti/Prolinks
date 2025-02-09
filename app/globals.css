@@ -65,6 +65,7 @@ body {
   @media only screen and (max-width: 768px) {
     .location{
       padding:100px 20px;
+      overflow:hidden;
     }
     .loc-grid{
       margin-top:10px;
@@ -74,7 +75,8 @@ body {
     }
 
     .socials{
-     padding:20px;
+     padding:20px 30px;
+     overflow:hidden;
     }
     .socialsFont{
       font-size:12px;
