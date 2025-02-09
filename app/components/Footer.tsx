@@ -22,7 +22,7 @@ const Footer = () => {
 
           {/* Footer Links */}
           {FOOTERLINKS.map((footer) => (
-            <div className="flex flex-col w-full" key={footer.id} footerContent>
+            <div className="flex flex-col w-full" key={footer.id}>
               <h2 className="text-xl font-semibold">{footer.title}</h2>
               {footer.subTitle.map((sub) => (
                 <p
