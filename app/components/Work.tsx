@@ -1,8 +1,13 @@
+"use client"
 import React from 'react';
 import { Highlight } from "./ui/hero-highlight";
+  import { useMediaQuery } from "../hooks/use-media-query";
+
 
 
 const Work = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
   return (
     <div
       className="w-full h-full"
@@ -14,7 +19,7 @@ const Work = () => {
       }}
       
     >
-      <div className="flex flex-col py-44 2xl:px-40 lg:px-40 bg-black/80 work">
+      <div className={`flex flex-col py-44 2xl:px-40 lg:px-40 bg-black/80 ${!isDesktop && 'work'}`}>
       <div className="flex flex-col w-full gap-4 leading-10 text-center uppercase md:text-left">
         <h2 className="font-semibold text-white text-md">What we do</h2>
         <h1 className="text-3xl font-bold md:text-4xl text-white/30 leading-relax workHeading">
@@ -27,7 +32,7 @@ const Work = () => {
 
 
 
-      <div className="grid grid-cols-2 gap-12 px-10 workGrid">
+      <div className={`grid grid-cols-2 gap-12 px-10 ${!isDesktop && 'workGrid'}`}>
   {/* First Item */}
   <div className="flex items-center space-x-4 h-[100px]">
     <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">

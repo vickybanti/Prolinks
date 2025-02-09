@@ -1,6 +1,7 @@
 import { Card } from "./ui/Card";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 
+
 export const Location = () => {
   const words = `We beautify everywhere we go`;
 

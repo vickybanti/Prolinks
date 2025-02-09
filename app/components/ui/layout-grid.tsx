@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import {  motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { JSX } from "react/jsx-runtime";
+import { useMediaQuery } from "../../hooks/use-media-query";
 
 
 type Card = {
@@ -16,6 +17,8 @@ type Card = {
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   const [selected, setSelected] = useState<Card | null>(null);
   const [lastSelected, setLastSelected] = useState<Card | null>(null);
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
 
   const handleClick = (card: Card) => {
     setLastSelected(selected);
@@ -28,7 +31,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="relative grid w-full h-full grid-cols-1 gap-4 p-10 mx-auto md:grid-cols-3 max-w-full layoutCard">
+    <div className={`relative grid w-full h-full grid-cols-1 gap-4 p-10 mx-auto md:grid-cols-3 max-w-full ${!isDesktop && 'layoutCard'}`}>
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
