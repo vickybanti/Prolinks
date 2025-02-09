@@ -41,7 +41,7 @@ const isDesktop = useMediaQuery("(min-width: 768px)");
 
 
   return (
-    <div className={`px-32 py-44 overflow-hidden text-white ${!isDesktop && 'work'}`}>
+    <div className={`${!isDesktop && 'work'} px-32 py-44 overflow-hidden text-white`}>
       <div className='px-10'>
         <Breadcrumb>
           <BreadcrumbList>
@@ -61,7 +61,7 @@ const isDesktop = useMediaQuery("(min-width: 768px)");
         <p className="text-gray-400 py-7">{COMPLETED.length} properties</p>
 
         {/* Grid container for property cards */}
-        <div className={`grid items-center justify-center w-full h-full grid-cols-3 gap-3  ${!isDesktop && 'projectGrid'}`}>
+        <div className={`${!isDesktop && 'projectGrid'} grid items-center justify-center w-full h-full grid-cols-3 gap-3`}>
           {COMPLETED.map((item) => (
             <PageCard
               id={item.id}
