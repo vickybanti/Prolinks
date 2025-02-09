@@ -37,7 +37,7 @@ const ProjectPage = () => {
 //   }
 
   return (
-    <div className='px-32 py-44 overflow-hidden text-white'>
+    <div className='px-32 py-44 overflow-hidden text-white work'>
       <div className='px-10'>
         <Breadcrumb>
           <BreadcrumbList>
