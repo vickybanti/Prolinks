@@ -5,9 +5,13 @@ import { Carousel } from "@/app/components/ui/carousel";
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import {motion} from "framer-motion"
+import { useMediaQuery } from "../hooks/use-media-query";
+
 
 
 const Page = () => {
+    const isDesktop = useMediaQuery("(min-width: 768px)");
+
     const router = useRouter()
     const slides1 = [
       { src: '/assets/2.jpg' },
@@ -47,7 +51,7 @@ const Page = () => {
           }}
 
       >
-          <div className="flex flex-col py-44 px-40 bg-black/90">
+          <div className="flex flex-col py-44 px-40 bg-black/90 work">
               <div className="flex items-center justify-center py-10 flex-col w-full gap-4 leading-10 text-center uppercase md:text-left">
                   <h2 className=" font-semibold text-white text-md">What we do</h2>
                   <h1 className="text-5xl font-bold text-white/60 leading-[80px] text-center py-5">
@@ -62,7 +66,7 @@ const Page = () => {
 
 
 
-              <div className="grid grid-cols-2 gap-12 pt-10">
+              <div className="grid grid-cols-2 gap-12 pt-10 workGrid">
                   {/* First Item */}
                   <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full px-3 bg-[#A08C5B]">
@@ -173,17 +177,17 @@ const Page = () => {
                  transition={{ ease: "easeInOut", duration: 1.5 }}
                  whileInView={{ opacity: 1 }}
                  viewport={{ once: false }} 
-                 className="flex items-center justify-between gap-4 bg-black">
+                 className="flex items-center justify-between gap-4 bg-black workGrid">
             
-            <div className="items-center w-1/2 h-full p-40 ">
+            <div className="items-center w-1/2 h-full p-40 services">
            <p className="font-semibold text-white"> From</p>
-<h1 className="text-[#A08C5B] text-6xl uppercase py-3">Exquisuite Architecture</h1>
+<h1 className="text-[#A08C5B] text-6xl uppercase py-3 servicesHeading">Exquisuite Architecture</h1>
 <p className="py-2 text-white text-md items-center justify-center leading-[32px]">
 we celebrate the exquisite beauty and elegance of majestic architecture. We specialize in representing and showcasing properties that embody timeless design, 
 meticulous craftsmanship, 
 and awe-inspiring architectural feats. </p>
 </div>
-<div className="justify-end w-1/2 h-full py-20 px-40 overflow-hidden">
+<div className="justify-end w-1/2 h-full py-20 px-40 overflow-hidden servicesCarousel">
 
            <Carousel slides={slides1} />
           </div>
@@ -194,19 +198,27 @@ and awe-inspiring architectural feats. </p>
                  animate={{ x: 0, opacity: 1 }}
                  transition={{ ease: "easeInOut", duration: 1.5 }}
                  whileInView={{ opacity: 1 }}
-                 viewport={{ once: false }} className="flex items-center justify-between gap-4 bg-black">
-
-          <div className="justify-start w-1/2 h-full py-20 px-40 overflow-hidden">
+                 viewport={{ once: false }} className="flex items-center justify-between gap-4 bg-black workGrid">
+{isDesktop &&
+          <div className='justify-start w-1/2 h-full py-20 px-40 overflow-hidden servicesCarousel'>
 
 <Carousel slides={slides2} />
 </div>
-            <div className="items-center w-1/2 h-full p-32 ">
+}
+            <div className="items-center w-1/2 h-full p-32 services">
            <p className="font-semibold text-white"> to the use of</p>
-<h1 className="text-[#A08C5B] text-6xl uppercase py-3">Competent Engineering</h1>
+<h1 className="text-[#A08C5B] text-6xl uppercase py-3 servicesHeading">Competent Engineering</h1>
 <p className="py-2 text-white text-md leading-[32px]">
 We take pride in our commitment to building exceptional properties using advanced engineering techniques. We believe that true luxury goes beyond aesthetics, encompassing the integration of innovative engineering solutions that enhance the structural integrity, 
 functionality, and sustainability of each property. </p>
 </div>
+
+{!isDesktop &&
+          <div className='justify-start w-1/2 h-full py-20 px-40 overflow-hidden servicesCarousel'>
+
+<Carousel slides={slides2} />
+</div>
+}
 
           </motion.div>
 
@@ -215,10 +227,10 @@ functionality, and sustainability of each property. </p>
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 1.5 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: false }} className="flex items-center justify-between gap-4 bg-black">
-            <div className="items-center w-1/2 h-full p-40 ">
+        viewport={{ once: false }} className="flex items-center justify-between gap-4 bg-black workGrid">
+            <div className="items-center w-1/2 h-full p-40 services ">
            <p className="font-semibold text-white"> to</p>
-<h1 className="text-[#A08C5B] text-6xl uppercase py-3">LUXURIOUS FINISHING</h1>
+<h1 className="text-[#A08C5B] text-6xl uppercase py-3 servicesHeading">LUXURIOUS FINISHING</h1>
 <p className="py-2 text-white text-md leading-[32px]">
 we celebrate the exquisite beauty and elegance of majestic architecture. We specialize in representing and showcasing properties that embody timeless design, 
 meticulous craftsmanship, 
@@ -226,7 +238,7 @@ and awe-inspiring architectural feats. </p>
 
 <Button onClick={()=>router.push("/projects")} className="mt-8">See More...</Button>
 </div>
-<div className="justify-end w-1/2 h-full py-20 px-40 overflow-hidden">
+<div className="justify-end w-1/2 h-full py-20 px-40 overflow-hidden servicesCarousel">
 
            <Carousel slides={slides3} />
           </div>
