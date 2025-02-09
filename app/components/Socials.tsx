@@ -16,13 +16,13 @@ export function Socials() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="2xl:py-44 lg:py-44 md:py-44 flex flex -col items-center h-full justify-center max-w-full "
+        className="py-44 lg:pt-64 flex h-full max-w-full px-40 socials"
       >
-        <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-36  px-40 work">
-        <div className="flex flex-col items-center justify-center">
-        <div className="text-3xl font-bold text-center uppercase dark:text-black-400 text-white/50">
+        <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-36">
+        <div className="flex flex-col">
+        <div className="text-3xl font-bold uppercase dark:text-black-400 text-white/50">
         
-        <div className="max-w-4xl font-bold text-center md:text-2xl lg:text-4xl text-neutral-700 dark:text-white  lg:w-full md:w-1/2 socials">
+        <div className=" font-bold md:text-2xl lg:text-4xl text-neutral-700 dark:text-white  lg:w-full md:w-1/2 ">
         <h1>Top notch <Highlight className="text-black dark:text-white"> projects </Highlight>  with a perfect mix of....</h1>
            </div>
         
@@ -38,8 +38,8 @@ export function Socials() {
         </div>
         
 
-        <button className="flex gap-2 items-center p-5 text-black bg-[#A08C5B] hover:text-[#A08C5B] backdrop-blur-sm border border-black hover:bg-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(212,175,55,0.5)] text-sm transition duration-400">
-        ONGOING PROJECTS <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 448 512">
+        <button className="2xl:w-1/3 lg:w-2/3 flex justify-around p-4 text-black bg-[#A08C5B] hover:text-[#A08C5B] backdrop-blur-sm border border-black hover:bg-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(212,175,55,0.5)] text-sm transition duration-400">
+       <span> ONGOING PROJECTS </span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 448 512">
   <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
 </svg>
 </button>            

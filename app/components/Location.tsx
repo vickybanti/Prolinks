@@ -5,7 +5,7 @@ export const Location = () => {
   const words = `We beautify everywhere we go`;
 
   return (
-      <div className="2xl:px-40 2xl:pb-44 md:px-8 md:py-32 bg-black h-full location">
+      <div className="2xl:px-40 lg:px-40 pb-44 bg-black h-full location">
         {/* Section Header */}
         <div className="flex flex-col gap-4 text-center uppercase md:text-left">
           <h2 className="text-xl font-semibold text-gray-700">Explore by Location</h2>

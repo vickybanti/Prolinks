@@ -99,10 +99,10 @@ export const ProductItem = ({
         className="flex-shrink-0 rounded-md shadow-2xl"
       />
       <div>
-        <h4 className="text-xl font-bold mb-1 text-[#A0865B] dark:text-white">
+        <h4 className="text-md font-bold mb-1 text-[#A0865B] dark:text-white">
           {title}
         </h4>
-        <p className="text-[#785F37] text-sm max-w-[10rem] dark:text-neutral-300">
+        <p className="text-[#785F37] text-xs max-w-[10rem] dark:text-neutral-300">
           {description}
         </p>
       </div>

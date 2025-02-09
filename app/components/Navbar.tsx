@@ -57,7 +57,7 @@ function DesktopNavbar() {
        transition={{ ease: "easeInOut", duration: 1.5 }}
        whileInView={{ opacity: 1 }}
        viewport={{ once: false }}
-      className="container flex items-center justify-between px-6 py-4 mx-auto">
+      className="flex items-center justify-between px-40 py-4">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Logo />

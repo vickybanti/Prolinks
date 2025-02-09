@@ -1,8 +1,14 @@
+"use client"
 import React from "react";
 import { FOOTERLINKS } from "../constants";
 import { Meteors } from "./ui/meteors";
+import { useMediaQuery } from "../hooks/use-media-query";
+
+
 
 const Footer = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
   return (
     <div
       className="relative max-w-full overflow-hidden bg-fixed bg-center bg-cover container h-full bg-black"
@@ -12,7 +18,7 @@ const Footer = () => {
       }}
     >
 
-      <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 xl:px-20 md:px-20 lg:px-32 xl:py-20 md:py-32 max-w-full">
+      <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 px-40 py-10 max-w-full footer">
         {/* Footer Content */}
         <div className="flex justify-between gap-10 mx-auto">
           {/* Branding */}
@@ -21,7 +27,8 @@ const Footer = () => {
           </div>
 
           {/* Footer Links */}
-          {FOOTERLINKS.map((footer) => (
+          {isDesktop && FOOTERLINKS.map((footer) => (
+             
             <div className="flex flex-col w-full" key={footer.id}>
               <h2 className="text-xl font-semibold">{footer.title}</h2>
               {footer.subTitle.map((sub) => (
@@ -32,9 +39,12 @@ const Footer = () => {
                   {sub.label}
                 </p>
               ))}
+            
             </div>
+            
           ))}
 
+        
           {/* Contact Us Section */}
           <div className="flex flex-col w-64">
             <h2 className="text-xl font-semibold">Contact Us</h2>
@@ -70,8 +80,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright Section */}
-        <div className="text-center border-t border-[#A08C5B] mt-6 pt-3">
-          <p className="text-[#A08C5B]">
+        <div className="text-center border-t-[2px] border-[#A08C5B] mt-3 pt-3">
+          <p className="text-[#A08C5B] text-sm">
             &copy; 2025 Project Prolinks. All Rights Reserved.
           </p>
         </div>
