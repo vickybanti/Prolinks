@@ -29,7 +29,7 @@ export function Socials() {
         <div className="text-3xl font-bold uppercase dark:text-black-400 text-white/50">
         
         <div className="leading-[72px] font-bold md:text-2xl lg:text-3xl text-neutral-700 dark:text-white  lg:w-full md:w-1/2 ">
-        <h1>Top notch <Highlight className="text-black dark:text-white"> projects </Highlight>  with a perfect mix of....</h1>
+        <h1 className="text-3xl font-bold md:text-4xl">Top notch <Highlight className="text-black dark:text-white"> projects </Highlight>  with a perfect mix of....</h1>
            </div>
         
 

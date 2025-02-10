@@ -29,6 +29,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
     setLastSelected(selected);
     setSelected(null);
   };
+  
 
   return (
     <div className={`relative grid w-full h-full grid-cols-1 gap-4 p-10 mx-auto md:grid-cols-3 max-w-full ${!isDesktop && 'layoutCard'}`}>
@@ -40,7 +41,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? "rounded-lg cursor-pointer absolute inset-0 h-full w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
+                ? `rounded-lg cursor-pointer absolute inset-0 h-full w-full ${!isDesktop && 'h-1/2 w-full py-8 mr-10'} m-auto z-50 flex justify-center items-center flex-wrap flex-col`
                 : lastSelected?.id === card.id
                 ? "z-40 bg-white rounded-xl h-full w-full"
                 : "bg-white rounded-xl h-full w-full"
@@ -70,6 +71,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
 };
 
 const ImageComponent = ({ card }: { card: Card }) => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
   return (
     <><motion.img
           layoutId={`image-${card.id}-image`}
@@ -77,7 +79,7 @@ const ImageComponent = ({ card }: { card: Card }) => {
           height="500"
           width="500"
           className={cn(
-              "object-cover object-top absolute inset-0 h-full w-full transition duration-200"
+              `object-cover object-top absolute inset-0 h-full w-full transition duration-200 `
           )}
           alt="thumbnail" />
 
@@ -100,7 +102,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         animate={{
           opacity: 0.6,
         }}
-        className={`absolute inset-0 z-10 w-full h-full px-4 ${!isDesktop && 'h-1/2 py-4'} bg-black opacity-60`}
+        className={`absolute inset-0 z-10 w-full h-full px-4 bg-black opacity-60`}
       />
       <motion.div
         layoutId={`content-${selected?.id}`}
@@ -120,7 +122,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
           duration: 0.3,
           ease: "easeInOut",
         }}
-        className="relative px-2 w-full pb-4 z-[70]"
+        className={`relative px-2 w-full pb-4 z-[70] ${!isDesktop && 'w-full h-1/2 mr-28}'}`}
       >
         {selected?.content}
       </motion.div>

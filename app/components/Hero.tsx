@@ -28,8 +28,10 @@ export function Hero() {
 }
 
 const SkeletonOne = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
   return (
-    <div>
+    <div className={`${!isDesktop && 'w-20 h-20 px-2 py-2'}`}>
       <p className="text-xl font-bold text-white md:text-4xl">
       Hallmark University Administrative building, Ijebu, Ogun State. 
       
