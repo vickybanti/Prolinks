@@ -89,6 +89,8 @@ const ImageComponent = ({ card }: { card: Card }) => {
 };
 
 const SelectedCard = ({ selected }: { selected: Card | null }) => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
   return (
     <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
       <motion.div
@@ -98,7 +100,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         animate={{
           opacity: 0.6,
         }}
-        className="absolute inset-0 z-10 w-full h-full px-4 bg-black opacity-60"
+        className={`absolute inset-0 z-10 w-full h-full px-4 ${!isDesktop && 'h-1/2 py-4'} bg-black opacity-60`}
       />
       <motion.div
         layoutId={`content-${selected?.id}`}
