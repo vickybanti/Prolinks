@@ -82,7 +82,7 @@ const Page = () => {
                       </div>
                   </div>
 
-                  {/* First Item */}
+                  {/* second Item */}
                   <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
                           <img
