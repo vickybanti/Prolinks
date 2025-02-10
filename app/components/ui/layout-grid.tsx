@@ -71,7 +71,6 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
 };
 
 const ImageComponent = ({ card }: { card: Card }) => {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
   return (
     <><motion.img
           layoutId={`image-${card.id}-image`}
