@@ -103,7 +103,7 @@ const SelectedCard = ({ selected }: { selected: Card | null; onClick: () => void
         animate={{
           opacity: 0.6,
         }}
-        className={`absolute inset-0 z-10 w-full h-full px-4 ${!isDesktop && 'w-full py-4'} bg-black opacity-60`}
+        className={`absolute inset-0 z-10 w-full h-full px-4 ${!isDesktop && 'w-[240px] py-4 px-0'} bg-black opacity-60`}
       />
       <motion.div
         layoutId={`content-${selected?.id}`}
