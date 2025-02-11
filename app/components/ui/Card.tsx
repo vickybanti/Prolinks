@@ -66,7 +66,7 @@ export function Card({
             {contentTitle}
           </h1>
           <div className="flex justify-between">
-          <p className="relative z-10 my-4 text-sm font-normal text-gray-50">
+          <p className="relative z-10 my-4 text-xs font-normal text-gray-50">
             {ContentSubtitle}
           </p>
           <Link href={href} className="flex hover:bg-black/45 p-2">

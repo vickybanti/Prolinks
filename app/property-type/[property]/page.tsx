@@ -4,9 +4,12 @@ import { useParams } from 'next/navigation';
 import { commercial, residentials, educational, shopping } from '@/app/constants';
 import PageCard from '@/app/components/PageCard';
 import { motion } from 'framer-motion';
+import { useMediaQuery } from "@/app/hooks/use-media-query";
+
 
 const PropertyPage = () => {
-  const params = useParams();
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+    const params = useParams();
   const property = Array.isArray(params.property) ? params.property[0] : params.property || '';
   const allProperties = [
     ...commercial.map((item) => ({ ...item, propertyType: item.propertyType || 'commercial' })),
@@ -41,7 +44,7 @@ const PropertyPage = () => {
   }
 
   return (
-    <div className='px-20 mt-20 overflow-hidden text-white'>
+    <div className={`${!isDesktop && 'work'}px-20 mt-20 overflow-hidden text-white`}>
       <div className='px-10 py-10'>
         <h1 className='text-2xl text-[#A08C5B] capitalize py-7'>{property}</h1>
         <p className="text-gray-400">Explore {property} buildings</p>
@@ -53,7 +56,7 @@ const PropertyPage = () => {
           transition={{ ease: "easeInOut", duration: 1.5 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: false }}
-          className='grid w-full h-full grid-cols-3 gap-8 mx-auto my-4'
+          className={`grid w-full h-full grid-cols-3 gap-8 mx-auto my-4 ${!isDesktop && 'projectGrid'}`}
         >
           {propertyData.map((item) => (
             <PageCard

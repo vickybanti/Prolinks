@@ -11,7 +11,7 @@ export function Hero() {
 
     
   return (
-    <div className={`bg-black h-screen ${!isDesktop && 'hero'}`}>
+    <div className={`bg-black h-screen py-10 ${!isDesktop && 'hero'}`}>
     <motion.div
     initial={{ opacity: 0.0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +21,7 @@ export function Hero() {
           ease: "easeInOut",
         }}
   
-        className="max-w-full 2xl:py-24 lg:py-20 px-8">
+        className="max-w-full 2xl:py-24 lg:py-44 px-8">
       <LayoutGrid cards={cards} />
     </motion.div>
     </div>
@@ -29,16 +29,18 @@ export function Hero() {
 }
 
 const SkeletonOne = () => {
+    const isDesktop = useMediaQuery("(min-width: 768px)");
+
 
   return (
-    <div className='h-full px-20 py-2 mx-auto flex justify-center items-center flex-wrap flex-col'>
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && ' ml-[-100px] px-10 text-[15px]'} flex justify-center items-center flex-wrap flex-col`}>
       <p className="text-xl font-bold text-white md:text-4xl w-full flex flex-wrap px-10 text-center">
       Hallmark University Administrative building, Ijebu, Ogun State. 
       
 
       </p>
       <p className="text-base font-normal text-white"></p>
-      <p className="max-w-lg my-4 text-base font-normal text-neutral-200">
+      <p className={`${!isDesktop && 'px-7 ml-3'} max-w-lg my-4 text-base font-normal text-neutral-200`}>
       Inspiring innovation and learning at Hallmark 
       University, Ijebu-Itele, Ogun State.
 
@@ -51,13 +53,15 @@ const SkeletonOne = () => {
 };
 
 const SkeletonTwo = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
   return (
-    <div className='h-full px-20 py-2 mx-auto flex justify-center items-center flex-wrap flex-col'>
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && 'mx-0 px-3'} flex justify-center items-center flex-wrap flex-col`}>
       <p className="text-xl font-bold text-white md:text-4xl w-full flex-flex-wrap px-10 text-center">
       Westgate Mall, Magodo Lagos premier shopping destination.
       </p>
       <p className="text-base font-normal text-white"></p>
-      <p className="max-w-lg my-4 text-base font-normal text-neutral-200">
+      <p className={`${!isDesktop && 'px-3'} max-w-lg my-4 text-base font-normal text-neutral-200`}>
       Redefining retail experiences at Westgate Mall, Magodo Lagos premier shopping destination
       </p>
       <Link href={`/property-type/shopping`} className="text-white p-3 bg-[#A08C5B] hover:text-black my-10">See related projects</Link>
@@ -66,14 +70,16 @@ const SkeletonTwo = () => {
   );
 };
 const SkeletonThree = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
   return (
-    <div className='h-full px-20 py-2 mx-auto flex justify-center items-center flex-wrap flex-col'>
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && 'mx-0 px-3'} flex justify-center items-center flex-wrap flex-col`}>
       <p className="text-xl font-bold text-white md:text-4xl max-w-lg flex flex-wrap px-10 text-center">
       Lascofedd
         Office buildings
       </p>
       <p className="text-base font-normal text-white"></p>
-      <p className="max-w-lg my-4 text-base font-normal text-neutral-200">
+      <p className={`${!isDesktop && 'px-3'} max-w-lg my-4 text-base font-normal text-neutral-200`}>
       Modern workspace reimagined
        – where productivity meets innovative design.
 
@@ -86,14 +92,16 @@ const SkeletonThree = () => {
   );
 };
 const SkeletonFour = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
   return (
-    <div className='h-full px-20 py-2 mx-auto flex justify-center items-center flex-wrap flex-col'>
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && 'mx-0 px-3'} flex justify-center items-center flex-wrap flex-col`}>
       <p className="text-xl font-bold text-white md:text-4xl max-w-lg flex flex-wrap text-center">
 
         Serene Residentials
       </p>
       <p className="text-base font-normal text-white"></p>
-      <p className="max-w-lg my-4 text-base font-normal text-neutral-200">
+      <p className={`${!isDesktop && 'px-3'} max-w-lg my-4 text-base font-normal text-neutral-200`}>
       A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
       perfect place to relax, unwind, and enjoy life.
       </p>
@@ -107,7 +115,7 @@ const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
-    className: "col-span-2 lg:h-[300px] 2xl:h-[450px]",
+    className: "2xl:col-span-2 lg:col-span-2 lg:h-[300px] 2xl:h-[450px]",
     thumbnail:
       "/assets/completed/Hallmark-1280x720.jpg",
     title:"Administrative buildings"
@@ -116,7 +124,7 @@ const cards = [
   {
     id: 2,
     content: <SkeletonTwo />,
-    className: "col-span-1",
+    className: "2xl:col-span-1 lg:col-span-1",
     title:"Shopping mall",
     thumbnail:
       
@@ -124,7 +132,7 @@ const cards = [
   {
     id: 3,
     content: <SkeletonThree />,
-    className: "col-span-1 lg:h-[300px] 2xl:h-[450px]",
+    className: "2xl:col-span-1 lg:col-span-1 lg:h-[300px] 2xl:h-[450px]",
     title:"Office building",
     thumbnail:
      "/assets/Lascofedd.jpg" 
@@ -132,7 +140,7 @@ const cards = [
   {
     id: 4,
     content: <SkeletonFour />,
-    className: "col-span-2",
+    className: "2xl:col-span-2 lg:col-span-2",
     title:"residentials",
     thumbnail:
     "assets/jj1_5 - Photo.jpg"      

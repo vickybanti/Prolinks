@@ -34,15 +34,8 @@ export function Navbar() {
   );
 }
 
-function Logo() {
-  return (
-    <Link href="/">
-     <BackgroundGradient className="rounded-[22] bg-black dark:bg-zinc-900 text-[#A0865B]">
-            <h2>Project Prolinks</h2>
-          </BackgroundGradient>
-    </Link>
-  );
-}
+
+
 
 function DesktopNavbar() {
   const pathname = usePathname();
@@ -60,8 +53,10 @@ function DesktopNavbar() {
        viewport={{ once: false }}
       className="flex items-center justify-between px-40 py-4">
         {/* Logo */}
-        <div className="flex-shrink-0">
-          <Logo />
+        <div className="flex items-center w-32 left-0 top-0">
+        <Link href="/">
+        <Image src="/assets/logo/logo3.jpg" width={100} height={50} alt="logo" className="object-contain" />
+       </Link>
         </div>
 
         {/* Navigation Links */}

@@ -3,6 +3,8 @@ import React from "react";
 import { FOOTERLINKS } from "../constants";
 import { Meteors } from "./ui/meteors";
 import { useMediaQuery } from "../hooks/use-media-query";
+import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   
@@ -21,9 +23,21 @@ const Footer = () => {
         {/* Footer Content */}
         <div className={`flex justify-between gap-10 mx-auto px-40 py-20 ${!isDesktop && 'footer'}`}>
           {/* Branding */}
-          <div className={`w-full ${!isDesktop && 'footerContent'}`}>
-            <h2 className="text-2xl font-bold">Prolinks</h2>
-          </div>
+          <div className="flex items-center mr-6">
+  <Link href="/">
+    <div className="flex flex-col items-center gap-0">
+      <Image
+        src="/assets/logo/logo3.jpg"
+        width={1000}
+        height={50}
+        alt="logo"
+        className="object-cover"
+      />
+      <h2 className="mt-[-30px]">Prolinks</h2>
+    </div>
+  </Link>
+</div>
+
 
           {/* Footer Links */}
           {FOOTERLINKS.map((footer) => (
