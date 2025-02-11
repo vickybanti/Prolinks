@@ -23,21 +23,22 @@ const Footer = () => {
         {/* Footer Content */}
         <div className={`flex justify-between gap-10 mx-auto px-40 py-20 ${!isDesktop && 'footer'}`}>
           {/* Branding */}
-          <div className="flex items-center mr-6">
-  <Link href="/">
-    <div className="flex flex-col items-center gap-0">
-      <Image
-        src="/assets/logo/logo3.jpg"
-        width={1000}
-        height={50}
-        alt="logo"
-        className="object-cover"
-      />
-      <h2 className={`mt-[-30px] ${!isDesktop && 'mt-[-70px] text-xl'}`}>Prolinks</h2>
-    </div>
-  </Link>
-</div>
-
+          <div className="2xl:mt-[-40px] lg:mt-[-25px] mr-6">
+          <div className="flex justify-start mr-6"> 
+            <Link href="/">
+              <div className="flex flex-col items-center gap-0">
+                <Image
+                  src="/assets/logo/logo3.jpg"
+                  width={1000}
+                  height={50}
+                  alt="logo"
+                  className="object-cover"
+                />
+                <h2 className={`mt-[-30px] px-10 ${!isDesktop && 'mt-[-70px] text-xl'}`}>Prolinks</h2>
+              </div>
+            </Link>
+          </div>
+          </div>
 
           {/* Footer Links */}
           {FOOTERLINKS.map((footer) => (

@@ -135,12 +135,7 @@ export const ONGOING = [
 ]
 
 export const NAVLINKS = [
-    {
-      id:1,
-      label: "Homepage",
-      route: "/",
-      icon: "https://img.icons8.com/?size=100&id=jPDM9Pv61iP5&format=png&color=000000",
-    },
+    
       
        
 

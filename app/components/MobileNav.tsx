@@ -18,10 +18,13 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { NAVLINKS } from "../constants";
 import {motion} from 'framer-motion'
+import { useMediaQuery } from "../hooks/use-media-query";
+
 
 
 const MobileNav = () => {
   const pathname = usePathname();
+  const isDesktop = useMediaQuery("(min-width: 464px)");
 
   return (
     <div>
@@ -34,7 +37,7 @@ const MobileNav = () => {
          transition={{ ease: "easeInOut", duration: 1.5 }}
          whileInView={{ opacity: 1 }}
          viewport={{ once: false }}
-        className="container flex items-center justify-between px-8 py-4 mx-auto">
+        className="flex items-center justify-between px-8 py-4 mx-auto">
           {/* Logo */}
           <Link href="/">
         <Image src="/assets/logo/logo3.jpg" width={100} height={50} alt="logo" className="object-contain" />
@@ -55,7 +58,7 @@ const MobileNav = () => {
               </DropdownMenuTrigger>
 
               {/* Dropdown Content */}
-              <DropdownMenuContent className="w-[400px] mx-auto bg-black border-black">
+              <DropdownMenuContent className={`w-[430px] mx-auto bg-black border-black ${!isDesktop && 'w-[354px]'} `}>
                 {/* Logo Inside Dropdown */}
                 <DropdownMenuLabel>
                   {/* <Link href="/">
@@ -97,7 +100,7 @@ const MobileNav = () => {
                               {link.label}
                             </DropdownMenuSubTrigger>
                             <DropdownMenuPortal>
-                              <DropdownMenuSubContent className="bg-black border-[#785F37] w-[600px] absolute top-10 mx-auto transform shadow-lg p-4">
+                              <DropdownMenuSubContent className="bg-black border-[#785F37] w-[500px] absolute top-10 mx-auto transform shadow-lg">
                                 {link.productItems.map((product) => (
                                   <DropdownMenuItem
                                     key={product.title}
@@ -115,7 +118,7 @@ const MobileNav = () => {
                                         width={60}
                                         height={60}
                                       />
-                                      <span>{product.title}</span>
+                                      <span className="w-52">{product.title}</span>
                                     </a>
                                   </DropdownMenuItem>
                                 ))}
