@@ -33,7 +33,7 @@ const Footer = () => {
         alt="logo"
         className="object-cover"
       />
-      <h2 className="mt-[-30px]">Prolinks</h2>
+      <h2 className={`mt-[-30px] ${!isDesktop && 'mt-[-70px] text-xl'}`}>Prolinks</h2>
     </div>
   </Link>
 </div>

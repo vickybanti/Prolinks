@@ -37,9 +37,8 @@ const MobileNav = () => {
         className="container flex items-center justify-between px-8 py-4 mx-auto">
           {/* Logo */}
           <Link href="/">
-
-            <h2 className="text-xl font-extrabold text-white">Prolinks</h2>
-          </Link>
+        <Image src="/assets/logo/logo3.jpg" width={100} height={50} alt="logo" className="object-contain" />
+       </Link>
 
           {/* Mobile Navigation Dropdown */}
           <nav>
