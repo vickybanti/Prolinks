@@ -2,7 +2,6 @@
 import React from "react";
 import { ProductItem } from "./ui/NavbarMenu";
 import Link from "next/link";
-import { BackgroundGradient } from "./ui/background-gradient";
 import Image from "next/image";
 import { useMediaQuery } from "../hooks/use-media-query";
 import MobileNav from "./MobileNav";
