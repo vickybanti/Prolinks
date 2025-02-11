@@ -7,6 +7,7 @@ import { useMediaQuery } from "../hooks/use-media-query";
 const Footer = () => {
   
   const isDesktop = useMediaQuery("(min-width: 768px)");
+  
   return (
     <div
       className="relative max-w-full overflow-hidden bg-fixed bg-center bg-cover container h-full bg-black"
@@ -50,7 +51,7 @@ const Footer = () => {
            className="object-contain"/>
            <p className="text-xs p-3 font-light cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black">
            
-            13, Dayo Kuyeclose,New Oko-oba, Abulegba, Lagos
+            13, Dayo Kuye close, New Oko-oba, Abulegba, Lagos
             </p>
             </div>
             <div className="flex items-center">

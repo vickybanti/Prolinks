@@ -66,7 +66,6 @@ const PropertyPage = () => {
               title={item.title}
               property={property}
               propertyLabel={property}
-              status='Completed'
             />
           ))}
         </motion.div>

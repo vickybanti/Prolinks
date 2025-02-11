@@ -159,7 +159,7 @@ export const NAVLINKS = [
             },
             {
               title: "Western gate",
-              href: "property/west-gate-supermarket-and-pharmacy",
+              href: "/property/west-gate-supermarket-and-pharmacy",
               src: "/assets/completed/Westgate.png",
               description:
                 "Check out shopping projects",
@@ -553,7 +553,7 @@ export const NAVLINKS = [
           secondColour: "blue",
         },
         {
-          src:"/assets/completed/shopping/Westgate.jpg",
+          src:"/assets/completed/shopping/Westgate.png",
           alt:"West gate project",
           title: "West gate shopping and pharmacy project",
           firstButton:"View",

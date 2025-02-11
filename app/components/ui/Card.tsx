@@ -1,5 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
 
 
 
@@ -12,6 +14,7 @@ export function Card({
   ContentSubtitle,
   img,
   colour,
+  href,
   
  
 }: {
@@ -23,14 +26,15 @@ export function Card({
   ContentSubtitle?:string;
   img?: React.ReactNode;
   colour?:string;
+  href:string;
 
  
 }) {
   return (
-    <div className="w-full max-w-xs group/card">
+    <div className="w-full max-w-xs group/card ">
       <div
         className={cn(
-          "cursor-pointer w-full relative rounded-sm shadow-xl flex flex-col justify-between p-4",
+          "cursor-pointer w-full relative rounded-sm shadow-xl flex flex-col justify-between p-4 ",
           className
         )}
         
@@ -42,14 +46,13 @@ export function Card({
         }}
       >
         {/* Overlay */}
-       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
+       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-10 z-10 hover:bg-black/45"></div>
         {/* Author Info */}
-        <div className="z-10 flex flex-row items-center space-x-4">
-          
-           <div className={`h-5 w-5 rounded-full border-2 border-${colour} object-cover text-white`}>
+        <div className="z-10 flex flex-row items-center space-x-4 ">
+           <div className={`h-5 w-5 rounded-full border-2 border-${colour} object-cover text-white `}>
            {img}
            </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col ">
             <p className="relative z-10 text-base font-normal text-gray-50">
               {title}
             </p>
@@ -66,8 +69,14 @@ export function Card({
           <p className="relative z-10 my-4 text-sm font-normal text-gray-50">
             {ContentSubtitle}
           </p>
+          <Link href={href} className="flex hover:bg-black/45 p-2">
+          <p className="relative z-10 my-4 text-sm font-thin text-gray-50 "> Details</p>
+          <div className="w-4">
+          <Image src="https://img.icons8.com/?size=100&id=59862&format=png&color=179797" alt="arrow" width={30} height={3} className="mt-5"/>
+          </div>
+          </Link>
+          
 
-          <p className="relative z-10 my-4 text-sm font-thin text-gray-50"> Details...</p>
           </div>
         </div>
       </div>

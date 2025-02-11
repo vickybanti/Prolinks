@@ -72,7 +72,6 @@ const ProjectPage = () => {
               description={item.description}
               title={item.title}
               property={project}
-              status={project}
             />
           ))}
         </div>

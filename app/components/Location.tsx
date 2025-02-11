@@ -4,7 +4,7 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { useMediaQuery } from "../hooks/use-media-query";
 
 export const Location = () => {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 820px)");
 
   const words = `We beautify everywhere we go`;
 
@@ -27,6 +27,7 @@ export const Location = () => {
               subtitle="5-BEDROOM DUPLEX"
               ContentSubtitle="Residentials"
               colour="black"
+              href="/property/5-bedroom-duplex"
             />
 
             <Card
@@ -36,6 +37,7 @@ export const Location = () => {
               subtitle="Library"
               ContentSubtitle="School library"
               colour="none"
+              href="/property/hallmark-university-projects-"
             />
 
             <Card
@@ -45,6 +47,7 @@ export const Location = () => {
               subtitle="City Mall"
               ContentSubtitle="Shopping"
               colour="black"
+              href="/property/cmart-supermarket-and-pharmacy"
             />
 
           
@@ -59,6 +62,7 @@ export const Location = () => {
               subtitle="MIXED-USE BUILDINGS"
               ContentSubtitle="Commercial/Office building"
               colour="none"
+              href="/property/lascofedd-project"
             />
 
             <Card
@@ -67,6 +71,8 @@ export const Location = () => {
               title="Magodo"
               subtitle="Shopping"
               colour="black"
+              ContentSubtitle="Mall"
+              href="/property/west-gate-supermarket-and-pharmacy"
             />
           </div>
         </div>

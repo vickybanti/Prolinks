@@ -37,11 +37,12 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
         <div key={i} className={cn(card.className, "")}>
           <motion.div
             onClick={() => handleClick(card)}
+            onMouseLeave={() => handleOutsideClick()}
             className={cn(
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? `rounded-lg cursor-pointer absolute inset-0 h-full w-full ${!isDesktop && 'h-1/2 w-full py-8 mr-10'} m-auto z-50 flex justify-center items-center flex-wrap flex-col`
+                ? `rounded-lg cursor-pointer absolute inset-0 min-h-full max-w-full ${!isDesktop && 'h-1/2 w-full px-5 py-8'} m-auto z-50 flex justify-center items-center flex-wrap flex-col`
                 : lastSelected?.id === card.id
                 ? "z-40 bg-white rounded-xl h-full w-full"
                 : "bg-white rounded-xl h-full w-full"
@@ -50,10 +51,11 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
           >
               <h1>{card.title}</h1>
             {selected?.id === card.id && 
-            <SelectedCard selected={selected} />}
+            <SelectedCard selected={selected} onClick={handleOutsideClick}/>}
             
             
-            <ImageComponent card={card} />
+            <ImageComponent card={card} 
+            />
            
           </motion.div>
         </div>
@@ -70,7 +72,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   );
 };
 
-const ImageComponent = ({ card }: { card: Card }) => {
+const ImageComponent = ({ card }: { card: Card;  }) => {
   return (
     <><motion.img
           layoutId={`image-${card.id}-image`}
@@ -78,22 +80,22 @@ const ImageComponent = ({ card }: { card: Card }) => {
           height="500"
           width="500"
           className={cn(
-              `object-cover object-top absolute inset-0 h-full w-full transition duration-200 `
+              "object-cover object-top absolute inset-0 h-full w-full transition duration-200"
           )}
           alt="thumbnail" />
 
-<h3 className="absolute cursor-pointer uppercase inset-0 flex items-center justify-center text-lg font-bold text-[#A08C5B] bg-black/50 rounded-lg hover:bg-white/10 hover:text-[#785F37]">
+<h3 className="absolute cursor-pointer uppercase inset-0 flex items-center justify-center text-2xl font-bold text-white text-center hover:bg-white/10 bg-black/50 rounded-lg hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(-white/10) hover:text-[#785F37]">
           {card.title}
         </h3>
           </>
   );
 };
 
-const SelectedCard = ({ selected }: { selected: Card | null }) => {
+const SelectedCard = ({ selected }: { selected: Card | null; onClick: () => void }) => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
+    <div className="bg-transparent h-full w-full flex px-20 flex-col justify-center rounded-lg shadow-2xl relative z-[60]">
       <motion.div
         initial={{
           opacity: 0,
@@ -101,7 +103,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         animate={{
           opacity: 0.6,
         }}
-        className={`absolute inset-0 z-10 w-full h-full px-4 bg-black opacity-60`}
+        className={`absolute inset-0 z-10 w-full h-full px-4 ${!isDesktop && 'h-1/2 py-4'} bg-black opacity-60`}
       />
       <motion.div
         layoutId={`content-${selected?.id}`}
@@ -121,7 +123,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
           duration: 0.3,
           ease: "easeInOut",
         }}
-        className={`relative px-2 w-full pb-4 z-[70] ${!isDesktop && 'w-full h-1/2 mr-28}'}`}
+        className={`relative px-2 w-full pb-4 z-[70] ${!isDesktop && 'w-1/2}'}`}
       >
         {selected?.content}
       </motion.div>

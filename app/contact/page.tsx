@@ -93,18 +93,17 @@ const Page = () => {
     animate={{ x: 0, opacity: 1 }}
     transition={{ ease: "easeInOut", duration: 1.5 }}
     whileInView={{ opacity: 1 }}
-    viewport={{ once: false }}>
-        <div className='flex flex-col w-full'>
-       <h1 className='text-5xl text-white'> Contact us! </h1>
-        </div>
+    viewport={{ once: false }}
+    >
+        
 
          <motion.div 
                          initial={{ y: -30, opacity: 0.2 }}
                          animate={{ y: 0, opacity: 1 }}
                          transition={{ ease: "easeInOut", duration: 1.5 }}
                          whileInView={{ opacity: 1 }}
-                         viewport={{ once: false }} className={`${!isDesktop && 'workGrid'} flex items-center justify-between gap-4 bg-black`}>
-                    <div className={`items-center w-1/2 h-full p-32 ${!isDesktop && 'work'}`}>
+                         viewport={{ once: false }} className={`${!isDesktop && 'workGrid'} flex items-center justify-between gap-4 bg-black py-44`}>
+                    <div className={`items-center w-1/2 h-full px-40  py-20 ${!isDesktop && 'work'}`}>
         <h1 className="text-[#A08C5B] text-5xl py-3">Contact us</h1>
         <div className="flex items-center]">
               
@@ -114,7 +113,7 @@ const Page = () => {
            className="object-contain"/>
            <p className="text-xs text-white p-3 font-light cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black">
            
-            13, Dayo Kuyeclose,New Oko-oba, Abulegba, Lagos
+            13, Dayo Kuye close,New Oko oba, Abulegba, Lagos
             </p>
             </div>
             <div className="flex items-center]">
@@ -135,7 +134,7 @@ const Page = () => {
             <p className="p-3 text-sm text-white">tundeadekola@yahoo.com</p>
             </div>
           </div>
-        <div className={`justify-end w-1/2 overflow-hidden h-full  px-32 py-40 bg-[#A08C5B] mr-10 ${!isDesktop && 'w-full px-2 justify-stretch'}`}>
+        <div className={`justify-end w-1/2 overflow-hidden px-32 py-10 h-full bg-[#A08C5B] mr-10 ${!isDesktop && 'w-[80%] px-8 h-1/2 mx-auto'} `}>
 
         <h2 className='py-3 text-lg font-semibold text-white'>Send us a message and we will get in touch</h2>
 

@@ -50,7 +50,6 @@ const isDesktop = useMediaQuery("(min-width: 768px)");
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             
-            <BreadcrumbSeparator />
             <BreadcrumbItem>
               <BreadcrumbPage className="text-white">Properties</BreadcrumbPage>
             </BreadcrumbItem>
@@ -72,7 +71,6 @@ const isDesktop = useMediaQuery("(min-width: 768px)");
               description={item.description}
               title={item.title}
               property={item.propertyType}
-              status={item.propertyType}
             />
           ))}
         </div>
