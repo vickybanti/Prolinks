@@ -33,14 +33,14 @@ const SkeletonOne = () => {
 
 
   return (
-    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && ' w-full ml-[-250px] px-2 text-[15px]'} flex justify-center items-center flex-wrap flex-col`}>
-      <p className="text-xl font-bold text-white md:text-4xl w-full flex flex-wrap px-10 text-center">
+    <div className={`h-full 2xl:px-20 py-2 2xl:mx-auto ${!isDesktop && ' w-full ml-[-250px] px-2 text-[15px]'} flex justify-center items-center flex-wrap flex-col`}>
+      <p className="text-xl font-bold text-white md:text-4xl w-full flex flex-wrap px-10 2xl:text-center">
       Hallmark University Administrative building, Ijebu, Ogun State. 
       
 
       </p>
       <p className="text-base font-normal text-white"></p>
-      <p className={`${!isDesktop && 'px-7 ml-3'} max-w-lg my-4 text-base font-normal text-neutral-200`}>
+      <p className={`${!isDesktop && 'px-7 ml-3'} 2xl:max-w-lg my-4 text-base font-normal text-neutral-200`}>
       Inspiring innovation and learning at Hallmark 
       University, Ijebu-Itele, Ogun State.
 
@@ -56,12 +56,12 @@ const SkeletonTwo = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && 'mx-0 px-3'} flex justify-center items-center flex-wrap flex-col`}>
-      <p className="text-xl font-bold text-white md:text-4xl w-full flex-flex-wrap px-10 text-center">
+    <div className={`h-full 2xl:px-20 py-2 2xl:mx-auto ${!isDesktop && 'mx-0 px-3'} flex justify-center items-center flex-wrap flex-col`}>
+      <p className="text-xl font-bold text-white md:text-4xl w-full flex-flex-wrap px-10 2xl:text-center">
       Westgate Mall, Magodo Lagos premier shopping destination.
       </p>
       <p className="text-base font-normal text-white"></p>
-      <p className={`${!isDesktop && 'px-3'} max-w-lg my-4 text-base font-normal text-neutral-200`}>
+      <p className={`${!isDesktop && 'px-3'} 2xl:max-w-lg my-4 text-base font-normal text-neutral-200`}>
       Redefining retail experiences at Westgate Mall, Magodo Lagos premier shopping destination
       </p>
       <Link href={`/property-type/shopping`} className="text-white p-3 bg-[#A08C5B] hover:text-black my-10">See related projects</Link>
@@ -96,12 +96,12 @@ const SkeletonFour = () => {
 
   return (
     <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && 'mx-0 px-3 w-full'} flex justify-center items-center flex-wrap flex-col`}>
-      <p className={`text-xl font-bold text-white md:text-4xl max-w-lg flex flex-wrap text-center ${!isDesktop && 'px-3 w-full'}`}>
+      <p className={`text-xl font-bold text-white md:text-4xl max-w-lg flex flex-wrap 2xl:text-center ${!isDesktop && 'px-3 w-full'}`}>
 
         Serene Residentials
       </p>
       <p className="text-base font-normal text-white"></p>
-      <p className={`${!isDesktop && 'px-3 w-full'} max-w-lg my-4 text-base font-normal text-neutral-200`}>
+      <p className={`${!isDesktop && 'px-3 w-full'} 2xl:max-w-lg my-4 text-base font-normal text-neutral-200`}>
       A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
       perfect place to relax, unwind, and enjoy life.
       </p>
