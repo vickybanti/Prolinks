@@ -29,7 +29,6 @@ export function Hero() {
 }
 
 const SkeletonOne = () => {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
     <div className='h-full px-20 py-2 mx-auto flex justify-center items-center flex-wrap flex-col'>
