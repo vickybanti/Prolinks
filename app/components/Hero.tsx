@@ -33,7 +33,7 @@ const SkeletonOne = () => {
 
 
   return (
-    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && ' ml-[-100px] px-10 text-[15px]'} flex justify-center items-center flex-wrap flex-col`}>
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && ' w-full ml-[-250px] px-2 text-[15px]'} flex justify-center items-center flex-wrap flex-col`}>
       <p className="text-xl font-bold text-white md:text-4xl w-full flex flex-wrap px-10 text-center">
       Hallmark University Administrative building, Ijebu, Ogun State. 
       
@@ -95,13 +95,13 @@ const SkeletonFour = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && 'mx-0 px-3'} flex justify-center items-center flex-wrap flex-col`}>
-      <p className="text-xl font-bold text-white md:text-4xl max-w-lg flex flex-wrap text-center">
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && 'mx-0 px-3 w-full'} flex justify-center items-center flex-wrap flex-col`}>
+      <p className={`text-xl font-bold text-white md:text-4xl max-w-lg flex flex-wrap text-center ${!isDesktop && 'px-3 w-full'}`}>
 
         Serene Residentials
       </p>
       <p className="text-base font-normal text-white"></p>
-      <p className={`${!isDesktop && 'px-3'} max-w-lg my-4 text-base font-normal text-neutral-200`}>
+      <p className={`${!isDesktop && 'px-3 w-full'} max-w-lg my-4 text-base font-normal text-neutral-200`}>
       A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
       perfect place to relax, unwind, and enjoy life.
       </p>

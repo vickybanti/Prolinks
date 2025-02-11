@@ -95,7 +95,7 @@ const SelectedCard = ({ selected }: { selected: Card | null; onClick: () => void
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className={`bg-transparent h-full w-full flex px-20 flex-col justify-center rounded-lg shadow-2xl relative z-[60] ${!isDesktop && 'w-full px-0 h-full ml-[-120px]'}`}>
+    <div className={`bg-transparent h-full w-full flex px-20 flex-col justify-center rounded-lg shadow-2xl relative z-[60] ${!isDesktop && 'w-full px-0 h-full ml-[-100px]'}`}>
       <motion.div
         initial={{
           opacity: 0,

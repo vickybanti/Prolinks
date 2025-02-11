@@ -22,7 +22,7 @@ export function Socials() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className={`2xl:py-32 lg:py-44 flex h-full max-w-full px-40 ${!isDesktop && 'socials'}`}
+        className={`2xl:py-32 lg:pt-96 flex h-full max-w-full px-40 ${!isDesktop && 'socials'}`}
       >
         <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-36">
         <div className="flex flex-col">
