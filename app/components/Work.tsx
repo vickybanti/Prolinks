@@ -23,7 +23,7 @@ const Work = () => {
       <div className="flex flex-col w-full gap-4 leading-10 text-center uppercase md:text-left">
         <h2 className="font-semibold text-white text-md">What we do</h2>
         <h1 className="text-3xl font-bold md:text-4xl text-white/30 leading-relax workHeading">
-          We know the <Highlight className="text-black dark:text-white">  ins and outs </Highlight> of luxurious buildings
+          We know the <Highlight className="text-white dark:text-white">  ins and outs </Highlight> of luxurious buildings
         </h1>
         <p className="text-[#A08C5B]"> And it shows in our magnificent edifices ALL over the big city of Lagos 
 

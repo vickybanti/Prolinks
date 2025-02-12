@@ -49,7 +49,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
             )}
             layoutId={`card-${card.id}`}
           >
-              <h1>{card.title}</h1>
+              <h1>{selected?.id ? '' : card.title}</h1>
             {selected?.id === card.id && 
             <SelectedCard selected={selected} onClick={handleOutsideClick}/>}
             

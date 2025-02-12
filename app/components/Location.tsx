@@ -17,13 +17,13 @@ export const Location = () => {
         </div>
 
         {/* Card Grid */}
-        <div className="xl:flex xl:flex-wrap xl:gap-5 lg:grid lg:grid-cols-2 justify-between mt-8 ">
+        <div className="justify-between mt-8 overflow-hidden lg:w-screen xl:flex xl:flex-wrap xl:gap-5">
           {/* First Row (3 Cards) */}
-          <div className="flex flex-wrap w-full 2xl:gap-44 lg:gap-4 md:gap-8 location-grid">
+          <div className="flex flex-wrap w-full 2xl:gap-[12.7rem] lg:gap-10 md:gap-8 location-grid">
             <Card
               image="/assets/dertyuio.jpg"
               title="Ipaja"
-              className="2xl:basis-[32%] 2xl:w-[150%] lg:w-full h-72 md:full xl:h-72"
+              className="2xl:basis-[32%] 2xl:w-[159%] lg:w-[106%] h-72 md:full xl:h-72"
               subtitle="5-BEDROOM DUPLEX"
               ContentSubtitle="Residentials"
               colour="black"
@@ -32,7 +32,7 @@ export const Location = () => {
 
             <Card
               image="/assets/completed/Library.jpg"
-              className="2xl:basis-[32%] 2xl:w-[150%] lg:w-full h-72 md:full xl:h-72"
+              className="2xl:basis-[32%] 2xl:w-[159%] lg:w-[106%] h-72 md:full xl:h-72"
               title="Hallmark"
               subtitle="Library"
               ContentSubtitle="School library"
@@ -42,7 +42,7 @@ export const Location = () => {
 
             <Card
               image="/assets/completed/20210917_122818.jpg"
-              className="2xl:basis-[32%] 2xl:w-[150%] lg:w-full h-72 md:full xl:h-72"
+              className="2xl:basis-[32%] 2xl:w-[159%] lg:w-[106%] h-72 md:full xl:h-72"
               title="Lekki"
               subtitle="City Mall"
               ContentSubtitle="Shopping"
@@ -54,10 +54,10 @@ export const Location = () => {
           </div>
 
           {/* Second Row (2 Cards) */}
-          <div className={`${!isDesktop && 'loc-grid location-grid'} flex flex-wrap w-full 2xl:gap-[27rem] lg:gap-44 md:gap-44`}>
+          <div className={`${!isDesktop && 'loc-grid location-grid'} flex flex-wrap w-full 2xl:gap-[29rem] lg:gap-56 md:gap-44`}>
             <Card
               image="/assets/office.jpg"
-              className="2xl:basis-[49%] 2xl:w-[226.2%] lg:w-[153%] h-72 md:[153%] xl:h-72"
+              className="2xl:basis-[49%] 2xl:w-[242%] lg:w-[160%] h-72 md:[153%] xl:h-72"
               title="WEMPCOROAD"
               subtitle="MIXED-USE BUILDINGS"
               ContentSubtitle="Commercial/Office building"
@@ -67,7 +67,7 @@ export const Location = () => {
 
             <Card
               image="/assets/completed/Westgate.png"
-              className="2xl:basis-[49%] 2xl:w-[226.2%] lg:w-[153%] h-72 md:[153%] xl:h-72"
+              className="2xl:basis-[49%] 2xl:w-[242%] lg:w-[160%] h-72 md:[153%] xl:h-72"
               title="Magodo"
               subtitle="Shopping"
               colour="black"

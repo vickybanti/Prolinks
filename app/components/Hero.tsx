@@ -118,7 +118,7 @@ const cards = [
     className: "2xl:col-span-2 lg:col-span-2 lg:h-[450px] 2xl:h-[450px]",
     thumbnail:
       "/assets/completed/Hallmark-1280x720.jpg",
-    title:"Administrative buildings"
+    title: "Administrative buildings"
 
       },
   {
