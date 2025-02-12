@@ -95,7 +95,7 @@ const SkeletonFour = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && 'mx-0 px-3 w-full'} flex justify-center items-center flex-wrap flex-col`}>
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && 'mx-0 px-3 w-[300px]'} flex justify-center items-center flex-wrap flex-col`}>
       <p className={`text-xl font-bold text-white md:text-4xl max-w-lg flex flex-wrap 2xl:text-center ${!isDesktop && 'px-3 w-full'}`}>
 
         Serene Residentials
