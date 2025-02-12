@@ -70,67 +70,70 @@ const MobileNav = () => {
                 <DropdownMenuSeparator />
 
                 {/* Navigation Links */}
-                <DropdownMenuGroup className="space-y-2">
-                  {NAVLINKS.map((link) => {
-                    const isActive = link.route === pathname;
+                <DropdownMenuGroup className="flex flex-col items-center space-y-2">
+  {NAVLINKS.map((link) => {
+    const isActive = link.route === pathname;
 
-                    return (
-                      <div key={link.id}>
-                        {/* Parent Link */}
-                        {!link.productItems && (
-                          <DropdownMenuItem
-                            className={`p-4 ${
-                              isActive
-                                ? "text-[#785F37] bg-black"
-                                : "text-black bg-[#785F37] hover:text-[#785F37] hover:bg-black transition-all duration-700"
-                            }`}
-                          >
-                            <Link href={link.route}>{link.label}</Link>
-                          </DropdownMenuItem>
-                        )}
+    return (
+      <div key={link.id} className="flex flex-col items-center w-full">
+        {/* Parent Link */}
+        {!link.productItems && (
+          <DropdownMenuItem
+            className={`p-4 w-full text-center justify-center ${
+              isActive
+                ? "text-[#785F37] bg-black"
+                : "text-black bg-[#785F37] hover:text-[#785F37] hover:bg-black transition-all duration-700"
+            }`}
+          >
+            <Link href={link.route}>{link.label}</Link>
+          </DropdownMenuItem>
+        )}
 
-                        {/* Submenu */}
-                        {link.productItems && (
-                          <DropdownMenuSub>
-                            <DropdownMenuSubTrigger  className={`p-4 ${
-                              isActive
-                                ? "text-[#785F37] bg-black"
-                                : "text-black bg-[#785F37] hover:text-[#785F37] hover:bg-black transition-all duration-700"
-                            }`}>
-                              {link.label}
-                            </DropdownMenuSubTrigger>
-                            <DropdownMenuPortal>
-                              <DropdownMenuSubContent className="bg-black border-[#785F37] absolute top-10 mx-auto transform shadow-lg">
-                                {link.productItems.map((product) => (
-                                  <DropdownMenuItem
-                                    key={product.title}
-                                    className="hover:bg-[#785F37] text-[#785F37] hover:text-black transition-all duration-300"
-                                  >
-                                    <a
-                                      href={product.href}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="flex items-center space-x-3"
-                                    >
-                                      <Image
-                                        src={product.src}
-                                        alt={product.title}
-                                        width={60}
-                                        height={60}
-                                      />
-                                      <span className="w-52">{product.title}</span>
-                                    </a>
-                                  </DropdownMenuItem>
-                                ))}
-                                <DropdownMenuSeparator />
-                              </DropdownMenuSubContent>
-                            </DropdownMenuPortal>
-                          </DropdownMenuSub>
-                        )}
-                      </div>
-                    );
-                  })}
-                </DropdownMenuGroup>
+        {/* Submenu */}
+        {link.productItems && (
+          <DropdownMenuSub>
+            <DropdownMenuSubTrigger
+              className={`p-4 w-full text-center justify-center ${
+                isActive
+                  ? "text-[#785F37] bg-black"
+                  : "text-black bg-[#785F37] hover:text-[#785F37] hover:bg-black transition-all duration-700"
+              }`}
+            >
+              {link.label}
+            </DropdownMenuSubTrigger>
+            <DropdownMenuPortal>
+              <DropdownMenuSubContent className="bg-black border-[#785F37] min-w-[200px] w-auto left-1/2 -translate-x-1/2 transform shadow-lg">
+                {link.productItems.map((product) => (
+                  <DropdownMenuItem
+                    key={product.title}
+                    className="hover:bg-[#785F37] text-[#785F37] hover:text-black transition-all duration-300 flex justify-center items-center w-full"
+                  >
+                    <a
+                      href={product.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-3"
+                    >
+                      <Image
+                        src={product.src}
+                        alt={product.title}
+                        width={60}
+                        height={60}
+                      />
+                      <span className="w-52">{product.title}</span>
+                    </a>
+                  </DropdownMenuItem>
+                ))}
+                <DropdownMenuSeparator />
+              </DropdownMenuSubContent>
+            </DropdownMenuPortal>
+          </DropdownMenuSub>
+        )}
+      </div>
+    );
+  })}
+</DropdownMenuGroup>
+
               </DropdownMenuContent>
             </DropdownMenu>
           </nav>
