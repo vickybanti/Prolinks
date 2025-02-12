@@ -11,14 +11,13 @@ import {
 } from "@/app/components/ui/breadcrumb";
 import { useMediaQuery } from "../hooks/use-media-query";
 
-const PropertyCard = ({ label, description, src, propertyType,href }: {
+const PropertyCard = ({ label, description, src, propertyType }: {
   label: string;
   description: string;
   images?: string[];
   src: string[];
   alt?: string;
   propertyType: string;
-  href?:string;
 }) => {
   const isDesktop = useMediaQuery("(min-width: 820px)");
 
