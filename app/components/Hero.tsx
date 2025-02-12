@@ -5,42 +5,108 @@ import { motion } from "framer-motion";
 import { useMediaQuery } from "../hooks/use-media-query";
 import Link from "next/link";
 
+
 export function Hero() {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
+    
   return (
-    <div className={`bg-black h-screen py-10 ${!isDesktop && 'flex flex-col'}`}>
-      <motion.div
-        initial={{ opacity: 0.0, y: -50 }}
+    <div className={`bg-black h-screen py-10 ${!isDesktop && 'hero'}`}>
+    <motion.div
+    initial={{ opacity: 0.0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="max-w-full 2xl:py-24 lg:py-44 px-8"
-      >
-        <LayoutGrid cards={cards} />
-      </motion.div>
+  
+        className="max-w-full 2xl:py-24 lg:py-44 px-8">
+      <LayoutGrid cards={cards} />
+    </motion.div>
     </div>
   );
 }
 
-interface SkeletonComponentProps {
-  title: string;
-  description: string;
-  link: string;
-  href: string;
-}
+const SkeletonOne = () => {
+    const isDesktop = useMediaQuery("(min-width: 768px)");
 
-const SkeletonComponent: React.FC<SkeletonComponentProps> = ({ title, description, link, href }) => {
+
   return (
-    <div className="h-full w-full px-5 py-4 flex flex-col items-center text-center">
-      <p className="text-xl font-bold text-white md:text-4xl max-w-lg">{title}</p>
-      <p className="my-4 text-base font-normal text-neutral-200">{description}</p>
-      <Link href={href} className="text-white p-3 bg-[#A08C5B] hover:text-black my-10">
-        {link}
-      </Link>
+    <div className={`h-full 2xl:px-20 py-2 2xl:mx-auto ${!isDesktop && ' w-full ml-[-150px] px-2 text-[15px]'} flex justify-center items-center flex-wrap flex-col`}>
+      <p className="text-xl font-bold text-white md:text-4xl w-full flex flex-wrap px-10 2xl:text-center">
+      Hallmark University Administrative building, Ijebu, Ogun State. 
+      
+
+      </p>
+      <p className="text-base font-normal text-white"></p>
+      <p className={`${!isDesktop && 'px-7 ml-3'} 2xl:max-w-lg my-4 text-base font-normal text-neutral-200`}>
+      Inspiring innovation and learning at Hallmark 
+      University, Ijebu-Itele, Ogun State.
+
+
+      </p>
+      <Link href={`/property-type/educational`} className="text-white p-3 bg-[#A08C5B] hover:text-black my-10">See related projects</Link>
+
+    </div>
+  );
+};
+
+const SkeletonTwo = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
+  return (
+    <div className={`h-full 2xl:px-20 py-2 2xl:mx-auto ${!isDesktop && 'mx-0 px-3'} flex justify-center items-center flex-wrap flex-col`}>
+      <p className="text-xl font-bold text-white md:text-4xl w-full flex-flex-wrap px-10 2xl:text-center">
+      Westgate Mall, Magodo Lagos premier shopping destination.
+      </p>
+      <p className="text-base font-normal text-white"></p>
+      <p className={`${!isDesktop && 'px-3'} 2xl:max-w-lg my-4 text-base font-normal text-neutral-200`}>
+      Redefining retail experiences at Westgate Mall, Magodo Lagos premier shopping destination
+      </p>
+      <Link href={`/property-type/shopping`} className="text-white p-3 bg-[#A08C5B] hover:text-black my-10">See related projects</Link>
+
+    </div>
+  );
+};
+const SkeletonThree = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
+  return (
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && 'mx-0 px-3'} flex justify-center items-center flex-wrap flex-col`}>
+      <p className="text-xl font-bold text-white md:text-4xl max-w-lg flex flex-wrap px-10 text-center">
+      Lascofedd
+        Office buildings
+      </p>
+      <p className="text-base font-normal text-white"></p>
+      <p className={`${!isDesktop && 'px-3'} max-w-lg my-4 text-base font-normal text-neutral-200`}>
+      Modern workspace reimagined
+       – where productivity meets innovative design.
+
+
+        
+      </p>
+      <Link href={`/property-type/commercial`} className="text-white p-3 bg-[#A08C5B] hover:text-black my-10">See related projects</Link>
+
+    </div>
+  );
+};
+const SkeletonFour = () => {
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+
+  return (
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && 'mx-0 px-3 w-full'} flex justify-center items-center flex-wrap flex-col`}>
+      <p className={`text-xl font-bold text-white md:text-4xl max-w-lg flex flex-wrap 2xl:text-center ${!isDesktop && 'px-3 w-full'}`}>
+
+        Serene Residentials
+      </p>
+      <p className="text-base font-normal text-white"></p>
+      <p className={`${!isDesktop && 'px-3 w-full'} 2xl:max-w-lg my-4 text-base font-normal text-neutral-200`}>
+      A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
+      perfect place to relax, unwind, and enjoy life.
+      </p>
+      <Link href={`/property-type/residentials`} className="text-white p-3 bg-[#A08C5B] hover:text-black my-10">See related projects</Link>
+
     </div>
   );
 };
@@ -48,46 +114,35 @@ const SkeletonComponent: React.FC<SkeletonComponentProps> = ({ title, descriptio
 const cards = [
   {
     id: 1,
-    content: <SkeletonComponent 
-                title="Hallmark University Administrative building, Ijebu, Ogun State." 
-                description="Inspiring innovation and learning at Hallmark University, Ijebu-Itele, Ogun State." 
-                link="See related projects" 
-                href="/property-type/educational" 
-              />,
-    className: "w-full lg:col-span-2 lg:h-[300px] 2xl:h-[450px]",
-    thumbnail: "/assets/completed/Hallmark-1280x720.jpg",
-  },
+    content: <SkeletonOne />,
+    className: "2xl:col-span-2 lg:col-span-2 lg:h-[300px] 2xl:h-[450px]",
+    thumbnail:
+      "/assets/completed/Hallmark-1280x720.jpg",
+    title:"Administrative buildings"
+
+      },
   {
     id: 2,
-    content: <SkeletonComponent 
-                title="Westgate Mall, Magodo Lagos premier shopping destination." 
-                description="Redefining retail experiences at Westgate Mall, Magodo Lagos." 
-                link="See related projects" 
-                href="/property-type/shopping" 
-              />,
-    className: "w-full lg:col-span-1",
-    thumbnail: "assets/completed/IMG-20190916-WA0022.jpg",
-  },
+    content: <SkeletonTwo />,
+    className: "2xl:col-span-1 lg:col-span-1",
+    title:"Shopping mall",
+    thumbnail:
+      
+    "assets/completed/IMG-20190916-WA0022.jpg" },
   {
     id: 3,
-    content: <SkeletonComponent 
-                title="Lascofedd Office Buildings" 
-                description="Modern workspace reimagined – where productivity meets innovative design." 
-                link="See related projects" 
-                href="/property-type/commercial" 
-              />,
-    className: "w-full lg:col-span-1 lg:h-[300px] 2xl:h-[450px]",
-    thumbnail: "/assets/Lascofedd.jpg",
-  },
+    content: <SkeletonThree />,
+    className: "2xl:col-span-1 lg:col-span-1 lg:h-[300px] 2xl:h-[450px]",
+    title:"Office building",
+    thumbnail:
+     "/assets/Lascofedd.jpg" 
+    },
   {
     id: 4,
-    content: <SkeletonComponent 
-                title="Serene Residentials" 
-                description="A house surrounded by greenery and nature’s beauty. The perfect place to relax, unwind, and enjoy life." 
-                link="See related projects" 
-                href="/property-type/residentials" 
-              />,
-    className: "w-full lg:col-span-2",
-    thumbnail: "assets/jj1_5 - Photo.jpg",
-  },
+    content: <SkeletonFour />,
+    className: "2xl:col-span-2 lg:col-span-2",
+    title:"residentials",
+    thumbnail:
+    "assets/jj1_5 - Photo.jpg"      
+},
 ];

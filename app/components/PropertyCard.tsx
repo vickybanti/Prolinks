@@ -22,8 +22,8 @@ const PropertyCard = ({ label, description, src, propertyType }: {
   const isDesktop = useMediaQuery("(min-width: 820px)");
 
   return (
-    <div className='mt-24 overflow-hidden 2xl:mt-32'>
-      <div className='flex flex-col w-screen h-auto px-20 py-10'>
+    <div className={`mt-24 overflow-hidden 2xl:mt-32 `}>
+      <div className={`flex flex-col w-screen h-auto px-20 py-10 ${!isDesktop && 'px-8'}`}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
