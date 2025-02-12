@@ -42,7 +42,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? `rounded-lg cursor-pointer absolute inset-0 max-h-full max-w-full ${!isDesktop && 'h-1/2 w-full px-5 py-8'} m-auto z-50 flex justify-center items-center flex-wrap flex-col`
+                ? `rounded-lg cursor-pointer absolute inset-0 min-h-full min-w-full ${!isDesktop && 'h-1/2 w-full px-5 py-8'} m-auto z-50 flex justify-center items-center flex-wrap flex-col`
                 : lastSelected?.id === card.id
                 ? "z-40 bg-white rounded-xl h-full w-full"
                 : "bg-white rounded-xl h-full w-full"
@@ -95,7 +95,7 @@ const SelectedCard = ({ selected }: { selected: Card | null; onClick: () => void
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className={`bg-transparent h-full w-full flex px-20 flex-col justify-center rounded-lg shadow-2xl relative z-[60] ${!isDesktop && 'w-full px-0 h-full ml-[-100px]'}`}>
+    <div className={`bg-transparent h-full w-full flex px-20 flex-col justify-center rounded-lg shadow-2xl relative z-[60] ${!isDesktop && 'w-full px-0 h-full ml-[-300px]'}`}>
       <motion.div
         initial={{
           opacity: 0,
@@ -103,7 +103,7 @@ const SelectedCard = ({ selected }: { selected: Card | null; onClick: () => void
         animate={{
           opacity: 0.6,
         }}
-        className={`absolute inset-0 z-10 w-full h-full px-4 ${!isDesktop && 'w-full py-4 px-0'} bg-black opacity-60`}
+        className={`absolute inset-0 z-10 w-full h-full px-4 ${!isDesktop && 'w-screen py-4 px-0'} bg-black opacity-60`}
       />
       <motion.div
         layoutId={`content-${selected?.id}`}

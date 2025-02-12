@@ -11,7 +11,7 @@ export function Hero() {
 
     
   return (
-    <div className={`bg-black h-screen py-10 ${!isDesktop && 'hero'}`}>
+    <div className={`bg-black h-screen ${!isDesktop && 'hero'}`}>
     <motion.div
     initial={{ opacity: 0.0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +21,7 @@ export function Hero() {
           ease: "easeInOut",
         }}
   
-        className="max-w-full px-8 2xl:py-24 lg:py-44">
+        className="max-w-full px-8 2xl:py-24 lg:py-32">
       <LayoutGrid cards={cards} />
     </motion.div>
     </div>
@@ -33,7 +33,7 @@ const SkeletonOne = () => {
 
 
   return (
-    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && '-ml-14 px-3 w-[300px]'} flex justify-center items-center flex-wrap flex-col`}>
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && '-ml-20 px-3 w-[300px]'} flex justify-center items-center flex-wrap flex-col`}>
       <p className="flex flex-wrap w-full px-10 text-xl font-bold text-white md:text-4xl 2xl:text-center">
       Hallmark University Administrative building, Ijebu, Ogun State. 
       
@@ -56,7 +56,7 @@ const SkeletonTwo = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && '-ml-14 px-3 w-[300px]'} flex justify-center items-center flex-wrap flex-col`}>
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && '-ml-10 px-3 w-[300px]'} flex justify-center items-center flex-wrap flex-col`}>
       <p className="w-full px-10 text-xl font-bold text-white md:text-4xl flex-flex-wrap 2xl:text-center">
       Westgate Mall, Magodo Lagos premier shopping destination.
       </p>
@@ -96,7 +96,7 @@ const SkeletonFour = () => {
 
   return (
     <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && '-ml-14 px-3 w-[300px]'} flex justify-center items-center flex-wrap flex-col`}>
-      <p className={`text-xl font-bold text-white md:text-4xl max-w-lg flex flex-wrap 2xl:text-center ${!isDesktop && 'px-3 w-full'}`}>
+      <p className={`text-xl font-bold text-white md:text-4xl max-w-lg flex flex-wrap 2xl:text-center `}>
 
         Serene Residentials
       </p>
@@ -115,7 +115,7 @@ const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
-    className: "2xl:col-span-2 lg:col-span-2 lg:h-[300px] 2xl:h-[450px]",
+    className: "2xl:col-span-2 lg:col-span-2 lg:h-[450px] 2xl:h-[450px]",
     thumbnail:
       "/assets/completed/Hallmark-1280x720.jpg",
     title:"Administrative buildings"

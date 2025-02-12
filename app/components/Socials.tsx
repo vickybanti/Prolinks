@@ -22,14 +22,14 @@ export function Socials() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className={`2xl:py-32 lg:pt-96 flex h-full max-w-full px-40 ${!isDesktop && 'socials'}`}
+        className={`2xl:py-32 lg:py-44 mt-64 flex h-full max-w-full px-40 ${!isDesktop && 'socials'}`}
       >
         <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-12 md:gap-36">
         <div className="flex flex-col">
         <div className="text-3xl font-bold uppercase dark:text-black-400 text-white/50">
         
         <div className={`leading-[72px] font-bold md:text-2xl lg:text-3xl text-neutral-700 dark:text-white  lg:w-full md:w-1/2 `}>
-        <h1 className={`text-3xl font-bold md:text-4xl ${!isDesktop && 'pr-7'}`}>Top notch <Highlight className="text-black dark:text-white"> projects </Highlight>  with a perfect mix of....</h1>
+        <h1 className={`leading-[120px] text-3xl font-bold md:text-4xl ${!isDesktop && 'pr-7'}`}>Top notch <Highlight className="text-black dark:text-white"> projects </Highlight>  with a perfect mix of....</h1>
            </div>
         
 

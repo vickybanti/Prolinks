@@ -46,7 +46,7 @@ export function Card({
         }}
       >
         {/* Overlay */}
-       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-10 z-10 hover:bg-black/45"></div>
+       <div className="absolute top-0 left-0 z-10 w-full h-full bg-black bg-opacity-10 hover:bg-black/45"></div>
         {/* Author Info */}
         <div className="z-10 flex flex-row items-center space-x-4 ">
            <div className={`h-5 w-5 rounded-full border-2 border-${colour} object-cover text-white `}>
@@ -69,10 +69,10 @@ export function Card({
           <p className="relative z-10 my-4 text-xs font-normal text-gray-50">
             {ContentSubtitle}
           </p>
-          <Link href={href} className="flex hover:bg-black/45 p-2">
-          <p className="relative z-10 my-4 text-sm font-thin text-gray-50 "> Details</p>
+          <Link href={href} className="flex px-2 my-3 hover:bg-black/45">
+          <p className="relative z-10 text-sm font-thin text-gray-50"> Details</p>
           <div className="w-4">
-          <Image src="https://img.icons8.com/?size=100&id=59862&format=png&color=179797" alt="arrow" width={30} height={3} className="mt-5"/>
+          <Image src="https://img.icons8.com/?size=100&id=59862&format=png&color=179797" alt="arrow" width={30} height={3} />
           </div>
           </Link>
           

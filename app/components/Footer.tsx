@@ -84,7 +84,7 @@ const Footer = () => {
            width="32px"
            height="2px"
            className="object-contain"/>
-           <a href="mailto:tundeadekola@yahoo.com" className="p-3 text-sm text-blue-500 hover:underline">
+           <a href="mailto:tundeadekola@yahoo.com" className="p-3 text-sm text-[#A08C5B] hover:underline">
   tundeadekola@yahoo.com
 </a>
 
