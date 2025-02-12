@@ -75,11 +75,12 @@ body {
     }
 
     .socials{
-     padding:20px 40px;
+     padding:20px 60px;
      overflow:hidden;
     }
     .socialsFont{
       font-size:12px;
+      padding-right:2px;
     }
     .socialsGrid{
       display:flex;

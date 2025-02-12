@@ -28,15 +28,15 @@ export function Socials() {
         <div className="flex flex-col">
         <div className="text-3xl font-bold uppercase dark:text-black-400 text-white/50">
         
-        <div className="leading-[72px] font-bold md:text-2xl lg:text-3xl text-neutral-700 dark:text-white  lg:w-full md:w-1/2 ">
-        <h1 className="text-3xl font-bold md:text-4xl">Top notch <Highlight className="text-black dark:text-white"> projects </Highlight>  with a perfect mix of....</h1>
+        <div className={`leading-[72px] font-bold md:text-2xl lg:text-3xl text-neutral-700 dark:text-white  lg:w-full md:w-1/2 `}>
+        <h1 className={`text-3xl font-bold md:text-4xl ${!isDesktop && 'pr-7'}`}>Top notch <Highlight className="text-black dark:text-white"> projects </Highlight>  with a perfect mix of....</h1>
            </div>
         
 
         </div>
-        <div className="flex font-extralight md:text-sm text-[#A08C5b] py-10 text-lg">
+        <div className={`flex font-extralight md:text-sm text-[#A08C5b] py-10 text-lg `}>
         
-        <p className="px-4 socialsFont">ARCHITECTURE</p>
+        <p className={`px-4 socialsFont`}>ARCHITECTURE</p>
              <p className="px-4 socialsFont">
                 ENGINEERING </p>
              <p className="px-4 socialsFont"> CONSTRUCTION</p>

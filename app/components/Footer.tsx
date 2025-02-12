@@ -12,7 +12,7 @@ const Footer = () => {
   
   return (
     <div
-      className="relative max-w-full overflow-hidden bg-fixed bg-center bg-cover container h-full bg-black"
+      className="container relative h-full max-w-full overflow-hidden bg-fixed bg-black bg-center bg-cover"
       style={{
         backgroundImage: `url(/assets/footerPics.jpg)`,
         backgroundRepeat: "no-repeat",
@@ -84,13 +84,16 @@ const Footer = () => {
            width="32px"
            height="2px"
            className="object-contain"/>
-            <p className="p-3 text-sm">tundeadekola@yahoo.com</p>
+           <a href="mailto:tundeadekola@yahoo.com" className="p-3 text-sm text-blue-500 hover:underline">
+  tundeadekola@yahoo.com
+</a>
+
             </div>
           </div>
         </div>
 
         {/* Copyright Section */}
-        <div className="text-center mt-3 pt-3">
+        <div className="pt-3 mt-3 text-center">
           <p className="text-[#A08C5B] text-xs">
             &copy; 2025 Project Prolinks. All Rights Reserved.
           </p>
