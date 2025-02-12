@@ -627,23 +627,23 @@ export const NAVLINKS = [
         {
           id:1,
           label:"Hallmark",
-          route:"/property/hallmark"
+          href:"hallmark"
           
         },
         {
           id:2,
           label:"West gate",
-          route:"/property/west-gate-supermarket-and-pharmacy"
+          href:"west-gate-supermarket-and-pharmacy"
         },
         {
           id:3,
           label:"Iyana ipaja",
-          route:"/property/5-bedroom-duplex"
+          href:"5-bedroom-duplex"
         },
         {
           id:4,
           label:"Ikorodu",
-          route:"/property/ikorodu-project"
+          href:"ikorodu-project"
         },
       ]
     },

@@ -11,13 +11,14 @@ import {
 } from "@/app/components/ui/breadcrumb";
 import { useMediaQuery } from "../hooks/use-media-query";
 
-const PropertyCard = ({ label, description, src, propertyType }: {
+const PropertyCard = ({ label, description, src, propertyType,href }: {
   label: string;
   description: string;
   images?: string[];
   src: string[];
   alt?: string;
   propertyType: string;
+  href?:string;
 }) => {
   const isDesktop = useMediaQuery("(min-width: 820px)");
 
@@ -60,7 +61,7 @@ const PropertyCard = ({ label, description, src, propertyType }: {
           </div>
 
           {/* Secondary Images */}
-          <div className='hidden md:flex md:flex-col md:w-1/3 gap-3 2xl:flex 2xl:flex-col 2xl:w-1/3 2xl:gap-3'>
+          <div className='hidden gap-3 md:flex md:flex-col md:w-1/3 2xl:flex 2xl:flex-col 2xl:w-1/3 2xl:gap-3'>
             {src.length > 1 && (
               <Image 
                 src={src[1]} 
@@ -96,7 +97,7 @@ const PropertyCard = ({ label, description, src, propertyType }: {
       </div>
 
       {/* Description Section */}
-      <div className='w-full px-10 md:px-20 py-10 '>
+      <div className='w-full px-10 py-10 md:px-20 '>
         <h1 className='py-5 text-2xl text-white'>DESCRIPTION</h1>
         <p className='text-sm text-white'>{description}</p>
       </div>
