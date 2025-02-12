@@ -36,10 +36,10 @@ export function Socials() {
         </div>
         <div className={`flex font-extralight md:text-sm text-[#A08C5b] py-10 text-lg `}>
         
-        <p className={`px-4 socialsFont`}>ARCHITECTURE</p>
-             <p className="px-4 socialsFont">
+        <p className={`pr-2 socialsFont`}>ARCHITECTURE</p>
+             <p className="px-2 socialsFont">
                 ENGINEERING </p>
-             <p className="px-4 socialsFont"> CONSTRUCTION</p>
+             <p className="px-2 socialsFont"> CONSTRUCTION</p>
 
         </div>
         

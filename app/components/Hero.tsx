@@ -101,7 +101,7 @@ const SkeletonFour = () => {
         Serene Residentials
       </p>
       <p className="text-base font-normal text-white"></p>
-      <p className={`${!isDesktop && 'px-3 w-[500px]'} 2xl:max-w-lg my-4 text-base font-normal text-neutral-200`}>
+      <p className={`${!isDesktop && 'px-3 w-[200px]'} 2xl:max-w-lg my-4 text-base font-normal text-neutral-200`}>
       A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
       perfect place to relax, unwind, and enjoy life.
       </p>
