@@ -71,6 +71,7 @@ const isDesktop = useMediaQuery("(min-width: 768px)");
               description={item.description}
               title={item.title}
               property={item.propertyType}
+              propertyLabel={item.propertyType}
             />
           ))}
         </div>

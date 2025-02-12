@@ -45,12 +45,13 @@ const Footer = () => {
             <div className="flex flex-col w-full" key={footer.id}>
               <h2 className="text-lg font-semibold">{footer.title}</h2>
               {footer.subTitle.map((sub) => (
-                <p
+                <Link
+                href={`/property/${sub.route}`}
                   key={sub.id}
                   className="text-sm w-1/2 py-1 cursor-pointer font-light transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black"
                 >
                   {sub.label}
-                </p>
+                </Link>
               ))}
             </div>
           ))}

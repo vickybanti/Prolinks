@@ -52,8 +52,8 @@ const Page = () => {
 
       >
           <div className={` ${!isDesktop && 'work'} flex flex-col py-44 px-40 bg-black/90`}>
-              <div className="flex items-center justify-center py-10 flex-col w-full gap-4 leading-10 text-center uppercase md:text-left">
-                  <h2 className=" font-semibold text-white text-md">What we do</h2>
+              <div className="flex flex-col items-center justify-center w-full gap-4 py-10 leading-10 text-center uppercase md:text-left">
+                  <h2 className="font-semibold text-white  text-md">What we do</h2>
                   <h1 className="text-5xl font-bold text-white/60 leading-[80px] text-center py-5">
                       We deliver <Highlight className="text-black dark:text-white">  EXCELLENCE </Highlight> in all our services
                   </h1>
@@ -77,7 +77,7 @@ const Page = () => {
                       </div>
                       <div className="flex flex-col">
                           <h3 className="text-[#A08C5B] text-2xl font-semibold ">Design</h3>
-                          <span className="text-[8px] text-white/60 py-6 leading-[24px]">We understand the importance of visually capturing architectural designs to showcase the full potential of a property by seamlessly blending 2D and 3D techniques to provide our clients with
+                          <span className="text-xs text-white/60 py-6 leading-[24px]">We understand the importance of visually capturing architectural designs to showcase the full potential of a property by seamlessly blending 2D and 3D techniques to provide our clients with
                               a comprehensive visual representation of their projects.</span>
                       </div>
                   </div>

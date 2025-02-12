@@ -165,7 +165,7 @@ body {
   .servicesGrid{
     display:flex;
    flex-direction:column;
-   gap:80px;
+   gap:150px;
    padding:10px;
   }
   .servicesCarousel{

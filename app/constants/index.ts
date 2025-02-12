@@ -600,17 +600,20 @@ export const NAVLINKS = [
       "subTitle":[
         {
         id:5,
-        label:"About"
+        label:"Services",
+        route:"/services"
       },
 
       {
         id:2,
-        label:"Properties"
+        label:"Properties",
+        route:"/projects"
       },
 
       {
         id:3,
-        label:"Privacy policy"
+        label:"Privacy policy",
+        route:"/privacy"
       },
     ]
 
@@ -623,19 +626,24 @@ export const NAVLINKS = [
       "subTitle":[
         {
           id:1,
-          label:"Hallmark"
+          label:"Hallmark",
+          route:"/property/hallmark"
+          
         },
         {
           id:2,
-          label:"West gate"
+          label:"West gate",
+          route:"/property/west-gate-supermarket-and-pharmacy"
         },
         {
           id:3,
-          label:"Lekki"
+          label:"Iyana ipaja",
+          route:"/property/5-bedroom-duplex"
         },
         {
           id:4,
-          label:"Ikoyi"
+          label:"Ikorodu",
+          route:"/property/ikorodu-project"
         },
       ]
     },

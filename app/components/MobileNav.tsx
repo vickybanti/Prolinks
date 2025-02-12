@@ -24,7 +24,7 @@ import { useMediaQuery } from "../hooks/use-media-query";
 
 const MobileNav = () => {
   const pathname = usePathname();
-  const isDesktop = useMediaQuery("(min-width: 464px)");
+  const isDesktop = useMediaQuery("(min-width: 378px)");
 
   return (
     <div>

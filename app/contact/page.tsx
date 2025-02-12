@@ -103,7 +103,7 @@ const Page = () => {
                          transition={{ ease: "easeInOut", duration: 1.5 }}
                          whileInView={{ opacity: 1 }}
                          viewport={{ once: false }} className={`${!isDesktop && 'workGrid'} flex items-center justify-between gap-4 bg-black py-44`}>
-                    <div className={`items-center w-1/2 h-full px-40  py-20 ${!isDesktop && 'work'}`}>
+                    <div className={`items-center w-1/2 h-full 2xl:px-40  py-20 ${!isDesktop && 'w-full px-10'}`}>
         <h1 className="text-[#A08C5B] text-5xl py-3">Contact us</h1>
         <div className="flex items-center]">
               
@@ -131,7 +131,9 @@ const Page = () => {
            width="32px"
            height="2px"
            className="object-contain"/>
-            <p className="p-3 text-sm text-white">tundeadekola@yahoo.com</p>
+            <a href="mailto:tundeadekola@yahoo.com" className="p-3 text-sm text-white hover:underline">
+  tundeadekola@yahoo.com
+</a>
             </div>
           </div>
         <div className={`justify-end w-1/2 overflow-hidden px-32 py-10 h-full bg-[#A08C5B] mr-10 ${!isDesktop && 'w-[80%] px-8 h-1/2 mx-auto'} `}>
