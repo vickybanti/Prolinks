@@ -118,7 +118,7 @@ const MobileNav = () => {
                                         width={60}
                                         height={60}
                                       />
-                                      <span className="w-52">{product.title}</span>
+                                      <span>{product.title}</span>
                                     </a>
                                   </DropdownMenuItem>
                                 ))}

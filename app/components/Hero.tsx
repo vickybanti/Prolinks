@@ -21,7 +21,7 @@ export function Hero() {
           ease: "easeInOut",
         }}
   
-        className="max-w-full 2xl:py-24 lg:py-44 px-8">
+        className="max-w-full px-8 2xl:py-24 lg:py-44">
       <LayoutGrid cards={cards} />
     </motion.div>
     </div>
@@ -34,7 +34,7 @@ const SkeletonOne = () => {
 
   return (
     <div className={`h-full 2xl:px-20 py-2 2xl:mx-auto ${!isDesktop && ' w-full ml-[-150px] px-2 text-[15px]'} flex justify-center items-center flex-wrap flex-col`}>
-      <p className="text-xl font-bold text-white md:text-4xl w-full flex flex-wrap px-10 2xl:text-center">
+      <p className="flex flex-wrap w-full px-10 text-xl font-bold text-white md:text-4xl 2xl:text-center">
       Hallmark University Administrative building, Ijebu, Ogun State. 
       
 
@@ -57,7 +57,7 @@ const SkeletonTwo = () => {
 
   return (
     <div className={`h-full 2xl:px-20 py-2 2xl:mx-auto ${!isDesktop && 'mx-0 px-3'} flex justify-center items-center flex-wrap flex-col`}>
-      <p className="text-xl font-bold text-white md:text-4xl w-full flex-flex-wrap px-10 2xl:text-center">
+      <p className="w-full px-10 text-xl font-bold text-white md:text-4xl flex-flex-wrap 2xl:text-center">
       Westgate Mall, Magodo Lagos premier shopping destination.
       </p>
       <p className="text-base font-normal text-white"></p>
@@ -74,7 +74,7 @@ const SkeletonThree = () => {
 
   return (
     <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && 'mx-0 px-3'} flex justify-center items-center flex-wrap flex-col`}>
-      <p className="text-xl font-bold text-white md:text-4xl max-w-lg flex flex-wrap px-10 text-center">
+      <p className="flex flex-wrap max-w-lg px-10 text-xl font-bold text-center text-white md:text-4xl">
       Lascofedd
         Office buildings
       </p>
@@ -101,7 +101,7 @@ const SkeletonFour = () => {
         Serene Residentials
       </p>
       <p className="text-base font-normal text-white"></p>
-      <p className={`${!isDesktop && 'px-3 w-full'} 2xl:max-w-lg my-4 text-base font-normal text-neutral-200`}>
+      <p className={`${!isDesktop && 'px-3 w-[500px]'} 2xl:max-w-lg my-4 text-base font-normal text-neutral-200`}>
       A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
       perfect place to relax, unwind, and enjoy life.
       </p>
