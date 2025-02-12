@@ -100,7 +100,7 @@ const MobileNav = () => {
                               {link.label}
                             </DropdownMenuSubTrigger>
                             <DropdownMenuPortal>
-                              <DropdownMenuSubContent className="bg-black border-[#785F37] w-[500px] absolute top-10 mx-auto transform shadow-lg">
+                              <DropdownMenuSubContent className="bg-black border-[#785F37] absolute top-10 mx-auto transform shadow-lg">
                                 {link.productItems.map((product) => (
                                   <DropdownMenuItem
                                     key={product.title}
@@ -118,7 +118,7 @@ const MobileNav = () => {
                                         width={60}
                                         height={60}
                                       />
-                                      <span>{product.title}</span>
+                                      <span className="w-52">{product.title}</span>
                                     </a>
                                   </DropdownMenuItem>
                                 ))}
