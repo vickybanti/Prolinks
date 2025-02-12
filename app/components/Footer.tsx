@@ -65,10 +65,14 @@ const Footer = () => {
            width="32px"
            height="2px"
            className="object-contain"/>
-           <p className="text-xs p-3 font-light cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black">
-           
-            13, Dayo Kuye close, New Oko-oba, Abulegba, Lagos
-            </p>
+           <a 
+  href="https://www.google.com/maps/search/?api=1&query=13,+Dayo+Kuye+Close,+New+Oko-Oba,+Abulegba,+Lagos" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="text-blue-500 hover:underline"
+>
+  View on Google Maps
+</a>
             </div>
             <div className="flex items-center">
               

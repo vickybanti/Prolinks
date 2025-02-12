@@ -17,7 +17,7 @@ export const Location = () => {
         </div>
 
         {/* Card Grid */}
-        <div className="justify-between mt-8 overflow-hidden lg:w-screen xl:flex xl:flex-wrap xl:gap-5">
+        <div className="justify-between mt-8 overflow-hidden lg:w-full xl:flex xl:flex-wrap xl:gap-5">
           {/* First Row (3 Cards) */}
           <div className="flex flex-wrap w-full 2xl:gap-[12.7rem] lg:gap-10 md:gap-8 location-grid">
             <Card
