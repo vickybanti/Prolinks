@@ -44,7 +44,7 @@ const PropertyPage = () => {
   }
 
   return (
-    <div className={`${!isDesktop && 'work'} px-20 mt-20 overflow-hidden text-white`}>
+    <div className={`${!isDesktop && 'work'} px-3 mt-20 overflow-hidden text-white`}>
       <div className='py-10'>
         <h1 className='text-2xl text-[#A08C5B] capitalize py-7'>{property} Projects</h1>
         <p className="text-gray-400">Explore {property} buildings</p>
@@ -56,7 +56,7 @@ const PropertyPage = () => {
           transition={{ ease: "easeInOut", duration: 1.5 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: false }}
-          className={`grid w-full h-full grid-cols-3 gap-8 mx-auto my-4 ${!isDesktop && 'projectGrid'}`}
+          className={`grid w-full h-full grid-cols-3 gap-8 my-4 ${!isDesktop && 'projectGrid'}`}
         >
           {propertyData.map((item) => (
             <PageCard
