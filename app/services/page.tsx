@@ -172,12 +172,12 @@ const Page = () => {
           </div>
 
           <motion.div
-                  initial={{ opacity: 0.0, y: 40 }}
+                  initial={{ opacity: 0.0, y: 200 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
                     delay: 0.8,
-                    duration: 1.5,
-                    ease: "easeInOut",
+                    duration: 0.5,
+                    ease: "linear",
                   }}
                  className={`flex items-center justify-between gap-4 bg-black ${!isDesktop && 'workGrid'}`}>
             
@@ -189,30 +189,37 @@ we celebrate the exquisite beauty and elegance of majestic architecture. We spec
 meticulous craftsmanship, 
 and awe-inspiring architectural feats. </p>
 </div>
-<div className={`justify-end w-1/2 h-full py-20 px-40 overflow-hidden ${!isDesktop && 'servicesCarousel'}`}>
+ <motion.div
+                  initial={{ opacity: 0.0, y: -200 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.8,
+                    duration: 0.5,
+                    ease: "linear",
+                  }} className={`justify-end w-1/2 h-full py-20 px-40 overflow-hidden ${!isDesktop && 'servicesCarousel'}`}>
 
            <Carousel slides={slides1} />
-          </div>
+          </motion.div>
           </motion.div>
 
          <motion.div
-                 initial={{ opacity: 0.0, y: -40 }}
+                 initial={{ opacity: 0.0, y: -200 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{
                    delay: 0.8,
-                   duration: 1.5,
-                   ease: "easeInOut",
+                   duration: 0.5,
+                   ease: "linear",
                  }}
                  className={`flex items-center justify-between gap-4 bg-black overflow-hidden ${!isDesktop && 'workGrid'}`}>
 {isDesktop &&
 
 <motion.div
-initial={{ opacity: 0.0, y: 40 }}
+initial={{ opacity: 0.0, y: 200 }}
 whileInView={{ opacity: 1, y: 0 }}
 transition={{
   delay: 0.8,
-  duration: 1.5,
-  ease: "easeInOut",
+  duration: 0.5,
+  ease: "linear",
 }}
  className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
 
@@ -229,12 +236,12 @@ functionality, and sustainability of each property. </p>
 
 {!isDesktop &&
           <motion.div
-          initial={{ opacity: 0.0, y: -40 }}
+          initial={{ opacity: 0.0, y: -200 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.8,
             duration: 1.5,
-            ease: "easeInOut",
+            ease: "linear",
           }} 
           className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
 
@@ -244,12 +251,12 @@ functionality, and sustainability of each property. </p>
 
           </motion.div>
           <motion.div
-                  initial={{ opacity: 0.0, y: 40 }}
+                  initial={{ opacity: 0.0, y: 200 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
                     delay: 0.8,
-                    duration: 1.5,
-                    ease: "easeInOut",
+                    duration: 0.5,
+                    ease: "linear",
                   }}
                  className={`flex items-center justify-between gap-4 bg-black ${!isDesktop && 'workGrid'}`}>
             
@@ -264,12 +271,12 @@ and awe-inspiring architectural feats. </p>
 <Button onClick={()=>router.push("/projects")} className="mt-8">See More...</Button>
 </div>
         <motion.div
-                 initial={{ opacity: 0.0, y: -40 }}
+                 initial={{ opacity: 0.0, y: -200 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{
                    delay: 1.0,
-                   duration: 1.5,
-                   ease: "easeInOut",
+                   duration: 0.5,
+                   ease: "linear",
                  }}
                  className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
 
