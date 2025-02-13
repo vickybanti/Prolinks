@@ -22,7 +22,7 @@ const PageCard = ({propertyLabel, title, description,icon, location, route }:{
 
         <Image src={icon} alt={title} className="object-cover" fill/>
         <div className="absolute flex justify-end w-full gap-2 pr-6 top-4">
-       {propertyLabel && <p className={`text-white ${propertyLabel === 'residentials' ? 'bg-[#4d964d]' :propertyLabel === 'commercial' ? 'bg-blue-400':'bg-red-950'} px-1 py-1 text-[10px] uppercase`}>{propertyLabel}</p>}
+       {propertyLabel && <p className={`text-white ${propertyLabel === 'residentials' ? 'bg-yellow-600' :propertyLabel === 'commercial' ? 'bg-red-950':propertyLabel === 'educational'?'bg-purple-800':'bg-blue-400'} px-1 py-1 text-[10px] uppercase`}>{propertyLabel}</p>}
         </div>
         
         

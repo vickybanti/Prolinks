@@ -5,7 +5,7 @@ export const COMPLETED = [
       title: "Orimolade project",
       route: "/property/orimolade",
       icon: "/assets/completed/residentials/NewOrimolad.jpg",
-      description: "5 Bedroom semi detached duplex with a basementAnd roof-top garden.",
+      description: "5 Bedroom semi detached duplex with a basement and roof-top garden.",
       location:"Orimolade Estate, Adeniyi Jones Avenue, Ikeja, Lagos",      
 
   },
@@ -15,8 +15,8 @@ export const COMPLETED = [
       propertyType:"residentials",
       route: "/property/Ikorodu",
       icon: "/assets/completed/residentials/duplex1.jpg",
-      description: "5 Bedroom semi detached duplex with a basementAnd roof-top garden.",
-      location:"OrimoladeEstate, Adeniyi Jones Avenue, Ikeja, Lagos",      
+      description: "5 Bedroom semi detached duplex with a basement and roof-top garden.",
+      location:"Orimolade Estate, Adeniyi Jones Avenue, Ikeja, Lagos",      
 
   },
   {
@@ -33,8 +33,8 @@ export const COMPLETED = [
       propertyType:"commercial",
       title: "Ogba project",
       route: "/property/ogba",
-      icon: "/assets/completed/commercial/ogba.png",
-      description: "COLITYSTUDIOS, DM AUDIOVISUALS  MANUFACTURES .",
+      icon: "/assets/Ogba.jpg",
+      description: "COLITY STUDIOS, DM AUDIO VISUALS  MANUFACTURES .",
       location:" OGBA, LAGOS STATE",  
   },
  
@@ -45,7 +45,7 @@ export const COMPLETED = [
     route: "/property/lascofedd",
     icon: "/assets/completed/commercial/Lascofedd.jpg",
     description: "LAGOS STATE CO-OPERATIVE FEDERATION (LASCOFED) MIXED-USE BUILDING .",
-    location:"  WEMPCOROAD, OGBA, LAGOSSTATE", 
+    location:"  WEMPCO ROAD, OGBA, LAGOS STATE", 
   },
 
   {
@@ -91,7 +91,7 @@ export const COMPLETED = [
     route: "/property/cmart-supermarket-and-pharmacy",
     icon: "/assets/completed/shopping/20210917_122818.jpg",
     description: "CMART SUPERMARKET AND PHARMACY",
-    location:"ABOYADACOLE,  LEKKIPHASE 1, LAGOS", 
+    location:"ABOYA DACOLE,  LEKKI PHASE 1, LAGOS", 
   }
 ]
 
@@ -145,7 +145,7 @@ export const NAVLINKS = [
               route:"/property-type/educational"
             },
             {
-              title: "Western gate",
+              title: "Western gate supermarket",
               href: "/property/west-gate-supermarket-and-pharmacy",
               src: "/assets/completed/Westgate.png",
               description:
@@ -209,7 +209,7 @@ export const NAVLINKS = [
       title: "Orimolade project",
       route: "/property/orimolade-project",
       icon: "/assets/completed/residentials/NewOrimolad.jpg",
-      description: "5 Bedroom semi detached duplex with a basementAnd roof-top garden.",
+      description: "5 Bedroom semi detached duplex with a basement and roof-top garden.",
       location:"Orimolade Estate, Adeniyi Jones Avenue, Ikeja, Lagos",      
       images:[
         {
@@ -242,8 +242,8 @@ export const NAVLINKS = [
       propertyType:"residentials",
       route: "/property/Ikorodu",
       icon: "/assets/completed/residentials/duplex1.jpg",
-      description: "5 Bedroom semi detached duplex with a basementAnd roof-top garden.",
-      location:"OrimoladeEstate, Adeniyi Jones Avenue, Ikeja, Lagos",      
+      description: "5 Bedroom semi detached duplex with a basement and roof-top garden.",
+      location:"Orimolade Estate, Adeniyi Jones Avenue, Ikeja, Lagos",      
       images:[
         {
           src:"/assets/completed/residentials/duplex2.jpg",
@@ -320,7 +320,7 @@ export const NAVLINKS = [
       title: "Ogba project",
       route: "/property/ogba-project",
       icon: "/assets/completed/commercial/ogba.jpg",
-      description: "COLITYSTUDIOS, DM AUDIOVISUALS  MANUFACTURES .",
+      description: "COLITY STUDIOS, DM AUDIO VISUALS  MANUFACTURES .",
       location:" OGBA, LAGOS STATE",      
       images:[
         {
@@ -355,7 +355,7 @@ export const NAVLINKS = [
       route: "/property/lascofedd",
       icon: "/assets/completed/commercial/Lascofedd.jpg",
       description: "LAGOS STATE CO-OPERATIVE FEDERATION (LASCOFED) MIXED-USE BUILDING .",
-      location:"  WEMPCOROAD, OGBA, LAGOSSTATE",      
+      location:"  WEMPCO ROAD, OGBA, LAGOS STATE",      
       images:[
         {
           src:"/assets/completed/commercial/Lascofedd.jpg",
