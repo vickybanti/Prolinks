@@ -22,9 +22,9 @@ export function Socials() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className={`2xl:py-16 lg:py-44 mt-64 flex h-full max-w-full px-20 ${!isDesktop && 'socials'}`}
+        className={`2xl:py-32 lg:py-44 lg:mt-10 flex h-full max-w-full ml-10 px-10 ${!isDesktop && 'socials'}`}
       >
-        <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col lg:gap-16 md:gap-36">
+        <div className=" lg:grid lg:grid-cols-2 md:flex md:flex-col 2xl:gap-36 lg:gap-8">
         <div className="flex flex-col">
         <div className="text-3xl font-bold uppercase dark:text-black-400 text-white/50">
         
@@ -52,7 +52,7 @@ export function Socials() {
           
         </div>
 
-        <div className="grid grid-cols-2 gap-12 socialsGrid">
+        <div className="grid grid-cols-2 2xl:gap-16 lg:gap-2 socialsGrid">
   {/* First Item */}
   <div className="flex items-center space-x-4 h-[100px]">
     <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B] socialsImg">
