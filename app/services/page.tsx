@@ -175,8 +175,8 @@ const Page = () => {
                   initial={{ opacity: 0.0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    delay: 0.3,
-                    duration: 0.8,
+                    delay: 1.0,
+                    duration: 1.5,
                     ease: "easeInOut",
                   }}
                  className={`flex items-center justify-between gap-4 bg-black ${!isDesktop && 'workGrid'}`}>
@@ -199,16 +199,25 @@ and awe-inspiring architectural feats. </p>
                  initial={{ opacity: 0.0, y: 40 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{
-                   delay: 0.3,
-                   duration: 0.8,
+                   delay: 1.0,
+                   duration: 1.5,
                    ease: "easeInOut",
                  }}
-                 className={`flex items-center justify-between gap-4 bg-black ${!isDesktop && 'workGrid'}`}>
+                 className={`flex items-center justify-between gap-4 bg-black overflow-hidden ${!isDesktop && 'workGrid'}`}>
 {isDesktop &&
-          <div className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
+
+<motion.div
+initial={{ opacity: 0.0, x: 40 }}
+whileInView={{ opacity: 1, x: 0 }}
+transition={{
+  delay: 1.0,
+  duration: 1.5,
+  ease: "easeInOut",
+}}
+ className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
 
 <Carousel slides={slides2} />
-</div>
+</motion.div>
 }
 <div className={`${!isDesktop && 'services'} items-center w-1/2 h-full p-40 `}>
 <p className="font-semibold text-white"> to the use of</p>
@@ -219,23 +228,30 @@ functionality, and sustainability of each property. </p>
 </div>
 
 {!isDesktop &&
-          <div className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
+          <motion.div
+          initial={{ opacity: 0.0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 1.0,
+            duration: 1.5,
+            ease: "easeInOut",
+          }} className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
 
 <Carousel slides={slides2} />
-</div>
+</motion.div>
 }
 
           </motion.div>
 
  <motion.div
-         initial={{ opacity: 0.0, y: 40 }}
-         whileInView={{ opacity: 1, y: 0 }}
+         initial={{ opacity: 0.0, x: -40 }}
+         whileInView={{ opacity: 1, x: 0 }}
          transition={{
-           delay: 0.3,
-           duration: 0.8,
+           delay: 1.0,
+           duration: 1.5,
            ease: "easeInOut",
          }}
-        className={`flex items-center justify-between gap-4 bg-black ${!isDesktop && 'workGrid'}`}>
+        className={`flex items-center justify-between gap-4 bg-black overflow-hidden${!isDesktop && 'workGrid'}`}>
             <div className={`items-center w-1/2 h-full p-32  ${!isDesktop && 'services'}`}>
            <p className="font-semibold text-white"> to</p>
 <h1 className={`text-[#A08C5B] text-6xl uppercase py-3  ${!isDesktop && 'servicesHeading'}`}>LUXURIOUS FINISHING</h1>
@@ -246,10 +262,18 @@ and awe-inspiring architectural feats. </p>
 
 <Button onClick={()=>router.push("/projects")} className="mt-8">See More...</Button>
 </div>
-<div className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
+        <motion.div
+                 initial={{ opacity: 0.0, x: 40 }}
+                 whileInView={{ opacity: 1, x: 0 }}
+                 transition={{
+                   delay: 1.0,
+                   duration: 1.5,
+                   ease: "easeInOut",
+                 }}
+     className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
 
            <Carousel slides={slides3} />
-          </div>
+          </motion.div>
           </motion.div>
 
       </motion.div>

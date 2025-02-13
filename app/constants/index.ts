@@ -33,19 +33,11 @@ export const COMPLETED = [
       propertyType:"commercial",
       title: "Ogba project",
       route: "/property/ogba",
-      icon: "/assets/completed/commercial/ogba.jpg",
+      icon: "/assets/completed/commercial/ogba.png",
       description: "COLITYSTUDIOS, DM AUDIOVISUALS  MANUFACTURES .",
       location:" OGBA, LAGOS STATE",  
   },
-  {
-    id:5,
-    title: "Lascofedd project",
-    propertyType:"commercial",
-    route: "/property/lascofedd",
-    icon: "/assets/completed/commercial/Lascofedd.jpg",
-    description: "LAGOS STATE CO-OPERATIVE FEDERATION (LASCOFED) MIXED-USE BUILDING .",
-    location:"  WEMPCOROAD, OGBA, LAGOSSTATE", 
-  },
+ 
   {
     id:6,
     title: "Lascofedd project",
