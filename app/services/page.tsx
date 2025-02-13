@@ -193,7 +193,7 @@ and awe-inspiring architectural feats. </p>
                   initial={{ opacity: 0.0, y: -200 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    delay: 0.8,
+                    delay: 1.5,
                     duration: 0.5,
                     ease: "linear",
                   }} className={`justify-end w-1/2 h-full py-20 px-40 overflow-hidden ${!isDesktop && 'servicesCarousel'}`}>
@@ -217,7 +217,7 @@ and awe-inspiring architectural feats. </p>
 initial={{ opacity: 0.0, y: 200 }}
 whileInView={{ opacity: 1, y: 0 }}
 transition={{
-  delay: 0.8,
+  delay: 1.5,
   duration: 0.5,
   ease: "linear",
 }}
@@ -274,7 +274,7 @@ and awe-inspiring architectural feats. </p>
                  initial={{ opacity: 0.0, y: -200 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{
-                   delay: 1.0,
+                   delay: 1.5,
                    duration: 0.5,
                    ease: "linear",
                  }}
