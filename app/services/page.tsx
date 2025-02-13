@@ -243,17 +243,17 @@ functionality, and sustainability of each property. </p>
 }
 
           </motion.div>
-
- <motion.div
-         initial={{ opacity: 0.0, y: 40 }}
-         whileInView={{ opacity: 1, y: 0 }}
-         transition={{
-           delay: 0.8,
-           duration: 1.5,
-           ease: "easeInOut",
-         }}
-         className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
-            <div className={`items-center w-1/2 h-full p-32  ${!isDesktop && 'services'}`}>
+          <motion.div
+                  initial={{ opacity: 0.0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.8,
+                    duration: 1.5,
+                    ease: "easeInOut",
+                  }}
+                 className={`flex items-center justify-between gap-4 bg-black ${!isDesktop && 'workGrid'}`}>
+            
+            <div className={`${!isDesktop && 'services'} items-center w-1/2 h-full p-40 `}>
            <p className="font-semibold text-white"> to</p>
 <h1 className={`text-[#A08C5B] text-6xl uppercase py-3  ${!isDesktop && 'servicesHeading'}`}>LUXURIOUS FINISHING</h1>
 <p className="py-2 text-white text-md leading-[32px]">
