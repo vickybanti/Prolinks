@@ -235,7 +235,8 @@ functionality, and sustainability of each property. </p>
             delay: 1.0,
             duration: 1.5,
             ease: "easeInOut",
-          }} className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
+          }} 
+          className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
 
 <Carousel slides={slides2} />
 </motion.div>
@@ -251,7 +252,7 @@ functionality, and sustainability of each property. </p>
            duration: 1.5,
            ease: "easeInOut",
          }}
-        className={`flex items-center justify-between gap-4 bg-black overflow-hidden${!isDesktop && 'workGrid'}`}>
+         className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
             <div className={`items-center w-1/2 h-full p-32  ${!isDesktop && 'services'}`}>
            <p className="font-semibold text-white"> to</p>
 <h1 className={`text-[#A08C5B] text-6xl uppercase py-3  ${!isDesktop && 'servicesHeading'}`}>LUXURIOUS FINISHING</h1>
@@ -270,7 +271,7 @@ and awe-inspiring architectural feats. </p>
                    duration: 1.5,
                    ease: "easeInOut",
                  }}
-     className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
+                 className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
 
            <Carousel slides={slides3} />
           </motion.div>
