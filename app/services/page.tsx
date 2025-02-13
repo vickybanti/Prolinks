@@ -196,7 +196,7 @@ and awe-inspiring architectural feats. </p>
           </motion.div>
 
          <motion.div
-                 initial={{ opacity: 0.0, y: 40 }}
+                 initial={{ opacity: 0.0, y: -40 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{
                    delay: 0.8,
@@ -207,8 +207,8 @@ and awe-inspiring architectural feats. </p>
 {isDesktop &&
 
 <motion.div
-initial={{ opacity: 0.0, x: 40 }}
-whileInView={{ opacity: 1, x: 0 }}
+initial={{ opacity: 0.0, y: 40 }}
+whileInView={{ opacity: 1, y: 0 }}
 transition={{
   delay: 0.8,
   duration: 1.5,
@@ -245,8 +245,8 @@ functionality, and sustainability of each property. </p>
           </motion.div>
 
  <motion.div
-         initial={{ opacity: 0.0, x: -40 }}
-         whileInView={{ opacity: 1, x: 0 }}
+         initial={{ opacity: 0.0, y: 40 }}
+         whileInView={{ opacity: 1, y: 0 }}
          transition={{
            delay: 0.8,
            duration: 1.5,
@@ -264,8 +264,8 @@ and awe-inspiring architectural feats. </p>
 <Button onClick={()=>router.push("/projects")} className="mt-8">See More...</Button>
 </div>
         <motion.div
-                 initial={{ opacity: 0.0, x: 40 }}
-                 whileInView={{ opacity: 1, x: 0 }}
+                 initial={{ opacity: 0.0, y: -40 }}
+                 whileInView={{ opacity: 1, y: 0 }}
                  transition={{
                    delay: 1.0,
                    duration: 1.5,
