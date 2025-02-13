@@ -15,7 +15,7 @@ const Page = () => {
     const router = useRouter()
     const slides1 = [
       { src: '/assets/2.jpg' },
-      { src: '/assets/ogba.jpg' },
+      { src: '/assets/Ogba.jpg' },
       { src: '/assets/completed/residentials/duplex2.jpg' },
     ];
 
