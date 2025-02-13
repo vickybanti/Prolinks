@@ -171,12 +171,14 @@ const Page = () => {
               </div>
           </div>
 
-          <motion.div 
-                 initial={{ y: -30, opacity: 0.2 }}
-                 animate={{ y: 0, opacity: 1 }}
-                 transition={{ ease: "easeInOut", duration: 1.5 }}
-                 whileInView={{ opacity: 1 }}
-                 viewport={{ once: false }} 
+          <motion.div
+                  initial={{ opacity: 0.0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.3,
+                    duration: 0.8,
+                    ease: "easeInOut",
+                  }}
                  className={`flex items-center justify-between gap-4 bg-black ${!isDesktop && 'workGrid'}`}>
             
             <div className={`${!isDesktop && 'services'} items-center w-1/2 h-full p-40 `}>
@@ -193,12 +195,14 @@ and awe-inspiring architectural feats. </p>
           </div>
           </motion.div>
 
-          <motion.div 
-                 initial={{ x: -30, opacity: 0.2 }}
-                 animate={{ x: 0, opacity: 1 }}
-                 transition={{ ease: "easeInOut", duration: 1.5 }}
-                 whileInView={{ opacity: 1 }}
-                 viewport={{ once: false }} 
+         <motion.div
+                 initial={{ opacity: 0.0, y: 40 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{
+                   delay: 0.3,
+                   duration: 0.8,
+                   ease: "easeInOut",
+                 }}
                  className={`flex items-center justify-between gap-4 bg-black ${!isDesktop && 'workGrid'}`}>
 {isDesktop &&
           <div className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
@@ -223,12 +227,14 @@ functionality, and sustainability of each property. </p>
 
           </motion.div>
 
- <motion.div 
-        initial={{ x: -30, opacity: 0.2 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ ease: "easeInOut", duration: 1.5 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: false }} 
+ <motion.div
+         initial={{ opacity: 0.0, y: 40 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         transition={{
+           delay: 0.3,
+           duration: 0.8,
+           ease: "easeInOut",
+         }}
         className={`flex items-center justify-between gap-4 bg-black ${!isDesktop && 'workGrid'}`}>
             <div className={`items-center w-1/2 h-full p-32  ${!isDesktop && 'services'}`}>
            <p className="font-semibold text-white"> to</p>

@@ -11,7 +11,7 @@ export function Hero() {
 
     
   return (
-    <div className={`bg-black h-screen ${!isDesktop && 'hero'}`}>
+    <div className={`bg-black h-screen px-10 ${!isDesktop && 'hero'}`}>
     <motion.div
     initial={{ opacity: 0.0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +21,7 @@ export function Hero() {
           ease: "easeInOut",
         }}
   
-        className="max-w-full px-8 2xl:py-24 lg:py-32">
+        className="max-w-full 2xl:py-24 lg:py-32">
       <LayoutGrid cards={cards} />
     </motion.div>
     </div>
@@ -33,7 +33,7 @@ const SkeletonOne = () => {
 
 
   return (
-    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && '-ml-20 px-3 w-[300px]'} flex justify-center items-center flex-wrap flex-col`}>
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && ' px-3 w-[300px]'} flex justify-center items-center flex-wrap flex-col`}>
       <p className="flex flex-wrap w-full px-10 text-xl font-bold text-white md:text-4xl 2xl:text-center">
       Hallmark University Administrative building, Ijebu, Ogun State. 
       
@@ -73,7 +73,7 @@ const SkeletonThree = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && '-ml-14 px-3 w-[300px]'} flex justify-center items-center flex-wrap flex-col`}>
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && '-ml-10 px-3 w-[300px]'} flex justify-center items-center flex-wrap flex-col`}>
       <p className="flex flex-wrap max-w-lg px-10 text-xl font-bold text-center text-white md:text-4xl">
       Lascofedd
         Office buildings
@@ -95,7 +95,7 @@ const SkeletonFour = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && '-ml-14 px-3 w-[300px]'} flex justify-center items-center flex-wrap flex-col`}>
+    <div className={`h-full px-20 py-2 mx-auto ${!isDesktop && 'ml-10 px-3 w-[300px]'} flex justify-center items-center flex-wrap flex-col`}>
       <p className={`text-xl font-bold text-white md:text-4xl max-w-lg flex flex-wrap 2xl:text-center `}>
 
         Serene Residentials

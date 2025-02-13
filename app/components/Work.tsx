@@ -19,7 +19,7 @@ const Work = () => {
       }}
       
     >
-      <div className={`flex flex-col py-44 2xl:px-40 lg:px-40 bg-black/80 ${!isDesktop && 'work'}`}>
+      <div className={`flex flex-col py-44 2xl:px-20 lg:px-20 bg-black/80 ${!isDesktop && 'work'}`}>
       <div className="flex flex-col w-full gap-4 leading-10 text-center uppercase md:text-left">
         <h2 className="font-semibold text-white text-md">What we do</h2>
         <h1 className="text-3xl font-bold md:text-4xl text-white/30 leading-relax workHeading">

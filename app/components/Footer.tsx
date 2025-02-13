@@ -21,10 +21,10 @@ const Footer = () => {
 
       <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 max-w-full footPad">
         {/* Footer Content */}
-        <div className={`flex justify-between gap-10 mx-auto px-40 py-20 ${!isDesktop && 'footer'}`}>
+        <div className={`flex justify-between 2xl:gap-48 mx-auto px-20 py-20 ${!isDesktop && 'footer'}`}>
           {/* Branding */}
-          <div className="2xl:mt-[-40px] lg:mt-[-25px] mr-6">
-          <div className="flex justify-start mr-6"> 
+          <div className="2xl:mt-[-40px] lg:mt-[-25px] mr-40">
+          <div className="flex justify-start pr-30"> 
             <Link href="/">
               <div className="flex flex-col items-center gap-0">
                 <Image
@@ -48,7 +48,7 @@ const Footer = () => {
                 <Link
                 href={"href" in sub ? `/property/${sub.href} `: "#"}
                   key={sub.id}
-                  className="text-sm w-1/2 py-1 cursor-pointer font-light transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black"
+                  className="text-sm py-1 cursor-pointer font-light transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black w-full"
                 >
                   {sub.label}
                 </Link>
@@ -57,7 +57,7 @@ const Footer = () => {
           ))}
 
           {/* Contact Us Section */}
-          <div className="flex flex-col w-64">
+          <div className="flex flex-col w-64 mr-20">
             <h2 className="text-xl font-semibold">Contact Us</h2>
             <div className="flex items-center">
               
@@ -69,9 +69,9 @@ const Footer = () => {
   href="https://www.google.com/maps/search/?api=1&query=13,+Dayo+Kuye+Close,+New+Oko-Oba,+Abulegba,+Lagos" 
   target="_blank" 
   rel="noopener noreferrer"
-  className="text-blue-500 hover:underline"
+  className="p-3 text-sm text-[#A08C5B] hover:underline"
 >
-  View on Google Maps
+13,Dayo Kuye Close,New Oko-Oba,Abulegba,Lagos
 </a>
             </div>
             <div className="flex items-center">
@@ -80,7 +80,12 @@ const Footer = () => {
               width="32px"
               height="2px"
               className="object-contain"/>
-            <p className="p-3 text-sm">0803-302-9830</p>
+            <a 
+  href="tel:08033029830" 
+ className="p-3 text-sm text-[#A08C5B] hover:underline">
+  0803-302-9830
+</a>
+
             </div>
 
             <div className="flex items-center">
