@@ -34,7 +34,7 @@ const Footer = () => {
                   alt="logo"
                   className="object-cover"
                 />
-                <h2 className={`mt-[-30px] px-10 ${!isDesktop && 'mt-[-70px] text-xl'}`}>Prolinks</h2>
+                <h2 className={`mt-[-30px] px-10 ${!isDesktop && 'mt-[-30px] text-2xl'}`}>Prolinks</h2>
               </div>
             </Link>
           </div>
@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* Footer Links */}
           {FOOTERLINKS.map((footer) => (
-            <div className="flex flex-col w-full" key={footer.id}>
+            <div className={`flex flex-col w-full ${!isDesktop && 'py-3'}`} key={footer.id}>
               <h2 className="text-lg font-semibold">{footer.title}</h2>
               {footer.subTitle.map((sub) => (
                 <Link

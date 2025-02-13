@@ -175,7 +175,7 @@ const Page = () => {
                   initial={{ opacity: 0.0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    delay: 1.0,
+                    delay: 0.8,
                     duration: 1.5,
                     ease: "easeInOut",
                   }}
@@ -199,7 +199,7 @@ and awe-inspiring architectural feats. </p>
                  initial={{ opacity: 0.0, y: 40 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{
-                   delay: 1.0,
+                   delay: 0.8,
                    duration: 1.5,
                    ease: "easeInOut",
                  }}
@@ -210,7 +210,7 @@ and awe-inspiring architectural feats. </p>
 initial={{ opacity: 0.0, x: 40 }}
 whileInView={{ opacity: 1, x: 0 }}
 transition={{
-  delay: 1.0,
+  delay: 0.8,
   duration: 1.5,
   ease: "easeInOut",
 }}
@@ -232,7 +232,7 @@ functionality, and sustainability of each property. </p>
           initial={{ opacity: 0.0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 1.0,
+            delay: 0.8,
             duration: 1.5,
             ease: "easeInOut",
           }} 
@@ -248,7 +248,7 @@ functionality, and sustainability of each property. </p>
          initial={{ opacity: 0.0, x: -40 }}
          whileInView={{ opacity: 1, x: 0 }}
          transition={{
-           delay: 1.0,
+           delay: 0.8,
            duration: 1.5,
            ease: "easeInOut",
          }}
