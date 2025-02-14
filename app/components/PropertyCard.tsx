@@ -23,7 +23,7 @@ const PropertyCard = ({ label, description, src, propertyType }: {
 
   return (
     <div className={`mt-24 overflow-hidden 2xl:mt-32 `}>
-      <div className={`flex flex-col w-screen h-auto px-20 py-10 ${!isDesktop && 'px-8'}`}>
+      <div className={`flex flex-col w-screen h-auto 2xl:px-20 lg:px-20 py-10 ${!isDesktop && 'px-4 min-w-[100%]'}`}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -47,7 +47,7 @@ const PropertyCard = ({ label, description, src, propertyType }: {
         </div>
 
         {/* Image Section */}
-        <div className={`w-full my-10 2xl:mt-20 ${isDesktop ? 'flex gap-3' : 'flex flex-col items-center'}`}>
+        <div className={`w-full my-10 2xl:mt-20 ${!isDesktop ? 'flex gap-3' : 'flex flex-col items-center'}`}>
           {/* Main Image */}
           <div className='w-full md:w-2/3 2xl:w-2/3'>
             <Image 
@@ -96,7 +96,7 @@ const PropertyCard = ({ label, description, src, propertyType }: {
       </div>
 
       {/* Description Section */}
-      <div className='w-full px-10 py-10 md:px-20 '>
+      <div className={`w-full py-10 2xl:px-20 lg:px-20 ${!isDesktop && 'px-4'}`}>
         <h1 className='py-5 text-2xl text-white'>DESCRIPTION</h1>
         <p className='text-sm text-white'>{description}</p>
       </div>
