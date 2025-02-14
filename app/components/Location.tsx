@@ -42,7 +42,7 @@ export const Location = () => {
 
             <Card
               image="/assets/completed/20210917_122818.jpg"
-              className={`2xl:basis-[32%] 2xl:w-[173%] lg:w-[120%] h-72 md:full xl:h-7 ${!isDesktop && 'min-w-[150%] px-0'}`}
+              className={`2xl:basis-[32%] 2xl:w-[173%] lg:w-[120%] h-72 md:full xl:h-72 ${!isDesktop && 'min-w-[150%] px-0'}`}
               title="Lekki"
               subtitle="City Mall"
               ContentSubtitle="Shopping"

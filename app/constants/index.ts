@@ -324,7 +324,7 @@ export const NAVLINKS = [
       location:" OGBA, LAGOS STATE",      
       images:[
         {
-          src:"/assets/completed/commercial/ogba.jpg",
+          src:"/assets/Ogba.jpg",
           alt:"Ogba project",
           title: "Orimolade project",
           firstButton:"View",
