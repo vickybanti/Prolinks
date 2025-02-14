@@ -23,7 +23,7 @@ const PropertyCard = ({ label, description, src, propertyType }: {
 
   return (
     <div className={`mt-24 overflow-hidden 2xl:mt-32 `}>
-      <div className={`flex flex-col w-screen h-auto px-20 py-10 ${!isDesktop && 'px-12'}`}>
+      <div className={`flex flex-col w-screen h-auto px-20 py-10 ${!isDesktop && 'px-8'}`}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -54,7 +54,7 @@ const PropertyCard = ({ label, description, src, propertyType }: {
               src={src[0]} 
               width={800} 
               height={500} 
-              className={`object-cover w-full h-[400px] rounded-lg ${!isDesktop && 'rounded-none'} `} 
+              className='object-cover w-full h-[400px] rounded-lg' 
               alt={label} 
             />
           </div>
