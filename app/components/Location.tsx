@@ -4,12 +4,12 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { useMediaQuery } from "../hooks/use-media-query";
 
 export const Location = () => {
-  const isDesktop = useMediaQuery("(min-width: 820px)");
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
   const words = `We beautify everywhere we go`;
 
   return (
-      <div className={`2xl:px-10 lg:px-10 ml-10 pb-44 bg-black h-full ${!isDesktop && 'location'}`}>
+      <div className={`2xl:px-10 lg:px-10 2xl:ml-10 lg:ml-10 pb-44 bg-black h-full ${!isDesktop && 'px-2 -ml-2 mt-10'}`}>
         {/* Section Header */}
         <div className="flex flex-col gap-4 text-center uppercase md:text-left">
           <h2 className="text-xl font-semibold text-gray-700">Explore by Location</h2>
@@ -17,13 +17,13 @@ export const Location = () => {
         </div>
 
         {/* Card Grid */}
-        <div className="justify-between mt-8 overflow-hidden lg:w-full xl:flex xl:flex-wrap xl:gap-5">
+        <div className={`justify-between mt-8 overflow-hidden lg:w-full md:flex-col xl:flex xl:flex-col xl:gap-5 ${!isDesktop && 'w-full items-stretch px-2'}`}>
           {/* First Row (3 Cards) */}
-          <div className="flex flex-wrap w-full 2xl:gap-[16.5rem] lg:gap-[83px] md:gap-8 location-grid">
+          <div className={`flex flex-wrap w-full 2xl:gap-[16.5rem] lg:gap-[83px] md:gap-8 ${!isDesktop && 'w-full gap-4'}`}>
             <Card
               image="/assets/dertyuio.jpg"
               title="Ipaja"
-              className="2xl:basis-[32%] 2xl:w-[173%] lg:w-[120%] h-72 md:full xl:h-72"
+              className={`2xl:basis-[32%] 2xl:w-[173%] lg:w-[120%] h-72 md:w-full xl:h-72 ${!isDesktop && 'min-w-[150%] px-0'}`}
               subtitle="5-BEDROOM DUPLEX"
               ContentSubtitle="Residentials"
               colour="black"
@@ -32,7 +32,7 @@ export const Location = () => {
 
             <Card
               image="/assets/completed/Library.jpg"
-              className="2xl:basis-[32%] 2xl:w-[173%] lg:w-[120%] h-72 md:full xl:h-72"
+              className={`2xl:basis-[32%] 2xl:w-[173%] lg:w-[120%] h-72 md:full xl:h-72 ${!isDesktop && 'min-w-[150%] px-0'}`}
               title="Hallmark"
               subtitle="Library"
               ContentSubtitle="School library"
@@ -42,7 +42,7 @@ export const Location = () => {
 
             <Card
               image="/assets/completed/20210917_122818.jpg"
-              className="2xl:basis-[32%] 2xl:w-[173%] lg:w-[120%] h-72 md:full xl:h-72"
+              className={`2xl:basis-[32%] 2xl:w-[173%] lg:w-[120%] h-72 md:full xl:h-7 ${!isDesktop && 'min-w-[150%] px-0'}`}
               title="Lekki"
               subtitle="City Mall"
               ContentSubtitle="Shopping"
@@ -57,7 +57,7 @@ export const Location = () => {
           <div className={`${!isDesktop && 'loc-grid location-grid'} flex flex-wrap w-full 2xl:gap-[35rem] lg:gap-[280px] md:gap-44`}>
             <Card
               image="/assets/office.jpg"
-              className="2xl:basis-[49%] 2xl:w-[263%] lg:w-[184%] h-72 md:[153%] xl:h-72"
+              className={`2xl:basis-[49%] 2xl:w-[263%] lg:w-[184%] h-72 md:[153%] xl:h-72 ${!isDesktop && 'min-w-[150%] px-0'}`}
               title="WEMPCOROAD"
               subtitle="MIXED-USE BUILDINGS"
               ContentSubtitle="Commercial/Office building"
@@ -67,7 +67,7 @@ export const Location = () => {
 
             <Card
               image="/assets/completed/Westgate.png"
-              className="2xl:basis-[49%] 2xl:w-[263%] lg:w-[184%] h-72 md:[153%] xl:h-72"
+              className={`2xl:basis-[49%] 2xl:w-[263%] lg:w-[184%] h-72 md:[153%] xl:h-72 ${!isDesktop && 'min-w-[150%] px-0'}`}
               title="Magodo"
               subtitle="Shopping"
               colour="black"
