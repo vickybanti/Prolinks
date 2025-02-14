@@ -54,7 +54,7 @@ const PropertyCard = ({ label, description, src, propertyType }: {
               src={src[0]} 
               width={800} 
               height={500} 
-              className='object-cover w-full h-[400px] rounded-lg' 
+              className={`object-cover w-full h-[400px] rounded-lg ${!isDesktop && 'rounded-none'} `} 
               alt={label} 
             />
           </div>
