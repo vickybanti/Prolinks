@@ -23,7 +23,7 @@ const PropertyCard = ({ label, description, src, propertyType }: {
 
   return (
     <div className={`mt-24 overflow-hidden 2xl:mt-32 `}>
-      <div className={`flex flex-col w-screen h-auto px-20 py-10 ${!isDesktop && 'px-8'}`}>
+      <div className={`flex flex-col w-screen h-auto px-20 py-10 ${!isDesktop && 'px-2'}`}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

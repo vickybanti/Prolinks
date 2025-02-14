@@ -117,6 +117,7 @@ body {
     display:flex;
    flex-direction:column;
    gap:60px;
+   padding:0px 8px;
   }
   
   
@@ -128,7 +129,7 @@ body {
   }
   .footPad{
     width:100%;
-    padding:30px 12px;
+    padding:30px 20 px;
   }
   .footer{
     padding:10px 0;
