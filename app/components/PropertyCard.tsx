@@ -47,9 +47,9 @@ const PropertyCard = ({ label, description, src, propertyType }: {
         </div>
 
         {/* Image Section */}
-        <div className={`w-full my-10 2xl:mt-20 ${!isDesktop ? 'flex gap-3' : 'flex flex-col items-center'}`}>
+        <div className={`w-full my-10 2xl:mt-20 ${isDesktop ? 'flex gap-3' : 'flex flex-col items-center'}`}>
           {/* Main Image */}
-          <div className='w-full md:w-2/3 2xl:w-2/3'>
+          <div className='w-full md:w-2/3 2xl:w-2/3 lg:w-2/3'>
             <Image 
               src={src[0]} 
               width={800} 
