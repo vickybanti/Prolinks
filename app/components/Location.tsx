@@ -1,6 +1,5 @@
 "use client"
 import { Card } from "./ui/Card";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { useMediaQuery } from "../hooks/use-media-query";
 
 export const Location = () => {
@@ -13,7 +12,7 @@ export const Location = () => {
         {/* Section Header */}
         <div className="flex flex-col gap-4 text-center uppercase md:text-left">
           <h2 className="text-xl font-semibold text-gray-700">Explore by Location</h2>
-          <TextGenerateEffect duration={4} words={words} />
+          <h1 className="text-[CC5500] font-bold text-3xl">{words}</h1>
         </div>
 
         {/* Card Grid */}
