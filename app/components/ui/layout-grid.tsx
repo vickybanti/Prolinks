@@ -84,7 +84,7 @@ const ImageComponent = ({ card }: { card: Card;  }) => {
           )}
           alt="thumbnail" />
 
-<h3 className="absolute cursor-pointer uppercase inset-0 flex items-center justify-center text-2xl font-bold text-white text-center hover:bg-white/10 bg-black/50 rounded-lg hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(-white/10) hover:text-[#785F37]">
+<h3 className="absolute cursor-pointer uppercase inset-0 flex items-center justify-center text-2xl font-bold text-white text-center hover:bg-white/10 bg-black/50 rounded-lg hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(-white/10) hover:text-[#CC5500]">
           {card.title}
         </h3>
           </>

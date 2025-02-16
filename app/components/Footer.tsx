@@ -12,14 +12,14 @@ const Footer = () => {
   
   return (
     <div
-      className="container relative h-full max-w-full overflow-hidden bg-fixed bg-black bg-center bg-cover"
+      className="container relative h-full max-w-full overflow-hidden bg-fixed bg-center bg-cover bg-white/80"
       style={{
         backgroundImage: `url(/assets/footerPics.jpg)`,
         backgroundRepeat: "no-repeat",
       }}
     >
 
-      <div className="text-[#A08C5B] bg-gradient-to-b from-black to-black/90 max-w-full footPad">
+      <div className="text-[#CC5500] bg-gradient-to-b from-white to-white/90 max-w-full footPad">
         {/* Footer Content */}
         <div className={`flex justify-between 2xl:gap-48 mx-auto px-20 py-20 ${!isDesktop && 'footer'}`}>
           {/* Branding */}
@@ -28,11 +28,11 @@ const Footer = () => {
             <Link href="/">
               <div className="flex flex-col items-center gap-0">
                 <Image
-                  src="/assets/logo/logo3.jpg"
+                  src="/assets/logo/logo2.jpg"
                   width={1000}
                   height={50}
                   alt="logo"
-                  className="object-cover"
+                  className="object-cover bg-blend-multiply"
                 />
                 <h2 className={`mt-[-30px] px-10 ${!isDesktop && 'mt-[-30px] text-2xl'}`}>Prolinks</h2>
               </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                 <Link
                 href={"href" in sub ? `/property/${sub.href} `: "#"}
                   key={sub.id}
-                  className="text-sm py-1 cursor-pointer font-light transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black w-full"
+                  className="text-sm py-1 cursor-pointer font-light transition-all duration-300 ease-in-out hover:bg-[#CC5500] hover:text-black w-full"
                 >
                   {sub.label}
                 </Link>
@@ -69,7 +69,7 @@ const Footer = () => {
   href="https://www.google.com/maps/search/?api=1&query=13,+Dayo+Kuye+Close,+New+Oko-Oba,+Abulegba,+Lagos" 
   target="_blank" 
   rel="noopener noreferrer"
-  className="p-3 text-sm text-[#A08C5B] hover:underline"
+  className="p-3 text-sm text-[#CC5500] hover:underline"
 >
 13,Dayo Kuye Close,New Oko-Oba,Abulegba,Lagos
 </a>
@@ -82,7 +82,7 @@ const Footer = () => {
               className="object-contain"/>
             <a 
   href="tel:08033029830" 
- className="p-3 text-sm text-[#A08C5B] hover:underline">
+ className="p-3 text-sm text-[#CC5500] hover:underline">
   0803-302-9830
 </a>
 
@@ -94,7 +94,7 @@ const Footer = () => {
            width="32px"
            height="2px"
            className="object-contain"/>
-           <a href="mailto:tundeadekola@yahoo.com" className="p-3 text-sm text-[#A08C5B] hover:underline">
+           <a href="mailto:tundeadekola@yahoo.com" className="p-3 text-sm text-[#CC5500] hover:underline">
   tundeadekola@yahoo.com
 </a>
 
@@ -104,7 +104,7 @@ const Footer = () => {
 
         {/* Copyright Section */}
         <div className="pt-3 mt-3 text-center">
-          <p className="text-[#A08C5B] text-xs">
+          <p className="text-[#CC5500] text-xs">
             &copy; 2025 Project Prolinks. All Rights Reserved.
           </p>
         </div>

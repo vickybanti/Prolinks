@@ -29,7 +29,7 @@ const MobileNav = () => {
   return (
     <div>
       {/* Header Section */}
-      <header className="fixed top-0 left-0 z-50 w-full bg-black shadow-sm">
+      <header className="fixed top-0 left-0 z-50 w-full bg-white shadow-sm">
          
         <motion.div 
          initial={{ x: -30, opacity: 0 }}
@@ -40,7 +40,7 @@ const MobileNav = () => {
         className="flex items-center justify-between px-8 py-4 mx-auto">
           {/* Logo */}
           <Link href="/">
-        <Image src="/assets/logo/logo3.jpg" width={100} height={50} alt="logo" className="object-contain" />
+        <Image src="/assets/logo/logo2.jpg" width={100} height={50} alt="logo" className="object-contain" />
        </Link>
 
           {/* Mobile Navigation Dropdown */}
@@ -58,7 +58,7 @@ const MobileNav = () => {
               </DropdownMenuTrigger>
 
               {/* Dropdown Content */}
-              <DropdownMenuContent className={`w-[430px] mx-auto bg-black border-black ${!isDesktop && 'w-[354px]'} `}>
+              <DropdownMenuContent className={`w-[430px] mx-auto bg-white border-none ${!isDesktop && 'w-[354px]'} `}>
                 {/* Logo Inside Dropdown */}
                 <DropdownMenuLabel>
                   {/* <Link href="/">
@@ -81,8 +81,8 @@ const MobileNav = () => {
                           <DropdownMenuItem
                             className={`p-4 ${
                               isActive
-                                ? "text-[#785F37] bg-black"
-                                : "text-black bg-[#785F37] hover:text-[#785F37] hover:bg-black transition-all duration-700"
+                                ? "bg-[#CC5500] text-white"
+                                : " text-[#CC5500] hover:bg-[#CC5500] hover:text-white transition-all duration-700"
                             }`}
                           >
                             <Link href={link.route}>{link.label}</Link>
@@ -94,17 +94,17 @@ const MobileNav = () => {
                           <DropdownMenuSub>
                             <DropdownMenuSubTrigger  className={`p-4 ${
                               isActive
-                                ? "text-[#785F37] bg-black"
-                                : "text-black bg-[#785F37] hover:text-[#785F37] hover:bg-black transition-all duration-700"
+                                ? "text-[#CC5500] bg-white"
+                                : "text-black bg-[#CC5500] hover:text-[#CC5500] hover:bg-white transition-all duration-700"
                             }`}>
                               {link.label}
                             </DropdownMenuSubTrigger>
                             <DropdownMenuPortal>
-                              <DropdownMenuSubContent className="bg-black border-[#785F37] min-w-[400px] w-auto absolute ml-[-360px] top-14 transform shadow-lg">
+                              <DropdownMenuSubContent className="bg-white border-[#CC5500] min-w-[400px] w-auto absolute ml-[-360px] top-14 transform shadow-lg">
                                 {link.productItems.map((product) => (
                                   <DropdownMenuItem
                                     key={product.title}
-                                    className="hover:bg-[#785F37] text-[#785F37] hover:text-black transition-all duration-300"
+                                    className="hover:bg-[#CC5500] text-[#CC5500] hover:text-black transition-all duration-300"
                                   >
                                     <a
                                       href={product.href}

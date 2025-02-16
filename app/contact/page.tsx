@@ -102,16 +102,16 @@ const Page = () => {
                          animate={{ y: 0, opacity: 1 }}
                          transition={{ ease: "easeInOut", duration: 1.5 }}
                          whileInView={{ opacity: 1 }}
-                         viewport={{ once: false }} className={`${!isDesktop && 'workGrid'} flex items-center justify-between gap-4 bg-black py-44`}>
-                    <div className={`items-center w-1/2 h-full 2xl:px-40  py-20 ${!isDesktop && 'w-full px-10'}`}>
-        <h1 className="text-[#A08C5B] text-5xl py-3">Contact us</h1>
+                         viewport={{ once: false }} className={`${!isDesktop && 'workGrid'} flex items-center justify-between gap-4 py-44`}>
+                    <div className={`items-center w-1/2 h-full 2xl:px-20 lg:px-20 py-20 ${!isDesktop && 'w-full px-10'}`}>
+        <h1 className="text-[#CC5500] text-5xl py-3">Contact us</h1>
         <div className="flex items-center]">
               
            <img src=" https://img.icons8.com/?size=100&id=107436&format=png&color=000000" 
            width="32px"
            height="2px"
            className="object-contain"/>
-           <p className="text-xs text-white p-3 font-light cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#A08C5B] hover:text-black">
+           <p className="text-xs text-black p-3 font-light cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#CC5500] hover:text-black">
            
             13, Dayo Kuye close,New Oko oba, Abulegba, Lagos
             </p>
@@ -122,7 +122,7 @@ const Page = () => {
               width="32px"
               height="2px"
               className="object-contain"/>
-            <p className="p-3 text-sm text-white">0803-302-9830</p>
+            <p className="p-3 text-sm text-black">0803-302-9830</p>
             </div>
 
             <div className="flex items-center]">
@@ -131,12 +131,12 @@ const Page = () => {
            width="32px"
            height="2px"
            className="object-contain"/>
-            <a href="mailto:tundeadekola@yahoo.com" className="p-3 text-sm text-white hover:underline">
+            <a href="mailto:tundeadekola@yahoo.com" className="p-3 text-sm text-black hover:underline">
   tundeadekola@yahoo.com
 </a>
             </div>
           </div>
-        <div className={`justify-end w-1/2 overflow-hidden px-32 py-10 h-full bg-[#A08C5B] mr-10 ${!isDesktop && 'w-[80%] px-8 h-1/2 mx-auto'} `}>
+        <div className={`justify-end w-1/2 overflow-hidden px-32 py-10 h-full bg-[#A0522D] mr-10 ${!isDesktop && 'w-[80%] px-8 h-1/2 mx-auto'} `}>
 
         <h2 className='py-3 text-lg font-semibold text-white'>Send us a message and we will get in touch</h2>
 
@@ -149,7 +149,7 @@ const Page = () => {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input placeholder="Email address" {...field} className="text-white"/>
+                <Input placeholder="Email address" {...field} className="text-white border-2 border-gray-100"/>
               </FormControl>
              
               <FormMessage />
@@ -164,7 +164,7 @@ const Page = () => {
             <FormItem>
               <FormLabel>message</FormLabel>
               <FormControl>
-                <Textarea placeholder="Enter your message" {...field} className="text-white"/>
+                <Textarea placeholder="Enter your message" {...field} className="text-white border-2 border-gray-100"/>
               </FormControl>
              
               <FormMessage />
@@ -173,7 +173,7 @@ const Page = () => {
         />
 
 
-        <Button type="submit" disabled={loading}>{loading? "submitting":"Submit"}</Button>
+        <Button type="submit" disabled={loading} className='bg-gray-900'>{loading? "submitting":"Submit"}</Button>
         <p className='text-white duration-100 ease-in-out'>{success}</p>
       </form>
     </Form>

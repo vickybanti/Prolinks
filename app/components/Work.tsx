@@ -19,13 +19,13 @@ const Work = () => {
       }}
       
     >
-      <div className={`flex flex-col py-44 2xl:px-20 lg:px-20 bg-black/80 ${!isDesktop && 'work'}`}>
+      <div className={`flex flex-col py-44 2xl:px-20 lg:px-20 bg-black/60 ${!isDesktop && 'work'}`}>
       <div className="flex flex-col w-full gap-4 leading-10 text-center uppercase md:text-left">
         <h2 className="font-semibold text-white text-md">What we do</h2>
-        <h1 className="text-3xl font-bold md:text-4xl text-white/30 leading-relax workHeading">
-          We know the <Highlight className="text-white dark:text-white">  ins and outs </Highlight> of luxurious buildings
+        <h1 className="text-3xl font-bold md:text-4xl text-white/85 leading-relax workHeading">
+          We know the <Highlight className="text-black dark:text-black">  ins and outs </Highlight> of luxurious buildings
         </h1>
-        <p className="text-[#A08C5B]"> And it shows in our magnificent edifices ALL over the big city of Lagos 
+        <p className="text-[#CC5500]"> And it shows in our magnificent edifices ALL over the big city of Lagos 
 
 </p>
       </div>
@@ -35,7 +35,7 @@ const Work = () => {
       <div className={`grid grid-cols-2 gap-12 px-10 ${!isDesktop && 'workGrid'}`}>
   {/* First Item */}
   <div className="flex items-center space-x-4 h-[100px]">
-    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
+    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#CC5500]">
       <img
         className="object-contain w-full h-full "
         src="https://img.icons8.com/?size=100&id=7687&format=png&color=000000"
@@ -43,14 +43,14 @@ const Work = () => {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#A08C5B] text-2xl font-semibold workIconFont">Design</h3>
-      <span className="text-sm text-white/50 workFontP">Architectural designs</span>
+      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Design</h3>
+      <span className="text-sm text-white/80 workFontP">Architectural designs</span>
     </div>
   </div>
 
   {/* First Item */}
   <div className="flex items-center space-x-4 h-[100px]">
-    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
+    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#CC5500]">
       <img
         className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=9342&format=png&color=000000"
@@ -58,8 +58,8 @@ const Work = () => {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#A08C5B] text-2xl font-semibold workIconFont">Construction</h3>
-      <span className="text-sm text-white/50 workFontP">Capable construction engineers</span>
+      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Construction</h3>
+      <span className="text-sm text-white/80 workFontP">Capable construction engineers</span>
     </div>
   </div>
 
@@ -67,7 +67,7 @@ const Work = () => {
 
   {/* First Item */}
   <div className="flex items-center space-x-4 h-[100px]">
-    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
+    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#CC5500]">
       <img
         className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=cQUE9D1CWfuG&format=png&color=000000"
@@ -75,8 +75,8 @@ const Work = () => {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#A08C5B] text-2xl font-semibold workIconFont">Interior decoration</h3>
-      <span className="text-sm text-white/50 workFontP">Stylish and luxurious interiors to suite your rich taste</span>
+      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Interior decoration</h3>
+      <span className="text-sm text-white/80 workFontP">Stylish and luxurious interiors to suite your rich taste</span>
     </div>
   </div>
 
@@ -84,7 +84,7 @@ const Work = () => {
 
   {/* First Item */}
   <div className="flex items-center space-x-4 h-[100px]">
-    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
+    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#CC5500]">
       <img
         className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=102879&format=png&color=000000"
@@ -92,15 +92,15 @@ const Work = () => {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#A08C5B] text-2xl font-semibold workIconFont">Project Management</h3>
-      <span className="text-sm text-white/50 workFontP">Sleep, rest assured your project is in safe hands</span>
+      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Project Management</h3>
+      <span className="text-sm text-white/80 workFontP">Sleep, rest assured your project is in safe hands</span>
     </div>
   </div>
 
 
   {/* First Item */}
   <div className="flex items-center space-x-4 h-[100px]">
-    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B]">
+    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#CC5500]">
       <img
         className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=DRqAsQCxcDuW&format=png&color=000000"
@@ -108,15 +108,15 @@ const Work = () => {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#A08C5B] text-2xl font-semibold workIconFont">Property Valuation</h3>
-      <span className="text-sm text-white/50 workFontP">Know the current worth of your properties</span>
+      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Property Valuation</h3>
+      <span className="text-sm text-white/80 workFontP">Know the current worth of your properties</span>
     </div>
   </div>
 
 
   {/* First Item */}
   <div className="flex items-center space-x-4 h-[100px]">
-    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#A08C5B] socialsImage">
+    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#CC5500] socialsImage">
       <img
         className="object-contain w-full h-full "
         src="https://img.icons8.com/?size=100&id=47076&format=png&color=000000"
@@ -124,8 +124,8 @@ const Work = () => {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#A08C5B] text-2xl font-semibold workIconFont">Property Marketing</h3>
-      <span className="text-sm text-white/50 workFontP">Sell your properties quicker</span>
+      <h3 className="text-[#CC5500] text-2xl font-semibold workIconFont">Property Marketing</h3>
+      <span className="text-sm text-white/80 workFontP">Sell your properties quicker</span>
     </div>
   </div>
 

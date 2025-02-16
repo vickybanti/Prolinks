@@ -11,7 +11,7 @@ export function Hero() {
 
     
   return (
-    <div className={`bg-black h-screen px-10 ${!isDesktop && 'hero'}`}>
+    <div className={`bg-white h-screen px-10 ${!isDesktop && 'hero'}`}>
     <motion.div
     initial={{ opacity: 0.0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ const SkeletonOne = () => {
 
 
       </p>
-      <Link href={`/property-type/educational`} className="text-white p-3 bg-[#A08C5B] hover:text-black my-10">See related projects</Link>
+      <Link href={`/property-type/educational`} className="text-white p-3 bg-[#CC5500] hover:text-black my-10">See related projects</Link>
 
     </div>
   );
@@ -64,7 +64,7 @@ const SkeletonTwo = () => {
       <p className={`${!isDesktop && 'px-3'} 2xl:max-w-lg my-4 text-base font-normal text-neutral-200`}>
       Redefining retail experiences at Westgate Mall, Magodo Lagos premier shopping destination
       </p>
-      <Link href={`/property-type/shopping`} className="text-white p-3 bg-[#A08C5B] hover:text-black my-10">See related projects</Link>
+      <Link href={`/property-type/shopping`} className="text-white p-3 bg-[#CC5500] hover:text-black my-10">See related projects</Link>
 
     </div>
   );
@@ -86,7 +86,7 @@ const SkeletonThree = () => {
 
         
       </p>
-      <Link href={`/property-type/commercial`} className="text-white p-3 bg-[#A08C5B] hover:text-black my-10">See related projects</Link>
+      <Link href={`/property-type/commercial`} className="text-white p-3 bg-[#CC5500] hover:text-black my-10">See related projects</Link>
 
     </div>
   );
@@ -105,7 +105,7 @@ const SkeletonFour = () => {
       A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
       perfect place to relax, unwind, and enjoy life.
       </p>
-      <Link href={`/property-type/residentials`} className="text-white p-3 bg-[#A08C5B] hover:text-black my-10">See related projects</Link>
+      <Link href={`/property-type/residentials`} className="text-white p-3 bg-[#CC5500] hover:text-black my-10">See related projects</Link>
 
     </div>
   );

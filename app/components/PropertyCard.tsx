@@ -27,7 +27,7 @@ const PropertyCard = ({ label, description, src, propertyType }: {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+              <BreadcrumbLink href="/" className="text-gray-500">Home</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
@@ -35,12 +35,12 @@ const PropertyCard = ({ label, description, src, propertyType }: {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage className="text-white">{label}</BreadcrumbPage>
+              <BreadcrumbPage className="font-medium text-gray-900">{label}</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
 
-        <h1 className='text-2xl text-[#A08C5B] py-3'>{label}</h1>
+        <h1 className='text-2xl text-[#CC5500] py-3'>{label}</h1>
         <div className='flex items-center gap-3'>
           <p className='p-2 text-xs text-white bg-orange-500'>{propertyType}</p>
           <p className='p-2 text-xs text-white bg-green-600'>Completed</p>
@@ -53,8 +53,8 @@ const PropertyCard = ({ label, description, src, propertyType }: {
             <Image 
               src={src[0]} 
               width={800} 
-              height={500} 
-              className='object-cover w-full h-[400px] rounded-lg' 
+              height={410} 
+              className='object-cover w-full h-[410px] rounded-lg' 
               alt={label} 
             />
           </div>
@@ -97,8 +97,8 @@ const PropertyCard = ({ label, description, src, propertyType }: {
 
       {/* Description Section */}
       <div className={`w-full py-10 2xl:px-20 lg:px-20 ${!isDesktop && 'px-4'}`}>
-        <h1 className='py-5 text-2xl text-white'>DESCRIPTION</h1>
-        <p className='text-sm text-white'>{description}</p>
+        <h1 className='py-5 text-2xl text-black'>DESCRIPTION</h1>
+        <p className='text-sm text-gray-600'>{description}</p>
       </div>
     </div>
   );

@@ -46,18 +46,18 @@ const isDesktop = useMediaQuery("(min-width: 768px)");
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+              <BreadcrumbLink href="/" className='text-gray-700'>Home</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             
             <BreadcrumbItem>
-              <BreadcrumbPage className="text-white">Properties</BreadcrumbPage>
+              <BreadcrumbPage className="text-gray-700">Properties</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
 
-        <h1 className='text-2xl text-[#A08C5B] capitalize py-7'>Completed Projects</h1>
-        <p className="text-gray-400 py-7">{COMPLETED.length} properties</p>
+        <h1 className='text-2xl text-[#CC5500] capitalize py-7'>Completed Projects</h1>
+        <p className="text-gray-600 py-7">{COMPLETED.length} properties</p>
 
         {/* Grid container for property cards */}
         <div className={`${!isDesktop && 'projectGrid'} grid items-center justify-center w-full h-full grid-cols-3 gap-3`}>

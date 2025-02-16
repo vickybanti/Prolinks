@@ -33,7 +33,7 @@ export const MenuItem = ({
     >
       <motion.p
         transition={{ duration: 0.7 }}
-        className={`${active &&'text-black bg-[#A08C5B] p-3 transition-all linear duration-300'} cursor-pointer text-[#A08C5B] font-semibold uppercase dark:text-white hover:text-white duration-700`}
+        className={`${active &&'text-black bg-[#CC5500] p-3 transition-all linear duration-300'} cursor-pointer text-[#CC5500] font-semibold uppercase dark:text-white hover:text-white duration-700`}
       >
         {item}
       </motion.p>
@@ -90,23 +90,29 @@ export const ProductItem = ({
   src: string;
 }) => {
   return (
-    <Link href={href} className="flex space-x-2">
+    <Link href={href} className="flex items-center w-full space-x-4">
+    {/* Image Container */}
+    <div className="flex-shrink-0 h-20 w-36">
       <Image
         src={src}
         width={140}
         height={70}
         alt={title}
-        className="flex-shrink-0 rounded-md shadow-2xl"
+        className="object-cover w-full h-full rounded-md shadow-2xl"
       />
-      <div>
-        <h4 className="text-md font-bold mb-1 text-[#A0865B] dark:text-white">
-          {title}
-        </h4>
-        <p className="text-[#785F37] text-xs max-w-[10rem] dark:text-neutral-300">
-          {description}
-        </p>
-      </div>
-    </Link>
+    </div>
+  
+    {/* Text Content */}
+    <div className="flex flex-col justify-center">
+      <h4 className="text-md font-bold mb-1 text-[#CC5500] dark:text-white">
+        {title}
+      </h4>
+      <p className="text-[#11100e] text-xs max-w-[12rem] dark:text-neutral-300">
+        {description}
+      </p>
+    </div>
+  </Link>
+  
   );
 };
 
