@@ -44,7 +44,7 @@ export function Socials() {
         </div>
         
 
-        <button onClick={()=>router.push("/projects")} className={`${!isDesktop && 'w-2/3'} 2xl:w-1/3 lg:w-1/2 flex justify-between p-4 text-black bg-[#CC5500] hover:text-[#CC5500] backdrop-blur-sm border border-white hover:bg-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(212,175,55,0.5)] text-sm transition duration-400`}>
+        <button onClick={()=>router.push("/projects")} className={`${!isDesktop && 'w-2/3'} 2xl:w-1/3 lg:w-1/2 flex justify-between p-4 text-white bg-[#CC5500] hover:text-[#CC5500] backdrop-blur-sm border border-white hover:bg-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(212,175,55,0.5)] text-sm transition duration-400`}>
        <span className="text-sm"> COMPLETED PROJECTS </span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 448 512">
   <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
 </svg>
