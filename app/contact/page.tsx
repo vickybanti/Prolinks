@@ -94,6 +94,8 @@ const Page = () => {
     transition={{ ease: "easeInOut", duration: 1.5 }}
     whileInView={{ opacity: 1 }}
     viewport={{ once: false }}
+    className={`mx-20 mt-44 ${!isDesktop && 'mx-0 mt-44'}`}
+    
     >
         
 
@@ -102,41 +104,66 @@ const Page = () => {
                          animate={{ y: 0, opacity: 1 }}
                          transition={{ ease: "easeInOut", duration: 1.5 }}
                          whileInView={{ opacity: 1 }}
-                         viewport={{ once: false }} className={`${!isDesktop && 'workGrid'} flex items-center justify-between gap-4 py-44`}>
-                    <div className={`items-center w-1/2 h-full 2xl:px-20 lg:px-20 py-20 ${!isDesktop && 'w-full px-10'}`}>
+                         viewport={{ once: false }} className={`${!isDesktop && 'workGrid'} flex items-center justify-between gap-0 h-1/2 my-auto `}
+                         style={{
+                          backgroundImage: "url('/assets/1.jpg')",
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                        }} 
+                      >
+                    <div className={`items-center w-1/2 h-full 2xl:px-20 2xl:py-24 lg:px-20 lg:py-24 bg-black shadow-2xl ${!isDesktop && 'w-full px-10'}`}>
         <h1 className="text-[#CC5500] text-5xl py-3">Contact us</h1>
-        <div className="flex items-center]">
+        <div className="flex items-center">
               
            <img src=" https://img.icons8.com/?size=100&id=107436&format=png&color=000000" 
            width="32px"
            height="2px"
            className="object-contain"/>
-           <p className="text-xs text-black p-3 font-light cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#CC5500] hover:text-black">
-           
-            13, Dayo Kuye close,New Oko oba, Abulegba, Lagos
-            </p>
+           <a 
+  href="https://www.google.com/maps/search/?api=1&query=13,+Dayo+Kuye+Close,+New+Oko-Oba,+Abulegba,+Lagos" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="p-3 text-sm text-[#CC5500] hover:underline"
+>
+13,Dayo Kuye Close <br />
+New Oko-Oba, <br />
+Abulegba,Lagos
+</a>
             </div>
-            <div className="flex items-center]">
+            <div className="flex items-center">
               
               <img src="https://img.icons8.com/?size=100&id=12921&format=png&color=000000"
               width="32px"
               height="2px"
               className="object-contain"/>
-            <p className="p-3 text-sm text-black">0803-302-9830</p>
+            <a 
+  href="tel:08033029830" 
+ className="p-3 text-sm text-[#CC5500] hover:underline">
+  0803-302-9830
+</a>
+
             </div>
 
-            <div className="flex items-center]">
+            <div className="flex items-center">
               
            <img src=" https://img.icons8.com/?size=100&id=OumT4lIcOllS&format=png&color=000000" 
            width="32px"
            height="2px"
            className="object-contain"/>
-            <a href="mailto:tundeadekola@yahoo.com" className="p-3 text-sm text-black hover:underline">
+           <a href="mailto:tundeadekola@yahoo.com" className="p-3 text-sm text-[#CC5500] hover:underline">
   tundeadekola@yahoo.com
 </a>
+
             </div>
           </div>
-        <div className={`justify-end w-1/2 overflow-hidden px-32 py-10 h-full bg-[#A0522D] mr-10 ${!isDesktop && 'w-[80%] px-8 h-1/2 mx-auto'} `}>
+          
+          <div 
+  className={`justify-end w-1/2 overflow-hidden px-20 2xl:py-11 lg:py-8 h-full 
+              bg-white/10 backdrop-blur-xl border border-white/20 
+              shadow-lg shadow-white/10 
+              ${!isDesktop && 'w-full px-8 h-1/2 mx-auto'}`}
+ 
+>
 
         <h2 className='py-3 text-lg font-semibold text-white'>Send us a message and we will get in touch</h2>
 

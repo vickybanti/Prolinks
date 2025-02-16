@@ -11,6 +11,8 @@ import { useMediaQuery } from "../hooks/use-media-query";
 
 const Page = () => {
     const isDesktop = useMediaQuery("(min-width: 768px)");
+      const isTablet = useMediaQuery("(min-width: 820px) and (max-width: 1024px)");
+    
 
     const router = useRouter()
     const slides1 = [
@@ -66,7 +68,7 @@ const Page = () => {
 
 
 
-              <div className={`${!isDesktop && 'servicesGrid'} grid grid-cols-2 gap-12 pt-10`}>
+              <div className={`${!isDesktop && 'servicesGrid'} ${isTablet && 'servicesGrid'} grid grid-cols-2 gap-12 pt-10`}>
                   {/* First Item */}
                   <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full px-3 bg-[#CC5500]">
@@ -179,7 +181,7 @@ const Page = () => {
                     duration: 0.5,
                     ease: "linear",
                   }}
-                 className={`flex items-center justify-between gap-4  ${!isDesktop && 'workGrid'}`}>
+                 className={`flex items-center justify-between gap-4  ${!isDesktop && 'workGrid'} ${isTablet && 'flex flex-col w-full gap-4 items-center'}`}>
             
             <div className={`${!isDesktop && 'services'} items-center w-1/2 h-full p-40 `}>
            <p className="font-semibold text-black"> From</p>

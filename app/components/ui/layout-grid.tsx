@@ -18,6 +18,8 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   const [selected, setSelected] = useState<Card | null>(null);
   const [lastSelected, setLastSelected] = useState<Card | null>(null);
   const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isTablet = useMediaQuery("(min-width: 820px) and (max-width: 1024px)");
+
 
 
   const handleClick = (card: Card) => {
@@ -32,7 +34,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   
 
   return (
-    <div className={`relative grid w-full h-full grid-cols-1 gap-4 p-10 mx-auto md:grid-cols-3 max-w-full ${!isDesktop && 'layoutCard'}`}>
+    <div className={`relative grid w-full h-full grid-cols-1 gap-4 p-10 mx-auto lg:grid-cols-3 max-w-full ${!isDesktop && 'layoutCard'} ${isTablet && 'layoutCard'}`}>
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
@@ -42,7 +44,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? `rounded-lg cursor-pointer absolute inset-0 2xl:min-h-full 2xl:min-w-full lg:min-h-full lg:min-w-full ${!isDesktop && 'h-1/2 w-full px-5 py-8'} m-auto z-50 flex justify-center items-center flex-wrap flex-col`
+                ? `rounded-lg cursor-pointer absolute inset-0 2xl:min-h-full 2xl:min-w-full lg:min-h-full lg:min-w-full ${isTablet && 'h-1/2 w-full px-5 py-8'} ${!isDesktop && 'h-1/2 w-full px-5 py-8'} m-auto z-50 flex justify-center items-center flex-wrap flex-col`
                 : lastSelected?.id === card.id
                 ? "z-40 bg-white rounded-xl h-full w-full"
                 : "bg-white rounded-xl h-full w-full"

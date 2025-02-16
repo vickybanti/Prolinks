@@ -10,7 +10,7 @@ import {useRouter} from "next/navigation"
 
  
 export function Socials() {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 912px)");
 
   const router = useRouter()
   return (

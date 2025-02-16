@@ -25,9 +25,11 @@ const Work = () => {
         <h1 className="text-3xl font-bold md:text-4xl text-white/85 leading-relax workHeading">
           We know the <Highlight className="text-black dark:text-black">  ins and outs </Highlight> of luxurious buildings
         </h1>
-        <p className="text-[#CC5500]"> And it shows in our magnificent edifices ALL over the big city of Lagos 
-
+        <div className='bg-black p-2 rounded-full lg:w-[54%] 2xl:w-[37%] shadow-lg'>
+        <p className="text-[#CC5500] "> And it shows in our magnificent edifices ALL over the big city of Lagos 
+        
 </p>
+</div>
       </div>
 
 
