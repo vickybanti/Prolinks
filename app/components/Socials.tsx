@@ -34,7 +34,7 @@ export function Socials() {
         
 
         </div>
-        <div className={`flex font-extralight md:text-sm text-[#FFAC1C] py-10 text-lg `}>
+        <div className={`flex font-extralight md:text-sm text-[#CC5500] py-10 text-lg `}>
         
         <p className={`pr-2 socialsFont`}>ARCHITECTURE</p>
              <p className="px-2 socialsFont">
@@ -44,7 +44,7 @@ export function Socials() {
         </div>
         
 
-        <button onClick={()=>router.push("/projects")} className={`${!isDesktop && 'w-2/3'} 2xl:w-1/3 lg:w-1/2 flex justify-between p-4 text-black bg-[#FFAC1C] hover:text-[#FFAC1C] backdrop-blur-sm border border-white hover:bg-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(212,175,55,0.5)] text-sm transition duration-400`}>
+        <button onClick={()=>router.push("/projects")} className={`${!isDesktop && 'w-2/3'} 2xl:w-1/3 lg:w-1/2 flex justify-between p-4 text-black bg-[#CC5500] hover:text-[#CC5500] backdrop-blur-sm border border-white hover:bg-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(212,175,55,0.5)] text-sm transition duration-400`}>
        <span className="text-sm"> COMPLETED PROJECTS </span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 448 512">
   <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
 </svg>
@@ -55,7 +55,7 @@ export function Socials() {
         <div className="grid grid-cols-2 2xl:gap-16 lg:gap-2 socialsGrid">
   {/* First Item */}
   <div className="flex items-center space-x-4 h-[100px]">
-    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#FFAC1C] socialsImg">
+    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#CC5500] socialsImg">
       <img
         className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=60012&format=png&color=000000"
@@ -63,14 +63,14 @@ export function Socials() {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#FFAC1C] text-lg font-semibold">25+</h3>
+      <h3 className="text-[#CC5500] text-lg font-semibold">25+</h3>
       <span className="text-sm text-black socialsFont">Achievements</span>
     </div>
   </div>
 
   {/* Second Item */}
   <div className="flex items-center space-x-4 h-[100px]">
-    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#FFAC1C]">
+    <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#CC5500]">
       <img
         className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=37862&format=png&color=000000"
@@ -78,14 +78,14 @@ export function Socials() {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#FFAC1C] text-lg font-semibold">15+</h3>
+      <h3 className="text-[#CC5500] text-lg font-semibold">15+</h3>
       <span className="text-sm text-black socialsFont">years of experience</span>
     </div>
   </div>
 
    {/* Fourth Item */}
    <div className="flex items-center space-x-4 h-[100px]">
-  <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#FFAC1C]">
+  <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#CC5500]">
   <img
         className="object-contain w-full h-full"
         src="https://img.icons8.com/?size=100&id=34520&format=png&color=000000"
@@ -93,14 +93,14 @@ export function Socials() {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#FFAC1C] text-lg font-semibold">300+</h3>
+      <h3 className="text-[#CC5500] text-lg font-semibold">300+</h3>
       <span className="text-sm text-black socialsFont">Building projects</span>
     </div>
   </div>
 
   {/* Third Item */}
   <div className="flex items-center space-x-4 h-[100px]">
-  <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#FFAC1C]">
+  <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#CC5500]">
   <img
         className="object-contain w-full h-full animate-pulse"
         src="https://img.icons8.com/?size=100&id=uLaytFdQhTaZ&format=png&color=000000"
@@ -108,7 +108,7 @@ export function Socials() {
       />
     </div>
     <div className="flex flex-col">
-      <h3 className="text-[#FFAC1C] text-lg font-semibold">700+</h3>
+      <h3 className="text-[#CC5500] text-lg font-semibold">700+</h3>
       <span className="text-sm text-black socialsFont">Happy Homeowners and tenants</span>
     </div>
   </div>
