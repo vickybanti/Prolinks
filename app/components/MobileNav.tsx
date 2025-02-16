@@ -95,7 +95,7 @@ const MobileNav = () => {
                             <DropdownMenuSubTrigger  className={`p-4 ${
                               isActive
                                 ? "text-[#CC5500] bg-white"
-                                : "text-black bg-[#CC5500] hover:text-[#CC5500] hover:bg-white transition-all duration-700"
+                                : "text-white bg-[#CC5500] hover:text-[#CC5500] hover:bg-white transition-all duration-700"
                             }`}>
                               {link.label}
                             </DropdownMenuSubTrigger>
