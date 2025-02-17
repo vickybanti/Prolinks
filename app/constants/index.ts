@@ -319,7 +319,7 @@ export const NAVLINKS = [
       propertyType:"commercial",
       title: "Ogba project",
       route: "/property/ogba-project",
-      icon: "/assets/completed/commercial/ogba.jpg",
+      icon: "/assets/completed/commercial/Ogba.jpg",
       description: "COLITY STUDIOS, DM AUDIO VISUALS  MANUFACTURES .",
       location:" OGBA, LAGOS STATE",      
       images:[
