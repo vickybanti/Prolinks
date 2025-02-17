@@ -619,7 +619,7 @@ export const NAVLINKS = [
         {
           id:1,
           label:"Hallmark",
-          href:"/property/hallmark"
+          href:"/property/hallmark-university-projects-"
           
         },
         {
