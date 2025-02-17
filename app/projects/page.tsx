@@ -41,8 +41,8 @@ const isDesktop = useMediaQuery("(min-width: 768px)");
 
 
   return (
-    <div className={`${!isDesktop && 'work'} px-20 py-44 overflow-hidden text-white`}>
-      <div className='px-10'>
+    <div className={`${!isDesktop && 'px-4'} 2xl:px-20 lg:px-20 py-44 overflow-hidden text-white`}>
+      <div className='2xl:px-10 lg:px-10'>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

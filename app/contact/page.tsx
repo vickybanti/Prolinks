@@ -94,7 +94,7 @@ const Page = () => {
     transition={{ ease: "easeInOut", duration: 1.5 }}
     whileInView={{ opacity: 1 }}
     viewport={{ once: false }}
-    className={`mx-20 mt-44 ${!isDesktop && 'mx-0 mt-44'}`}
+    className={`mx-20 mt-44 ${!isDesktop && 'mx-2 w-full mt-44'}`}
     
     >
         
@@ -111,7 +111,7 @@ const Page = () => {
                           backgroundPosition: "center",
                         }} 
                       >
-                    <div className={`items-center w-1/2 h-full 2xl:px-20 2xl:py-24 lg:px-20 lg:py-24 bg-black shadow-2xl ${!isDesktop && 'w-full px-10'}`}>
+                    <div className={`items-center w-1/2 h-full 2xl:px-20 2xl:py-24 lg:px-20 lg:py-24 bg-black shadow-2xl ${!isDesktop && 'w-full px-5'}`}>
         <h1 className="text-[#CC5500] text-5xl py-3">Contact us</h1>
         <div className="flex items-center">
               

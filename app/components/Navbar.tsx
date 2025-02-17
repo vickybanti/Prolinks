@@ -69,7 +69,7 @@ function DesktopNavbar() {
             className={`relative px-3 py-3 overflow-hidden transition-all duration-700 ${
               isActive
                 ? "inset-0 bg-gradient-to-b from-[#CC5500] to-white text-black"
-                : "bg-inherit text-[#CC5500] group"
+                : "bg-white text-[#CC5500] group"
             }`}
           >
             {/* Background Gradient Overlay */}
@@ -78,7 +78,7 @@ function DesktopNavbar() {
             {/* If there are product items, show dropdown, else just a link */}
             {link.productItems && link.productItems.length > 0 ? (
               <>
-                <NavigationMenuTrigger className="relative z-10 flex hover:text-black hover:bg-transparent ">
+                <NavigationMenuTrigger className="relative z-10 flex hover:text-[#CC5500] hover:bg-transparent ">
                   {link.label}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>

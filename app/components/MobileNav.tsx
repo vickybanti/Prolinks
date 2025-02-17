@@ -37,7 +37,7 @@ const MobileNav = () => {
          transition={{ ease: "easeInOut", duration: 1.5 }}
          whileInView={{ opacity: 1 }}
          viewport={{ once: false }}
-        className="flex items-center justify-between px-8 py-4 mx-auto">
+        className="flex items-center justify-between px-2 py-4 mx-auto">
           {/* Logo */}
           <Link href="/">
         <Image src="/assets/logo/logo2.jpg" width={100} height={50} alt="logo" className="object-contain" />
@@ -92,11 +92,7 @@ const MobileNav = () => {
                         {/* Submenu */}
                         {link.productItems && (
                           <DropdownMenuSub>
-                            <DropdownMenuSubTrigger  className={`p-4 ${
-                              isActive
-                                ? "text-[#CC5500] bg-white"
-                                : "text-white bg-[#CC5500] hover:text-[#CC5500] hover:bg-white transition-all duration-700"
-                            }`}>
+                            <DropdownMenuSubTrigger  className={`p-4 text-[#CC5500]`}>
                               {link.label}
                             </DropdownMenuSubTrigger>
                             <DropdownMenuPortal>
