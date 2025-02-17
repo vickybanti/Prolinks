@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import {motion} from "framer-motion"
 import { useMediaQuery } from "../hooks/use-media-query";
+import Image from 'next/image';
 
 
 
@@ -72,7 +73,9 @@ const Page = () => {
                   {/* First Item */}
                   <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full px-3 bg-[#CC5500]">
-                          <img
+                          <Image
+                          width={100}
+                          height={100}
                               className="object-contain w-full h-full"
                               src="https://img.icons8.com/?size=100&id=7687&format=png&color=000000"
                               alt="trophy-emoji" />
@@ -87,7 +90,9 @@ const Page = () => {
                   {/* second Item */}
                   <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#CC5500]">
-                          <img
+                      <Image
+                          width={100}
+                          height={100}
                               className="object-contain w-full h-full"
                               src="https://img.icons8.com/?size=100&id=9342&format=png&color=000000"
                               alt="trophy-emoji" />
@@ -104,7 +109,9 @@ const Page = () => {
                   {/* third Item */}
                   <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#CC5500]">
-                          <img
+                      <Image
+                          width={100}
+                          height={100}
                               className="object-contain w-full h-full"
                               src="https://img.icons8.com/?size=100&id=cQUE9D1CWfuG&format=png&color=000000"
                               alt="trophy-emoji" />
@@ -122,7 +129,9 @@ const Page = () => {
                   {/* Fourth Item */}
                   <div className="flex items-center space-x-4 h-[100px] py-20">
                       <div className="w-[60px] h-[60px] flex-shrink-0 rounded-full p-3 bg-[#CC5500]">
-                          <img
+                          <Image
+                            width={100}
+                              height={100}
                               className="object-contain w-full h-full"
                               src="https://img.icons8.com/?size=100&id=102879&format=png&color=000000"
                               alt="trophy-emoji" />
@@ -181,9 +190,9 @@ const Page = () => {
                     duration: 0.5,
                     ease: "linear",
                   }}
-                 className={`flex items-center justify-between gap-4  ${!isDesktop && 'workGrid'} ${isTablet && 'flex flex-col w-full gap-4 items-center'}`}>
+                 className={`flex items-center justify-between gap-4  ${!isDesktop && 'workGrid'} ${isTablet && 'flex flex-col w-full gap-4 px-3'}`}>
             
-            <div className={`${!isDesktop && 'services'} items-center w-1/2 h-full p-40 `}>
+            <div className={`${!isDesktop && 'services'} items-center w-1/2 h-full p-40 ${isTablet && 'w-full px-10'} `}>
            <p className="font-semibold text-black"> From</p>
            <h1 className={`text-[#CC5500] text-6xl uppercase py-3  ${!isDesktop && 'servicesHeading'}`}>Exquisuite Architecture</h1>
 <p className="py-2 text-black text-md items-center justify-center leading-[32px]">
@@ -198,7 +207,7 @@ and awe-inspiring architectural feats. </p>
                     delay: 1.5,
                     duration: 0.5,
                     ease: "linear",
-                  }} className={`justify-end w-1/2 h-full py-20 px-40 overflow-hidden ${!isDesktop && 'servicesCarousel'}`}>
+                  }} className={`justify-end w-1/2 h-full py-20 px-40 overflow-hidden ${!isDesktop && 'servicesCarousel'} ${isTablet && 'w-full px-10'} `}>
 
            <Carousel slides={slides1} />
           </motion.div>
@@ -212,8 +221,8 @@ and awe-inspiring architectural feats. </p>
                    duration: 0.5,
                    ease: "linear",
                  }}
-                 className={`flex items-center justify-between gap-4  overflow-hidden ${!isDesktop && 'workGrid'}`}>
-{isDesktop &&
+                 className={`flex items-center justify-between gap-4  overflow-hidden ${!isDesktop && 'workGrid'} ${isTablet && 'flex flex-col w-full gap-4 px-3'}`}>
+{isDesktop && !isTablet &&
 
 <motion.div
 initial={{ opacity: 0.0, y: 200 }}
@@ -223,12 +232,12 @@ transition={{
   duration: 0.5,
   ease: "linear",
 }}
- className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
+ className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'} ${isTablet && 'w-full px-10'}`}>
 
 <Carousel slides={slides2} />
 </motion.div>
 }
-<div className={`${!isDesktop && 'services'} items-center w-1/2 h-full p-40 `}>
+<div className={`${!isDesktop && 'services'} ${isTablet && 'services'} items-center w-1/2 h-full p-40 `}>
 <p className="font-semibold text-black"> to the use of</p>
 <h1 className={`text-[#CC5500] text-6xl uppercase py-3  ${!isDesktop && 'servicesHeading'}`}>Competent Engineering</h1>
 <p className="py-2 text-black text-md leading-[32px]">
@@ -245,7 +254,21 @@ functionality, and sustainability of each property. </p>
             duration: 1.5,
             ease: "linear",
           }} 
-          className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
+          className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'} ${isTablet && 'w-full px-10'}`}>
+
+<Carousel slides={slides2} />
+</motion.div>
+}
+{isTablet &&
+          <motion.div
+          initial={{ opacity: 0.0, y: -200 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.8,
+            duration: 1.5,
+            ease: "linear",
+          }} 
+          className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'} ${isDesktop && 'w-full px-10'}`}>
 
 <Carousel slides={slides2} />
 </motion.div>
@@ -260,9 +283,9 @@ functionality, and sustainability of each property. </p>
                     duration: 0.5,
                     ease: "linear",
                   }}
-                 className={`flex items-center justify-between gap-4 ${!isDesktop && 'workGrid'}`}>
+                 className={`flex items-center justify-between gap-4 ${!isDesktop && 'workGrid'} ${isTablet && 'flex flex-col w-full gap-4 px-3'}`}>
             
-            <div className={`${!isDesktop && 'services'} items-center w-1/2 h-full p-40 `}>
+            <div className={`${!isDesktop && 'services'} ${isTablet && 'services'} items-center w-1/2 h-full p-40 `}>
            <p className="font-semibold text-black"> to</p>
 <h1 className={`text-[#CC5500] text-6xl uppercase py-3  ${!isDesktop && 'servicesHeading'}`}>LUXURIOUS FINISHING</h1>
 <p className="py-2 text-black text-md leading-[32px]">
@@ -280,7 +303,7 @@ and awe-inspiring architectural feats. </p>
                    duration: 0.5,
                    ease: "linear",
                  }}
-                 className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'}`}>
+                 className={`justify-start w-1/2 h-full py-20 px-40 overflow-hidden  ${!isDesktop && 'servicesCarousel'} ${isTablet && 'w-full px-10'}`}>
 
            <Carousel slides={slides3} />
           </motion.div>
