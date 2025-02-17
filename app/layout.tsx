@@ -17,7 +17,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Prolinks",
-  description: ".Architecture .Engineering  .Construction",
+  description: "Architecture. Engineering. Construction.",
 };
 
 export default function RootLayout({
