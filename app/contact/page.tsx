@@ -94,7 +94,7 @@ const Page = () => {
     transition={{ ease: "easeInOut", duration: 1.5 }}
     whileInView={{ opacity: 1 }}
     viewport={{ once: false }}
-    className={`mx-20 mt-44 ${!isDesktop && 'mx-2 w-full mt-44'}`}
+    className={`2xl:mx-20 lg:mx-20 mt-44 ${!isDesktop && 'mx-2 w-full mt-44'}`}
     
     >
         
