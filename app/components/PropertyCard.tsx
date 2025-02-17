@@ -42,8 +42,8 @@ const PropertyCard = ({ label, description, src, propertyType }: {
 
         <h1 className='text-2xl text-[#CC5500] py-3'>{label}</h1>
         <div className='flex items-center gap-3'>
-          <p className='p-2 text-xs text-white bg-orange-500'>{propertyType}</p>
-          <p className='p-2 text-xs text-white bg-green-600'>Completed</p>
+        {propertyType && <p className={`text-white p-2 ${propertyType === 'residentials' ? 'bg-green-950' : propertyType === 'commercial' ? 'bg-red-950' : propertyType === 'educational' ? 'bg-purple-800' : 'bg-[#020408]'} text-xs uppercase`}>{propertyType}</p>} 
+        <p className='p-2 text-xs text-white bg-gray-600'>Completed</p>
         </div>
 
         {/* Image Section */}
