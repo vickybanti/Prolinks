@@ -16,7 +16,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Prolinks",
+  title: "Prolinks - Architectural Excellence.",
   description: "Architecture. Engineering. Construction.",
 };
 
