@@ -1,9 +1,19 @@
 "use client"
 import React from 'react';
+import {motion} from "framer-motion"
 
 const Page = () => {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12 text-gray-800">
+    <motion.div
+            initial={{ opacity: 0.0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.8,
+              ease: "easeInOut",
+            }}
+         className="max-w-4xl mx-auto px-6 py-12 text-gray-800">
+
       <h1 className="text-3xl font-bold text-center text-gray-900 mb-6">Privacy Policy</h1>
       <p className="text-center text-sm text-gray-600 mb-10">
         Last updated: February 17, 2025
@@ -76,7 +86,7 @@ const Page = () => {
 </a>
         </span>
       </footer>
-    </div>
+    </motion.div>
   );
 };
 
