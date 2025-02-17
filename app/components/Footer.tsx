@@ -48,7 +48,7 @@ const Footer = () => {
               <h2 className="text-lg font-semibold">{footer.title}</h2>
               {footer.subTitle.map((sub) => (
                 <Link
-                href={"href" in sub ? `/property/${sub.href} `: "#"}
+                href={"href" in sub ? `${sub.href} `: "#"}
                   key={sub.id}
                   className="text-sm py-1 cursor-pointer font-light transition-all duration-300 ease-in-out hover:bg-[#CC5500] hover:text-black w-full"
                 >

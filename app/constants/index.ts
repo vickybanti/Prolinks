@@ -593,19 +593,19 @@ export const NAVLINKS = [
         {
         id:5,
         label:"Services",
-        route:"/services"
+        href:"/services"
       },
 
       {
         id:2,
         label:"Properties",
-        route:"/projects"
+        href:"/projects"
       },
 
       {
         id:3,
         label:"Privacy policy",
-        route:"/privacy-policy"
+        href:"/privacy-policy"
       },
     ]
 
@@ -619,23 +619,23 @@ export const NAVLINKS = [
         {
           id:1,
           label:"Hallmark",
-          href:"hallmark"
+          href:"/property/hallmark"
           
         },
         {
           id:2,
           label:"West gate",
-          href:"west-gate-supermarket-and-pharmacy"
+          href:"/property/west-gate-supermarket-and-pharmacy"
         },
         {
           id:3,
           label:"Iyana ipaja",
-          href:"5-bedroom-duplex"
+          href:"/property/5-bedroom-duplex"
         },
         {
           id:4,
           label:"Ikorodu",
-          href:"ikorodu-project"
+          href:"/property/ikorodu-project"
         },
       ]
     },
@@ -647,23 +647,23 @@ export const NAVLINKS = [
         {
           id:1,
           label:"Residentials",
-          route:"/property-type/residentials"
+          href:"/property-type/residentials"
         },
         {
           id:2,
           label:"Commercials",
-          route:"/property-type/commercials"
+          href:"/property-type/commercial"
         },
 
         {
           id:3,
           label:"Shopping",
-          route:"/property-type/shopping"
+          href:"/property-type/shopping"
         },
         {
           id:4,
           label:"Admins",
-          route:"/property-type/educational"
+          href:"/property-type/educational"
         },
        
        

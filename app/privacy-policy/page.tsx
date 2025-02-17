@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 
 const Page = () => {
@@ -69,7 +70,11 @@ const Page = () => {
       </section>
       
       <footer className="mt-10 text-center text-sm text-gray-600">
-        If you have any questions, contact us at <span className="text-blue-600">[your email]</span>
+        If you have any questions, contact us at <span className="text-blue-600">
+        <a href="mailto:tundeadekola@yahoo.com" className="p-3 text-sm text-[#CC5500] hover:underline">
+  tundeadekola@yahoo.com
+</a>
+        </span>
       </footer>
     </div>
   );
