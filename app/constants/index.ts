@@ -605,7 +605,7 @@ export const NAVLINKS = [
       {
         id:3,
         label:"Privacy policy",
-        route:"/privacy"
+        route:"/privacy-policy"
       },
     ]
 
@@ -643,18 +643,30 @@ export const NAVLINKS = [
       id:3,
       "title":"Explore",
       "subTitle":[
+       
         {
           id:1,
-          label:"Search"
+          label:"Residentials",
+          route:"/property-type/residentials"
         },
         {
           id:2,
-          label:"Ongoing"
+          label:"Commercials",
+          route:"/property-type/commercials"
         },
+
         {
           id:3,
-          label:"Completed"
+          label:"Shopping",
+          route:"/property-type/shopping"
         },
+        {
+          id:4,
+          label:"Admins",
+          route:"/property-type/educational"
+        },
+       
+       
        
       ]
     },

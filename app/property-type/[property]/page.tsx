@@ -44,7 +44,7 @@ const PropertyPage = () => {
   }
 
   return (
-    <div className={`${!isDesktop && 'work'} px-3 mt-20 overflow-hidden text-white`}>
+    <div className={`${!isDesktop && 'work'} 2xl:px-20 lg:px-20 mt-20 overflow-hidden text-white`}>
       <div className={`py-10 ${!isDesktop && 'px-2'}`}>
         <h1 className='text-2xl text-[#A08C5B] capitalize py-7'>{property} Projects</h1>
         <p className="text-gray-400">Explore {property} buildings</p>

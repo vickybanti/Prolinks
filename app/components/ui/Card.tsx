@@ -56,7 +56,7 @@ export function Card({
             <p className="relative z-10 text-base font-normal text-gray-50">
               {title}
             </p>
-            <p className="text-sm text-gray-400">{subtitle}</p>
+            <p className="text-sm text-[#CC5500]">{subtitle}</p>
           </div>
         </div>
 
@@ -72,7 +72,7 @@ export function Card({
           <Link href={href} className="flex px-2 my-3 hover:bg-black/45">
           <p className="relative z-10 text-sm font-thin text-gray-50"> Details</p>
           <div className="w-4">
-          <Image src="https://img.icons8.com/?size=100&id=59862&format=png&color=179797" alt="arrow" width={30} height={3} />
+          <Image src="https://img.icons8.com/?size=100&id=59862&format=png&color=CC5500" alt="arrow" width={30} height={3} />
           </div>
           </Link>
           
