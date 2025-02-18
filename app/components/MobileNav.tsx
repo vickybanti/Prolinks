@@ -34,7 +34,7 @@ const MobileNav = () => {
         initial={{ x: -30, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 1.5 }}
-        className="flex items-center justify-between px-2 py-4 mx-auto"
+        className="flex items-center justify-between px-4 py-4 mx-auto"
       >
         {/* Logo */}
         <Link href="/">
