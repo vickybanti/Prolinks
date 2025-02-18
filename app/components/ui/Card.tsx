@@ -1,4 +1,5 @@
 "use client";
+import { useMediaQuery } from "@/app/hooks/use-media-query";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,6 +31,8 @@ export function Card({
 
  
 }) {
+
+  const isDesktop = useMediaQuery("(min-width: 768px)");
   return (
     <div className="w-full max-w-xs group/card ">
       <div
@@ -65,7 +68,7 @@ export function Card({
           <h1 className="relative z-10 text-xl font-semibold md:text-2xl text-gray-50">
             {contentTitle}
           </h1>
-          <div className={`flex justify-between items-center px-10 mr-7`}>
+        <div className={`flex justify-between items-center px-10 ${!isDesktop && 'mr-24'}`}>
           <p className="relative z-10 my-4 text-xs font-normal text-gray-50">
             {ContentSubtitle}
           </p>
