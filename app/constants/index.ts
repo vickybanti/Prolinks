@@ -105,14 +105,7 @@ export const ONGOING = [
     location:" Federal Polytechnic Ede, Ede, Osun State",      
 
   },
-  {
-    id:2,
-    title: "Orimolade project 1",
-    route: "https://tailwindmasterkit.com",
-    icon: "/assets/ongoing/New Orimolade_Scene 1.jpg",
-    location:" Federal Polytechnic Ede, Ede, Osun State",      
-    description:"Prespective view of ongoing orimolade project",
-  },
+ 
   {
     id:3,
     title: "Ogba project",
