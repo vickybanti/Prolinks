@@ -60,7 +60,7 @@ const isDesktop = useMediaQuery("(min-width: 768px)");
         <p className="text-gray-600 py-7">{COMPLETED.length} properties</p>
 
         {/* Grid container for property cards */}
-        <div className={`${!isDesktop && 'projectGrid'} grid items-center justify-center w-full h-full grid-cols-3 gap-3`}>
+        <div className={`${!isDesktop && 'flex flex-col w-full px-1'} 2xl:grid lg:grid 2xl:items-center lg:items-center 2xl:justify-center lg:justify-center w-full h-full 2xl:grid-cols-3 lg:grid-cols-3 gap-3`}>
           {COMPLETED.map((item) => (
             <PageCard
               id={item.id}
