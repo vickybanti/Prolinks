@@ -87,7 +87,7 @@ export const COMPLETED = [
   {
     id:11,
     propertyType:"Shopping",
-    title: "CMART PHARMACY AND SUPERMARKET",
+    title: "CMART SUPERMARKET AND PHARMACY",
     route: "/property/cmart-supermarket-and-pharmacy",
     icon: "/assets/completed/shopping/20210917_122818.jpg",
     description: "CMART SUPERMARKET AND PHARMACY",
