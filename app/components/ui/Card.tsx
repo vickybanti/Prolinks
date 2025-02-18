@@ -65,7 +65,7 @@ export function Card({
           <h1 className="relative z-10 text-xl font-semibold md:text-2xl text-gray-50">
             {contentTitle}
           </h1>
-          <div className="flex justify-between">
+          <div className={`flex justify-between items-center px-10 mr-7`}>
           <p className="relative z-10 my-4 text-xs font-normal text-gray-50">
             {ContentSubtitle}
           </p>
