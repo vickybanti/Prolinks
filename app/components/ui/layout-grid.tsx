@@ -17,7 +17,7 @@ type Card = {
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   const [selected, setSelected] = useState<Card | null>(null);
   const [lastSelected, setLastSelected] = useState<Card | null>(null);
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 780px)");
   const isTablet = useMediaQuery("(min-width: 820px) and (max-width: 1024px)");
 
 

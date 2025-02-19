@@ -37,7 +37,7 @@ const ProjectPage = () => {
 //     return <div>Loading...</div>;
 //   }
 
-const isDesktop = useMediaQuery("(min-width: 768px)");
+const isDesktop = useMediaQuery("(min-width: 780px)");
 
 
   return (

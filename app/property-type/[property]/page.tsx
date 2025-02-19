@@ -8,7 +8,7 @@ import { useMediaQuery } from "@/app/hooks/use-media-query";
 
 
 const PropertyPage = () => {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 780px)");
     const params = useParams();
   const property = Array.isArray(params.property) ? params.property[0] : params.property || '';
   const allProperties = [

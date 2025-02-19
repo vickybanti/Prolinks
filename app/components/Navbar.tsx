@@ -20,7 +20,7 @@ import {
 
 
 export function Navbar() {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 780px)");
   
 
 

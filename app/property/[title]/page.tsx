@@ -14,6 +14,7 @@ const PropertyPage = () => {
     ...educational.map((item) => ({ ...item, propertyType: item.propertyType || 'educational' })),
     ...shopping.map((item) => ({ ...item, propertyType: item.propertyType || 'shopping' })),
   ];
+  
 
   interface PropertyData {
     title: string;

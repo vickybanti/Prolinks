@@ -6,7 +6,7 @@ import { Highlight } from "./ui/hero-highlight";
 
 
 const Work = () => {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 780px)");
 
   return (
     <div

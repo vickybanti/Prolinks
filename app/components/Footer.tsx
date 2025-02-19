@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const Footer = () => {
   
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 780px)");
   const isTablet = useMediaQuery("(min-width: 820px) and (max-width: 1024px)");
 
   

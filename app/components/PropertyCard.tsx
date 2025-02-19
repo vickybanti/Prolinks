@@ -19,7 +19,7 @@ const PropertyCard = ({ label, description, src, propertyType }: {
   alt?: string;
   propertyType: string;
 }) => {
-  const isDesktop = useMediaQuery("(min-width: 820px)");
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
   return (
     <div className={`mt-24 overflow-hidden 2xl:mt-32 `}>
