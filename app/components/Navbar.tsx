@@ -50,16 +50,16 @@ function DesktopNavbar() {
        transition={{ ease: "easeInOut", duration: 1.5 }}
        whileInView={{ opacity: 1 }}
        viewport={{ once: false }}
-      className="flex items-center justify-between w-full px-14 py-4">
+      className="flex items-center justify-between w-full px-20 py-4">
         {/* Logo */}
-        <div className="top-0 left-0 ml-5 flex items-center">
+        <div className="top-0 left-0 flex items-center">
         <Link href="/">
         <Image src="/assets/logo/logo1.jpg" width={100} height={50} alt="logo" className="object-contain" />
        </Link>
         </div>
 
 {/* Navigation Links */}
-<div className="flex left-0 space-x-1 text-[#CC5500] ml-auto 2xl:mr-3">
+<div className="flex left-0 space-x-1 text-[#CC5500] ml-auto">
   {NAVLINKS.map((link) => {
     const isActive = link.route === pathname;
     return (
